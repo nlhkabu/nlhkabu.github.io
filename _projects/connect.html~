@@ -1,0 +1,12 @@
+---
+layout: work
+permalink: /connect/
+title: Connect
+skills: [Django, TDD, BDD, Continuous Integration, HTML, CSS/SCSS, UI, Visual Design]
+summary: Connect is a moderated web application that helps people connect with each other based on skills, interests and location.
+feature_image: /assets/connect2.png
+site_url: http://mysite.com
+github_url: /nlhkabu/blahblah
+---
+
+#Some content here

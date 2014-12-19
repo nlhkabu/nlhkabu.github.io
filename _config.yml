@@ -1,0 +1,13 @@
+url: http://whoisnicoleharris.com
+timezone: Australia/Melbourne
+highlighter: pygments
+permalink: /:year/:month/:day/:title.html
+
+sass:
+    sass_dir: _sass
+    style: :compressed
+
+collections:
+    projects:
+        output: true
+        permalink: /:path/

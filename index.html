@@ -1,1 +1,119 @@
-Hello, World!
+---
+layout: default
+title: Home
+---
+
+<section class="selected-projects dark" id="projects">
+    <div class="section-heading">
+        <h3>Selected Projects</h3>
+    </div>
+    {% comment %}
+        {% assign pages = site.pages | group_by: "layout" %}
+        {% for page_type in pages %}
+            {% if page_type.name == 'project' %}
+                {% for project in page_type.items %}
+                    <div class="project{% if forloop.last %} last{% endif %}">
+                        <div class="container">
+                            <h2>{{ project.title }}</h2>
+                            {% if project.skills %}
+                            <div class="tags light">
+                                {% for skill in project.skills %}
+                                    <span>{{ skill }}</span>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                            {% if project.summary %}
+                                <p>{{ project.summary }}</p>
+                            {% endif %}
+                            <a class="button primary" href="{{ project.url }}">View Project</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+    {% endcomment %}
+
+    {% for project in site.projects %}
+        <div class="project{% if forloop.last %} last{% endif %}">
+            <div class="container">
+                <h2>{{ project.title }}</h2>
+                {% if project.skills %}
+                <div class="tags light">
+                    {% for skill in project.skills %}
+                        <span>{{ skill }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% if project.summary %}
+                    <p>{{ project.summary }}</p>
+                {% endif %}
+                <a class="button primary" href="{{ project.url }}">View Project</a>
+            </div>
+        </div>
+    {% endfor %}
+
+</section>
+
+<section class="skills light" id="skills">
+    <div class="section-heading">
+        <h3>Skills &amp; Interests</h3>
+    </div>
+    <div id="professional" class="skill">
+        <div class="container">
+            <h2>Professional</h2>
+            <p>Connect is a moderated social media site that allows it's members to 'connect' based on Skills and location.  Originally designed for the PyLadies Australia community, Connect is now used by a number of open-source communities...</p>
+
+            <div class="half">
+                <ul>
+                    <li>HTML</li>
+                    <li>SCSS/CSS</li>
+                    <li>JS/JQUERY</li>
+                    <li>Django</li>
+                    <li>Angular JS (currently learning)</li>
+                </ul>
+            </div>
+            <div class="half">
+                <ul>
+                    <li>Test-driven development</li>
+                    <li>User Interface Design</li>
+                    <li>Aesthetic Design</li>
+                    <li>Project Management</li>
+                    <li>Client and stakeholder management</li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <a href="/assets/cv.pdf" class="button light cv">Download my CV</a>
+        </div>
+    </div>
+    <div id="personal" class="skill">
+        <div class="container">
+            <h2>Personal</h2>
+            <p>Connect is a moderated social media site that allows it's members to 'connect' based on Skills and location.  Originally designed for the PyLadies Australia community, Connect is now used by a number of open-source communities...</p>
+        </div>
+    </div>
+</section>
+
+<section class="writing" id="writing">
+    <div class="section-heading">
+        <h3>Writing &amp; Talks</h3>
+    </div>
+    <div class="dark">
+        {% for post in site.posts %}
+            <a class="article{% if forloop.first %} first{% endif %}" href="{{ post.url }}">
+                <span class="container">
+                    <span class="title-block pull-left">
+                        <span class="title">{{ post.title }}</span>
+                        <span class="meta">
+                            {% assign d = post.date | date: "%-d" %}
+                            {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}
+                            {{ post.date | date: "%B" }},
+                            {{ post.date | date: "%Y" }}
+                        </span>
+                    </span>
+                    <i class="fa fa-long-arrow-right pull-right"></i>
+                    <span class="clearfix"></span>
+                </span>
+            </a>
+        {% endfor %}
+    </div>
+</section>

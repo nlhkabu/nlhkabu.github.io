@@ -1,0 +1,72 @@
+---
+layout: default
+---
+
+<section class="project dark">
+    <div class="section-heading  article-heading">
+        <h1>{{ page.title }}</h1>
+    </div>
+
+    {% if page.summary %}
+        <div class="container">
+            <div class="project-intro">
+                <p>{{ page.summary }}</p>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if page.feature_image %}
+        <div class="project-img">
+            <img src="{{ page.feature_image }}" alt="{{ page.title }}" />
+        </div>
+    {% endif %}
+
+    {{ content }}
+
+    {% for section in page.sections %}
+        <div class="project-snippet{% if forloop.last %} last{% endif %}">
+            <div class="container">
+                {{ section | markdownify }}
+            </div>
+        </div>
+    {% endfor %}
+
+    {% if page.site_url or page.github_url %}
+        <div class="project-links container">
+            <div class="container">
+                {% if page.site_url %}
+                    <a href="{{ page.site_url }}" class="button primary">Visit Site</a>
+                {% endif %}
+                {% if page.github_url %}
+                    <a href="http://github.com{{ page.github_url }}" class="button">View Source on GitHub</a>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+</section>
+
+{% if page.previous or page.next %}
+    <section class="sub-nav dark">
+        {% if page.previous %}
+            <a href="{{ page.previous.url }}" class="prev">
+                <i class="fa fa-long-arrow-left"></i>
+                <span class="title-block">
+                    <span class="meta">Previous Article</span>
+                    {{ page.previous.title }}
+                </span>
+                <span class="clearfix"></span>
+            </a>
+        {% endif %}
+        {% if page.next %}
+            <a href="{{ page.next.url }}" class="next">
+                <i class="fa fa-long-arrow-right"></i>
+                <span class="title-block">
+                    <span class="meta">Next Article</span>
+                    {{ page.next.title }}
+                </span>
+                <span class="clearfix"></span>
+            </a>
+        {% endif %}
+        <span class="clearfix"></span>
+    </section>
+{% endif %}
