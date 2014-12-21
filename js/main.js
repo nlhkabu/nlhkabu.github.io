@@ -16,4 +16,24 @@ $(document).ready(function(){
             nav.hide();
         }
     });
+
+    //Smooth scroll to page id (for index page)
+
+    $('a[href^="/#"], a[href^="#"]').on('click',function (e) {
+
+        var target = this.hash;
+        var $target = $(target);
+        var path = window.location.pathname;
+
+        if (path == '/' || target == '#contact'){
+            e.preventDefault();
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        }
+    });
+
 });
