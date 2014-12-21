@@ -1,17 +1,9 @@
 /* Work Section */
 
-.selected-projects {
-    .section-heading {
-        border-bottom: 1px solid $highlight-light;
-
-        h3 {
-            color: $highlight;
-        }
-    }
-
+.project-list {
     .project {
         padding: 90px 0;
-        border-bottom: 2px solid $light-grey;
+        border-top: 2px solid $light-grey;
 
         h2 {
             margin: 0 0 10px 0;
@@ -40,8 +32,8 @@
         }
     }
 
-    .project.last {
-        border-bottom: 0;
+    .project:first-child {
+        border-top: 0;
     }
 }
 
@@ -52,7 +44,10 @@
 
     .section-heading {
         border-top: 1px solid #ed8995;
-        color: #dc132b;
+
+        h3 {
+            color: #dc132b;
+        }
     }
 
     .skill {
@@ -90,53 +85,9 @@
 
     .section-heading {
         border-bottom: 1px solid #ed8995;
-        color: #dc132b;
-    }
 
-    .article {
-        display: block;
-        border-top: 2px solid $light-grey;
-        padding: 40px 0;
-        font-size: 25px;
-        line-height: 28px;
-        text-decoration: none;
-
-        .title-block {
-            float: left;
-            max-width: 560px;
-
-            @media only screen and (max-width: 700px) {
-                width: 100%;
-                float: none;
-            }
-
-            .title {
-                font-family: 'Raleway';
-            }
-
+        h3 {
+            color: #dc132b;
         }
-
-        .fa {
-            color: #ececec;
-            position: relative;
-            top: 20px;
-
-            @media only screen and (max-width: 700px) {
-                display: none;
-            }
-        }
-
-        &:hover {
-            background-color: #fbfbfb;
-
-            .fa {
-                color: #dedede;
-            }
-        }
-    }
-
-    .article.first {
-        padding-top: 45px;
-        border-top: 0;
     }
 }

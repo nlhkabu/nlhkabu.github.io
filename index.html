@@ -3,54 +3,30 @@ layout: default
 title: Home
 ---
 
-<section class="selected-projects dark" id="projects">
+<section class="dark" id="projects">
     <div class="section-heading">
         <h3>Selected Projects</h3>
     </div>
-    {% comment %}
-        {% assign pages = site.pages | group_by: "layout" %}
-        {% for page_type in pages %}
-            {% if page_type.name == 'project' %}
-                {% for project in page_type.items %}
-                    <div class="project{% if forloop.last %} last{% endif %}">
-                        <div class="container">
-                            <h2>{{ project.title }}</h2>
-                            {% if project.skills %}
-                            <div class="tags light">
-                                {% for skill in project.skills %}
-                                    <span>{{ skill }}</span>
-                                {% endfor %}
-                            </div>
-                            {% endif %}
-                            {% if project.summary %}
-                                <p>{{ project.summary }}</p>
-                            {% endif %}
-                            <a class="button primary" href="{{ project.url }}">View Project</a>
+    <div class="project-list">
+        {% for project in site.projects %}
+            <div class="project">
+                <div class="container">
+                    <h2>{{ project.title }}</h2>
+                    {% if project.skills %}
+                        <div class="tags light">
+                            {% for skill in project.skills %}
+                                <span>{{ skill }}</span>
+                            {% endfor %}
                         </div>
-                    </div>
-                {% endfor %}
-            {% endif %}
-        {% endfor %}
-    {% endcomment %}
-
-    {% for project in site.projects %}
-        <div class="project{% if forloop.last %} last{% endif %}">
-            <div class="container">
-                <h2>{{ project.title }}</h2>
-                {% if project.skills %}
-                <div class="tags light">
-                    {% for skill in project.skills %}
-                        <span>{{ skill }}</span>
-                    {% endfor %}
+                    {% endif %}
+                    {% if project.summary %}
+                        <p>{{ project.summary }}</p>
+                    {% endif %}
+                    <a class="button primary" href="{{ project.url }}">View Project</a>
                 </div>
-                {% endif %}
-                {% if project.summary %}
-                    <p>{{ project.summary }}</p>
-                {% endif %}
-                <a class="button primary" href="{{ project.url }}">View Project</a>
             </div>
-        </div>
-    {% endfor %}
+        {% endfor %}
+    </div>
 
 </section>
 
@@ -99,7 +75,7 @@ title: Home
     </div>
     <div class="dark">
         {% for post in site.posts %}
-            <a class="article{% if forloop.first %} first{% endif %}" href="{{ post.url }}">
+            <a href="{{ post.url }}">
                 <span class="container">
                     <span class="title-block pull-left">
                         <span class="title">{{ post.title }}</span>

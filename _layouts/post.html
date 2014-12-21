@@ -7,8 +7,8 @@ layout: default
         <h1>{{ page.title }}</h1>
     </div>
 
-    <div class="container">
-        <div class="body">
+    <div class="content">
+        <div class="container main">
             {% if page.tldr %}
                 <div class="tldr">
                     <p>{{ page.tldr }}</p>
@@ -29,31 +29,40 @@ layout: default
                 </span>
             </div>
         </div>
+
+
+        {% if page.previous or page.next %}
+            <div class="section-heading other-post-heading">
+                <h1>More Articles</h1>
+            </div>
+
+            <div class="footer-post-links">
+                {% if page.previous %}
+                    <a href="{{ page.previous.url }}" class="prev">
+                        <span class="container">
+                            <span class="title-block">
+                                <span class="meta">Previous</span>
+                                <span class="title">{{ page.previous.title }}</span>
+                            </span>
+                            <i class="fa fa-long-arrow-right right"></i>
+                            <i class="fa fa-long-arrow-left left"></i>
+                            <span class="clearfix"></span>
+                        </span>
+                    </a>
+                {% endif %}
+                {% if page.next %}
+                    <a href="{{ page.next.url }}" class="next">
+                        <span class="container">
+                            <span class="title-block">
+                                <span class="meta">Next</span>
+                                <span class="title">{{ page.next.title }}</span>
+                            </span>
+                            <i class="fa fa-long-arrow-right"></i>
+                            <span class="clearfix"></span>
+                        </span>
+                    </a>
+                {% endif %}
+            </div>
+        {% endif %}
     </div>
 </article>
-
-{% if page.previous or page.next %}
-    <section class="sub-nav dark">
-        {% if page.previous %}
-            <a href="{{ page.previous.url }}" class="prev">
-                <i class="fa fa-long-arrow-left"></i>
-                <span class="title-block">
-                    <span class="meta">Previous Article</span>
-                    {{ page.previous.title }}
-                </span>
-                <span class="clearfix"></span>
-            </a>
-        {% endif %}
-        {% if page.next %}
-            <a href="{{ page.next.url }}" class="next">
-                <i class="fa fa-long-arrow-right"></i>
-                <span class="title-block">
-                    <span class="meta">Next Article</span>
-                    {{ page.next.title }}
-                </span>
-                <span class="clearfix"></span>
-            </a>
-        {% endif %}
-        <span class="clearfix"></span>
-    </section>
-{% endif %}
