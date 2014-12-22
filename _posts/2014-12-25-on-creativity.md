@@ -8,7 +8,6 @@ I have always considered myself to be creative.  One of my earliest memories was
 
 My parents encourgaged my creativity - I always had supplies and tried lots of things - sewing, cooking, cake decorating, painting, beading, pottery, paper making.  I likened myself to my Grandma or Aunty Julie who between them demonstrated that being creative was fun and fulfilling.
 
-
 ## STEM != Creativity
 
 At school we had one lesson on HTML in IT.  Other lessons focussed on touch typing, Excel, Word and a tiny bit of hardware.
