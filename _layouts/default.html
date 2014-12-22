@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% include header.html %}
-    <body>
+    <body{% if page.class %} class="{{ page.class }}"{% endif %}>
         {% include nav.html %}
         {% include banner.html %}
         {{ content }}

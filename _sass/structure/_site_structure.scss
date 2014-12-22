@@ -73,7 +73,7 @@ header {
 .banner {
     background-color: $highlight;
     text-align: center;
-    padding: 140px 0;
+    padding: 70px 0;
 
     @media only screen and (max-width: 750px) {
         padding: 50px 10px;
@@ -88,6 +88,10 @@ header {
         letter-spacing: .05em;
 
     }
+}
+
+.home .banner {
+    padding: 140px 0;
 }
 
 .section-heading {
@@ -199,7 +203,7 @@ header {
         }
 
         &:hover {
-            background-color: #fbfbfb;
+            background-color: #f9f9f9;
 
             .fa {
                 color: #dedede;
@@ -217,38 +221,34 @@ header {
 
 article {
 
-    .content {
-        position: relative;
+    .container.main {
+        padding-bottom: 90px;
+    }
 
-        .container.main {
-            padding-bottom: 90px;
+    h2 {
+        margin: 55px 0 20px 0;
+    }
+
+    h3 {
+        margin: 35px 0 10px 0;
+    }
+
+    .tldr {
+        padding: 40px 0 20px 0;
+
+        p {
+            font-size: 18px;
+            font-style: italic;
+            font-family: 'Raleway';
         }
+    }
 
-        h2 {
-            margin: 55px 0 20px 0;
-        }
+    .meta-block {
+        margin-top: 40px;
 
-        h3 {
-            margin: 35px 0 10px 0;
-        }
-
-        .tldr {
-            padding: 40px 0 20px 0;
-
-            p {
-                font-size: 18px;
-                font-style: italic;
-                font-family: 'Raleway';
-            }
-        }
-
-        .meta-block {
-            margin-top: 40px;
-
-            span {
-                display: inline-block;
-                margin-right: 5px;
-            }
+        span {
+            display: inline-block;
+            margin-right: 5px;
         }
     }
 }
