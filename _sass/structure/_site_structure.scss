@@ -1,5 +1,9 @@
 /* Site Structure */
 
+body {
+    position: relative;
+}
+
 .container {
     max-width: 700px;
     margin: 0 auto;
@@ -88,6 +92,7 @@ header {
 
 .section-heading {
 
+    padding: 0 5%;
     border-bottom: 1px solid $highlight-light;
 
     h1, h2, h3, h4, h5, h6 {
@@ -99,52 +104,6 @@ header {
         color: $highlight;
     }
 
-}
-
-/* Footer / Contact Me */
-
-.contact {
-    background-color: #1fb0ae;
-
-    .section-heading {
-        border-top: 1px solid #8fd7d6;
-        background-color: $white;
-        border-bottom: 0;
-
-        h3 {
-            color: #1fb0ae;
-        }
-    }
-
-    h2 {
-        margin-top: 0;
-    }
-
-    .content {
-        padding: 90px 0;
-    }
-
-    .social {
-        margin-top: 40px;
-    }
-
-    .icon-link {
-        background-color: #16a9a7;
-        margin: 0 2px;
-        border-radius: 50%;
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-
-        i {
-            color: $white;
-            font-size: 20px;
-            line-height: 20px;
-            position: relative;
-            top: 10px;
-        }
-    }
 }
 
 
@@ -355,5 +314,71 @@ article {
 }
 
 
+/* Footer / Contact Me */
 
+.contact {
+    background-color: #1fb0ae;
 
+    .section-heading {
+        border-top: 1px solid #8fd7d6;
+        background-color: $white;
+        border-bottom: 0;
+
+        h3 {
+            color: #1fb0ae;
+        }
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    .content {
+        padding: 90px 0;
+    }
+
+    .social {
+        margin-top: 40px;
+    }
+
+    .icon-link {
+        background-color: #16a9a7;
+        margin: 0 2px;
+        border-radius: 50%;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+
+        i {
+            color: $white;
+            font-size: 20px;
+            line-height: 20px;
+            position: relative;
+            top: 10px;
+        }
+    }
+}
+
+.top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    padding: 2px;
+    border-radius: 3px;
+    background-color: $white;
+    cursor: pointer;
+
+    i.fa {
+        display: none;
+        font-size: 20px;
+        text-align: center;
+        color: lighten($mid-grey, 20%);
+    }
+
+    &:hover i.fa {
+        color: lighten($mid-grey, 10%);
+    }
+}

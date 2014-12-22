@@ -20,7 +20,6 @@ $(document).ready(function(){
     //Smooth scroll to page id (for index page)
 
     $('a[href^="/#"], a[href^="#"]').on('click',function (e) {
-
         var target = this.hash;
         var $target = $(target);
         var path = window.location.pathname;
@@ -34,6 +33,22 @@ $(document).ready(function(){
                 window.location.hash = target;
             });
         }
+    });
+
+    // Back to top Functionality
+    $(window).scroll(function() {
+        if($(this).scrollTop() !== 0) {
+            $('#top').fadeIn();
+            $('#top .fa').fadeIn();
+        } else {
+            $('#top').fadeOut();
+            $('#top .fa').fadeOut();
+        }
+    });
+
+    $('#top').click(function() {
+        console.log('boo');
+        $('body,html').animate({scrollTop:0},400);
     });
 
 });
