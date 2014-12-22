@@ -86,7 +86,9 @@
     display: table; /* 2 */
 }
 
+.clearfix,
 .clearfix:after {
+    display: block;
     clear: both;
 }
 

@@ -1,5 +1,6 @@
 ---
 layout: post
+color: #25B174
 title: You Are Not Your Code - a really long title goes here!
 tldr: Programming can be an emotional rollercoaster.  But we should remember that we are more than the code we produce.
 ---

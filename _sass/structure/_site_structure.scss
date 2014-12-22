@@ -5,11 +5,11 @@ body {
 }
 
 .container {
-    max-width: 700px;
+    max-width: 750px;
     margin: 0 auto;
     display: block;
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 750px) {
         padding: 0 5%;
     }
 }
@@ -160,7 +160,7 @@ header {
         border-top: 2px solid $light-grey;
         padding: 40px 0;
         text-decoration: none;
-        font-size: 25px;
+        font-size: 20px;
 
         .container {
             position: relative;
@@ -193,7 +193,7 @@ header {
             transform: translateY(-50%);
             color: #ececec;
 
-            @media only screen and (max-width: 700px) {
+            @media only screen and (max-width: 750px) {
                 display: none;
             }
         }
@@ -253,13 +253,14 @@ article {
     }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 750px) {
     .footer-post-links {
         display: table;
         width: 100%;
 
         a {
             display: table-cell;
+            vertical-align: top;
             width: 50%;
             border: 0;
 
@@ -367,7 +368,8 @@ article {
     right: 20px;
     display: block;
     padding: 2px;
-    border-radius: 3px;
+    border-radius: 2px;
+    webkit-border-radius: 2px;
     background-color: $white;
     cursor: pointer;
 
