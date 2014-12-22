@@ -2,12 +2,11 @@
 
 ---
 
-@import "structure/normalize",
-        "structure/html5_boilerplate",
-        "structure/helpers",
-        "structure/default_colours",
-        "structure/pygments",
-        "pages/colours",
-        "pages/index",
-        "structure/typography",
-        "structure/site_structure";
+@import "normalize",
+        "html5_boilerplate",
+        "helpers",
+        "default_colours",
+        "pygments",
+        "index",
+        "typography",
+        "site_structure";

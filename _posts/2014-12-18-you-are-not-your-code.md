@@ -1,5 +1,10 @@
 ---
 layout: post
+colors:
+    default: 17a265
+    dark: 25b174
+    light: 8bd0b2
+
 title: You Are Not Your Code
 tldr: Programming can be an emotional rollercoaster.  But we should remember that we are more than the code we produce.
 ---

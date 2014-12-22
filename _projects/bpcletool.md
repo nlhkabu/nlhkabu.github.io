@@ -1,27 +1,55 @@
 ---
 layout: project
+colors:
+    default: f16d1d
+    dark: ef6411
+    light: f5b38c
+
 title: BPCLEtool
 skills: [UI, Visual Design, JS/Jquery, CSS/SCSS]
-summary: BPCLEtool is a web application.
+summary: BPCLEtool is a web application that helps health organisations improve and maintain clinical education best practices.  Originally developed for the Victorian Department of Health, BPCLEtool is used by hundreds of health organisations across Victoria.
 feature_image: /assets/bpcle2.png
 site_url: http://bpcletool.net.au
 
 sections:
 -   |
     ##The Problem
-    This is the first section.
+    The BPCLE Framework was developed by Darcy Associates for the Victorian Department of Health, in order to define best practices in clinical learning environments.
+    As part of this process, Darcy Associates also developed a prototype excel application that allowed health organisations to rate themselves against the framework and discover how they could improve their educational environments.
+
+    Our task was to extend this concept; by designing and developing a modern, accessable, intuative web application.
+
+    As the design lead, my challenges included:
+
+    * Leading users through a complex multi-step process
+    * Ensuring help was readily available when needed
+    * Developing intuative information architecture
+    * Maintaining visual consistency as new features were added to the application
+
 
 -   |
     ##The Solution
-    This is the second section.
 
-    * List item
-    * Another list item
+    My first port of call was to develop a series of wireframes to:
 
--   |
-    ##The Reception
-    This is a long section with multiple paragraphs.
+    * Divide the application's functionality into intuative groupings
+    * Show or hide content to the appropriate user classes
+    * Establish how a standard user would move sequentially through the application's functionality
+    * Set out visual cues to highlight an individual's progress
 
-    This is the second paragraph of the long section.
+    Following this, the application's aesthetic design was built out in an iterative process, with intermittent user acceptance testing validating or challenging design decisions.
+
+    Particular highlights of the design include:
+
+    * Well labelled and easy to use input forms
+    * Fast and informative javascript form validation
+    * Simple, consistant data presentation
+    * Intuative use of colour for descriptive purposes (e.g. red to highlight a bad result, green to highlight a good result)
+    * Non invasive help functionality, with tooltips and dropdowns revealing information at the point of need
+
+
+
+
+
 ---
 

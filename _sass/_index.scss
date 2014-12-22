@@ -14,7 +14,7 @@
 
             span {
                 display: inline-block;
-                background-color: #c38cb4;
+                background-color: $contrast;
                 padding: 4px 5px 3px 5px;
                 margin-right: 2px;
                 font-family: 'Raleway';
@@ -43,10 +43,11 @@
 .skills {
 
     .section-heading {
-        border-top: 1px solid #ed8995;
+        border-top: 1px solid $contrast-light;
+        border-bottom: 0;
 
         h3 {
-            color: #dc132b;
+            color: $contrast;
         }
     }
 
@@ -69,12 +70,12 @@
     }
 
     #professional {
-        background-color: #dc132b;
+        background-color: $contrast;
 
     }
 
     #personal {
-        background-color: #dc2b40;
+        background-color: $contrast-dark;
     }
 }
 
@@ -84,10 +85,10 @@
 .writing {
 
     .section-heading {
-        border-bottom: 1px solid #ed8995;
+        border-bottom: 1px solid $contrast-light;
 
         h3 {
-            color: #dc132b;
+            color: $contrast;
         }
     }
 }

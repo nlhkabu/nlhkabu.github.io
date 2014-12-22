@@ -1,10 +1,13 @@
 ---
 layout: post
-title: 2014&#58; My Year of Python
-tldr: At the end of 2013, I decided that 2014 would be my year of Python.  It's been great!
----
+colors:
+    default: 59b32d
+    dark: 499f1f
+    light: 9dde7c
 
-A Year of Python
+title: 2014&#58; My Year of Python
+tldr: At the end of 2013, I decided that 2014 would be my year of Python.  It's been a difficult but rewarding journey.
+---
 
 At the end of 2013 (and after much convincing from ojh) I decided to make 2014 my 'year of Python'.  I chose a year because I felt that would be enough time to get involved to see if I liked the work and the community - and make a decision as to whether Python (and web development in general) is for me.
 
@@ -12,17 +15,21 @@ Here's what I did, what I've learnt and where I'm going:
 
 ## Community
 
+### PyLadies
+
 I was disappointed that there wasn't an active Pyladies Australia - so (with some encouragement from the Pyladies mothership) I decided to form one myself.  I set up a website and mailing list to which 30+ women have registered, which is a great starting point.  I had hoped that I would find a whole heap of other women interested in helping out (running workshops, etc.), but people are busy (!) so at this stage things are fairly dormant.  Being in Bendigo, I can't personally run local workshops (I just don't think there would be any interest here), so that's been a bit of a sticking point.  Circumstances also meant that I couldn't attend PyConAU, which was a missed opportunity to meet people and get stuff happening.
 
 At this stage I feel that the only way PyLadies Australia is going to move forward is if I put in a huge amount of personal time and energy - something I have to weigh up the benefits of.
 
+###PyCon Australia
+
 This year I also volunteered to design the PyCon 2014 logo and website.   This was to be my first significant contribution what I thought would be an open-source project - though, unfortunately, the software the site is built upon is private.
 
-### What worked
+#### What worked
 
 The process of putting together the logo was fairly straightforward as I had total creative freedom in this respect.  The website itself was first designed in HTML, CSS & JS and then integrated into the CMS - a system that worked really well.
 
-### What I'd do differently
+#### What I'd do differently
 
 In the end the branding was a bit all-over-the-place, as I didn't have oversight on all visual materials.  It would have been nice to have a list of __all__ of the places the logo would be used to make sure everthing was visually coherant.  For example, the youtube channel is a bit of a disaster, and the logo on the slide templates really should have sit on a white background.
 
@@ -74,4 +81,4 @@ This is just my favourite of __many__ videos I have watched on pyvideo which is 
 
 I'm certainly keen to keep learning and engaging with the Python community.  I'd like to see more mentoring going on, which I hope Connect can help with.  Personally, I'd like to offer my skills and knowledge to help others - not only because I feel this is a great way of giving back, but also because this will help me to cement my knowledge.
 
-On a technical front, I'm currently exploring all manners of techniques and strategies for testing - at the moment that means BDD with gherkin.
+On a technical front, I'm currently exploring all manners of techniques and strategies for testing - at the moment that means BDD with gherkin.  Watch this space!

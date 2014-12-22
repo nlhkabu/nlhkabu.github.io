@@ -44,13 +44,13 @@ header {
             padding: 25px 35px;
 
             &:hover {
-                background-color: rgba(0,0,0,.05);
+                background-color: rgba(255, 255, 255,.04);
             }
 
             @media only screen and (max-width: 750px) {
                 display: block;
                 padding: 10px;
-                border-top: 1px solid rgba(0,0,0,.05);
+                border-top: 1px solid rgba(255, 255, 255,.02);
             }
         }
 
@@ -79,18 +79,22 @@ header {
         padding: 50px 10px;
     }
 
-    .logo {
-        width: 320px;
-    }
+    a {
+        text-decoration: none;
 
-    p.sub {
-        font-family: 'Raleway';
-        font-size: 15px;
-        font-weight: 600;
-        text-transform: uppercase;
-        margin-top: 15px;
-        letter-spacing: .05em;
+        .logo {
+            width: 320px;
+        }
 
+        p.sub {
+            font-family: 'Raleway';
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-top: 15px;
+            letter-spacing: .05em;
+
+        }
     }
 }
 
@@ -99,9 +103,11 @@ header {
 }
 
 .section-heading {
-
     padding: 0 5%;
-    border-bottom: 1px solid $highlight-light;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: $highlight-light;
+    background-color: $white;
 
     h1, h2, h3, h4, h5, h6 {
         text-align: center;
@@ -322,16 +328,12 @@ article {
 /* Footer / Contact Me */
 
 .contact {
-    background-color: #1fb0ae;
+    background-color: $highlight;
 
     .section-heading {
-        border-top: 1px solid #8fd7d6;
-        background-color: $white;
+        border-top-width: 1px;
+        border-top-style: solid;
         border-bottom: 0;
-
-        h3 {
-            color: #1fb0ae;
-        }
     }
 
     h2 {
@@ -347,7 +349,7 @@ article {
     }
 
     .icon-link {
-        background-color: #16a9a7;
+        background-color: $highlight-dark;
         margin: 0 2px;
         border-radius: 50%;
         display: inline-block;
