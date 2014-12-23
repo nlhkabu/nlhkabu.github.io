@@ -28,7 +28,7 @@ sections:
 -   |
     ##The Solution
 
-    Connect is a web application developed in Django and designed to be a friendly, accessable space.  Each member has:
+    Connect is a web application developed in Django and designed to be a friendly, accessible space.  Each member has:
 
     * A public profile displaying a biography, professional links, a list of relevant skills
     * The ability to nominate how they prefer to interact with other members (for example, by selecting 'mentor')

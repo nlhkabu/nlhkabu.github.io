@@ -17,13 +17,13 @@ sections:
     The BPCLE Framework was developed by Darcy Associates for the Victorian Department of Health, in order to define best practices in clinical learning environments.
     As part of this process, Darcy Associates also developed a prototype excel application that allowed health organisations to rate themselves against the framework and discover how they could improve their educational environments.
 
-    Our task was to extend this concept; by designing and developing a modern, accessable, intuative web application.
+    Our task was to extend this concept; by designing and developing a modern, accessible, intuitive web application.
 
     As the design lead, my challenges included:
 
     * Leading users through a complex multi-step process
     * Ensuring help was readily available when needed
-    * Developing intuative information architecture
+    * Developing intuitive information architecture
     * Maintaining visual consistency as new features were added to the application
 
 
@@ -32,7 +32,7 @@ sections:
 
     My first port of call was to develop a series of wireframes to:
 
-    * Divide the application's functionality into intuative groupings
+    * Divide the application's functionality into intuitive groupings
     * Show or hide content to the appropriate user classes
     * Establish how a standard user would move sequentially through the application's functionality
     * Set out visual cues to highlight an individual's progress
@@ -41,15 +41,11 @@ sections:
 
     Particular highlights of the design include:
 
-    * Well labelled and easy to use input forms
-    * Fast and informative javascript form validation
-    * Simple, consistant data presentation
-    * Intuative use of colour for descriptive purposes (e.g. red to highlight a bad result, green to highlight a good result)
-    * Non invasive help functionality, with tooltips and dropdowns revealing information at the point of need
-
-
-
-
+    * Well labeled and easy to use input forms
+    * Fast and informative JavaScript form validation
+    * Simple, consistent data presentation
+    * Intuitive use of colour for descriptive purposes (e.g. red to highlight a bad result, green to highlight a good result)
+    * Non-invasive help functionality, with tooltips and dropdowns revealing information at the point of need
 
 ---
 
