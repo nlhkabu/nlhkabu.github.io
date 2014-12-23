@@ -2,6 +2,7 @@
 
 body {
     position: relative;
+    background-color: $white;
 }
 
 .container {
@@ -205,7 +206,7 @@ header {
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-            color: #ececec;
+            color: $light-grey;
 
             @media only screen and (max-width: 750px) {
                 display: none;
@@ -213,10 +214,10 @@ header {
         }
 
         &:hover {
-            background-color: #f9f9f9;
+            background-color: darken($white, 2%);
 
             .fa {
-                color: #dedede;
+                color: darken($light-grey, 10%);
             }
         }
     }
@@ -376,17 +377,12 @@ article {
     padding: 2px;
     border-radius: 2px;
     webkit-border-radius: 2px;
-    background-color: $white;
     cursor: pointer;
 
     i.fa {
         display: none;
         font-size: 20px;
         text-align: center;
-        color: lighten($mid-grey, 20%);
-    }
-
-    &:hover i.fa {
-        color: lighten($mid-grey, 10%);
+        color: rgba(0, 0, 0, .2);
     }
 }
