@@ -1,8 +1,8 @@
 ---
 layout: post
 colors:
-    default: 17a265
-    dark: 25b174
+    default: 25b174
+    dark: 17a265
     light: 8bd0b2
 
 title: You Are Not Your Code
