@@ -27,7 +27,7 @@ I absolutely adore the creativity of designing websites.  I love that I can craf
 
 Even so, for a long time I avoided learning back-end development.  I still had it in the 'dry', 'boring' and 'difficult' box.  And that's the thing - all the tutorials and books *were* boring (because they built things I had no interest in making) or poorly written, or difficult.  They all lacked creativity.
 
-After a lot of encouragement from my then-boyfriend-now-husband I finally decided to give it a go.  I named 2014 my 'year of python' and set about building an application to teach myself Django.
+After a lot of encouragement from my then-boyfriend-now-husband I finally decided to give it a go.  I named 2014 my '[year of python](/2014/12/31/2014-my-year-of-python.html)' and set about building an application to teach myself Django.
 
 ## Down the Rabbit Hole
 

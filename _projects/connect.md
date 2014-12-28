@@ -6,7 +6,7 @@ colors:
     light: ed8995
 
 title: Connect
-skills: [Django, TDD, BDD, Continuous Integration, HTML, CSS/SCSS, UI, Visual Design]
+skills: [Django, TDD, BDD, HTML, CSS/SCSS, UI, Visual Design]
 summary: Connect is a moderated web application that helps people connect with each other based on skills, interests and location.  Connect is currently in development and due for a full-feature release in early 2015.
 feature_image: /assets/connect2.png
 site_url: http://kabu-connect.herokuapp.com/
@@ -28,7 +28,7 @@ sections:
 -   |
     ##The Solution
 
-    Connect is a web application developed in Django and designed to be a friendly, accessible space.  Each member has:
+    Connect is a web application developed in Django and designed to be a friendly, accessible space for members to meet.  Each member has:
 
     * A public profile displaying a biography, professional links, a list of relevant skills
     * The ability to nominate how they prefer to interact with other members (for example, by selecting 'mentor')

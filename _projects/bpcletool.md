@@ -14,7 +14,7 @@ site_url: http://bpcletool.net.au
 sections:
 -   |
     ##The Problem
-    The BPCLE Framework was developed by Darcy Associates for the Victorian Department of Health, in order to define best practices in clinical learning environments.
+    The BPCLE Framework was developed by [Darcy Associates](http://darcyassociates.com.au/) for the Victorian Department of Health, in order to define best practices in clinical learning environments.
     As part of this process, Darcy Associates also developed a prototype excel application that allowed health organisations to rate themselves against the framework and discover how they could improve their educational environments.
 
     Our task was to extend this concept; by designing and developing a modern, accessible, intuitive web application.
