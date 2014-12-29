@@ -1,4 +1,0 @@
-timezone: Australia/Melbourne
-markdown: rdiscount
-pygments: true
-permalink: /:year/:month/:day/:title.html
