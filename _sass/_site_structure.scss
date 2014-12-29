@@ -260,68 +260,6 @@ article {
     }
 }
 
-@media only screen and (min-width: 750px) {
-    .footer-post-links {
-        display: table;
-        width: 100%;
-
-        a {
-            display: table-cell;
-            vertical-align: top;
-            width: 50%;
-            border: 0;
-
-            .title-block {
-                max-width: 80%;
-            }
-        }
-
-        a.prev {
-            .title-block {
-                float: right;
-                text-align: right;
-                margin-right: 5%;
-            }
-
-            .fa.left {
-                left: 5%;
-            }
-
-            .fa.right {
-                display: none;
-            }
-        }
-
-        a.next {
-            .title-block {
-                margin-left: 5%;
-            }
-
-            .fa {
-                right: 5%;
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 1500px) {
-    .footer-post-links {
-        a.prev {
-            .title-block {
-                margin-right: 0;
-            }
-
-        }
-
-        a.next {
-            .title-block {
-                margin-left: 0;
-            }
-        }
-    }
-}
-
-
 /* Footer / Contact Me */
 
 .contact {
