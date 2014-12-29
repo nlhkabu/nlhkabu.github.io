@@ -6,7 +6,7 @@ colors:
     light: 8bd0b2
 
 title: You Are Not Your Code
-tldr: Programming can be an emotional roller-coaster.  But we should remember that we are more than the code we produce.
+summary: Programming can be an emotional roller-coaster.  But we should remember that we are more than the code we produce.
 ---
 
 Programming is hard. And learning to program is even harder.

@@ -6,7 +6,7 @@ colors:
     light: 8fd7d6
 
 title: On Creativity
-tldr: The perception of coding as a non-creative pursuit is problematic.
+summary: The perception of coding as a non-creative pursuit is problematic.
 ---
 
 I have always considered myself to be creative.  One of my earliest memories was drawing in my family lounge room at a child-size portable desk - it was bright yellow and had compartments on the side where I kept my pencils, crayons and textas.
