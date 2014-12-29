@@ -11,3 +11,5 @@ collections:
     projects:
         output: true
         permalink: /:path/
+
+exclude: [vendor]
