@@ -1,13 +1,12 @@
 ---
-layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Nicole Harris</title>
-    <link href="http://whoisnicoleharris.com/atom.xml" rel="self"/>
-    <link href="http://whoisnicoleharris.com/"/>
+    <link href="{{ site.url }}/atom.xml" rel="self"/>
+    <link href="{{ site.url }}"/>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>http://whoisnicoleharris.com/</id>
+    <id>{{ site.url }}</id>
     <author>
         <name>Nicole Harris</name>
         <email>n.harris@kabucreative.com.au</email>

@@ -10,7 +10,7 @@ layout: default
         <div class="container main">
             {% if page.tldr %}
                 <div class="tldr">
-                    <p>TLDR: {{ page.tldr }}</p>
+                    <p>{{ page.tldr }}</p>
                 </div>
             {% endif %}
 
@@ -24,11 +24,10 @@ layout: default
                     {{ page.date | date: "%Y" }}
                 </span>
                 <span class="meta">
-                    <a href="#"><i class="fa fa-rss"></i></a>
+                    <a href="/atom.xml"><i class="fa fa-rss"></i></a>
                 </span>
             </div>
         </div>
-
 
         {% if page.previous or page.next %}
             <div class="section-heading other-post-heading">
