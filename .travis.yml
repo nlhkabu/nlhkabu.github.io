@@ -1,7 +1,7 @@
 language: ruby
 rvm:
 - 2.1
-script: sudo ./script/cibuild
+script: script/cibuild
 
 env:
   global:
