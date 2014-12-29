@@ -26,14 +26,16 @@ $(document).ready(function(){
         var $target = $(target);
         var path = window.location.pathname;
 
-        if (path == '/' || target == '#contact'){
-            e.preventDefault();
+        if (target =! '#nav'){
+            if (path == '/' || target == '#contact'){
+                e.preventDefault();
 
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top
-            }, 900, 'swing', function () {
-                window.location.hash = target;
-            });
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            }
         }
     });
 
@@ -49,8 +51,8 @@ $(document).ready(function(){
         }
     });
 
-    $('#top').click(function() {
-        console.log('boo');
+    $('#top').click(function(e) {
+        e.preventDefault();
         $('body,html').animate({scrollTop:0},400);
     });
 
