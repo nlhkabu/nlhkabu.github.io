@@ -1,8 +1,9 @@
 $(document).ready(function(){
 
+    // Toggle mobile nav
+
     var nav = $('.main-nav');
 
-    // Toggle mobile nav
     $('.toggle-nav').click(function(e){
         e.preventDefault();
         nav.slideToggle();
@@ -16,6 +17,7 @@ $(document).ready(function(){
             nav.hide();
         }
     });
+
 
     //Smooth scroll to page id (for index page)
 
@@ -35,6 +37,7 @@ $(document).ready(function(){
         }
     });
 
+
     // Back to top Functionality
     $(window).scroll(function() {
         if($(this).scrollTop() !== 0) {
@@ -50,5 +53,45 @@ $(document).ready(function(){
         console.log('boo');
         $('body,html').animate({scrollTop:0},400);
     });
+
+
+    // Select Random decorative image
+
+    var randomSelect = function(array) {
+        return array[Math.floor(Math.random() * array.length)];
+    };
+
+    var images = [
+        'bee',
+        'bird',
+        'bubbles',
+        'bug',
+        'caterpiller',
+        'crab',
+        'dandelion',
+        'fish',
+        'hearts',
+        'jellyfish',
+        'lanterns',
+        'martini',
+        'monster',
+        'moon',
+        'mountain',
+        'mushrooms',
+        'rocket',
+        'snail',
+        'snowflakes',
+        'spiders',
+        'sun',
+        'volcano',
+        'whale',
+        'wheat' ]
+
+    function getImage(){
+        var img = randomSelect(images);
+        $('.banner').append('<img src="/assets/banner-images/' + img + '.svg" alt="decorative image" class="banner-image ' + img + '">')
+    }
+
+    getImage();
 
 });

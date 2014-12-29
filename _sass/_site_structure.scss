@@ -42,7 +42,7 @@ header {
             font-weight: 600;
             font-size: 13px;
             display: inline-block;
-            padding: 25px 35px;
+            padding: 25px 34px;
 
             &:hover {
                 background-color: rgba(255, 255, 255,.04);
@@ -72,15 +72,15 @@ header {
 }
 
 .banner {
+    position: relative;
     background-color: $highlight;
     text-align: center;
-    padding: 70px 0;
-
-    @media only screen and (max-width: 750px) {
-        padding: 50px 10px;
-    }
+    padding: 140px 0;
+    overflow: hidden;
 
     a {
+        display: inline-block;
+        max-width: 100%;
         text-decoration: none;
 
         .logo {
@@ -97,10 +97,6 @@ header {
 
         }
     }
-}
-
-.home .banner {
-    padding: 140px 0;
 }
 
 .section-heading {
