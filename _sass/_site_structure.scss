@@ -64,6 +64,7 @@ header {
         display: none;
         padding: 10px;
         text-align: right;
+        cursor: pointer;
 
         @media only screen and (max-width: 750px) {
             display: block;
