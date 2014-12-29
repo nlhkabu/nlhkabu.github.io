@@ -1,10 +1,7 @@
 language: ruby
 rvm:
 - 2.1
-script: sudo ./script/cibuild
-
-before_script:
- - chmod +x script/cibuild
+script: jekyll build && htmlproof ./_site
 
 env:
   global:
