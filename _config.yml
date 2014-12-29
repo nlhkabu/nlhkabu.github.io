@@ -13,3 +13,6 @@ collections:
         permalink: /:path/
 
 exclude: [vendor]
+
+gems:
+  - jekyll-sitemap
