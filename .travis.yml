@@ -1,7 +1,7 @@
 language: ruby
 rvm:
 - 2.1
-script: ./script/cibuild
+script: sudo ./script/cibuild
 
 before_script:
  - chmod +x script/cibuild
