@@ -41,10 +41,10 @@ layout: default
                             <span class="title-block">
                                 <span class="title">{{ page.previous.title }}</span>
                                 <span class="meta">
-                                    {% assign d = page.date | date: "%-d" %}
+                                    {% assign d = page.previous.date | date: "%-d" %}
                                     {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}
-                                    {{ page.date | date: "%B" }},
-                                    {{ page.date | date: "%Y" }}
+                                    {{ page.previous.date | date: "%B" }},
+                                    {{ page.previous.date | date: "%Y" }}
                                 </span>
                             </span>
                             <i class="fa fa-long-arrow-right right"></i>
@@ -58,10 +58,10 @@ layout: default
                             <span class="title-block">
                                 <span class="title">{{ page.next.title }}</span>
                                 <span class="meta">
-                                    {% assign d = page.date | date: "%-d" %}
+                                    {% assign d = page.next.date | date: "%-d" %}
                                     {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}
-                                    {{ page.date | date: "%B" }},
-                                    {{ page.date | date: "%Y" }}
+                                    {{ page.next.date | date: "%B" }},
+                                    {{ page.next.date | date: "%Y" }}
                                 </span>
                             </span>
                             <i class="fa fa-long-arrow-right"></i>
