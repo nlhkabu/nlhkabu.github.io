@@ -26,7 +26,7 @@ $(document).ready(function(){
         var $target = $(target);
         var path = window.location.pathname;
 
-        if (target =! '#nav'){
+        if (target != '#nav'){
             if (path == '/' || target == '#contact'){
                 e.preventDefault();
 
