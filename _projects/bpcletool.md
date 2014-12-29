@@ -26,7 +26,6 @@ sections:
     * Developing intuitive information architecture
     * Maintaining visual consistency as new features were added to the application
 
-
 -   |
     ##The Solution
 
