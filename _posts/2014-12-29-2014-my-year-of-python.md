@@ -65,7 +65,7 @@ This seems pretty obvious, right? Apparently not. The number of people on IRC as
 
 ### [Test-Driven Development with Python](http://chimera.labs.oreilly.com/books/1234000000754)
 
-Even though I've found that tutorial-books aren't my ideal learning tool, there is enough helpful content here to make following along worth while.  There are lots of code examples (which I love) and the author does a really good job of selling the benefits of TDD.
+Even though I've found that tutorial-books aren't my ideal learning tool, there is enough helpful content here to make following along worthwhile.  There are lots of code examples (which I love) and the author does a really good job of selling the benefits of TDD.
 
 ### Two Scoops of Django
 
