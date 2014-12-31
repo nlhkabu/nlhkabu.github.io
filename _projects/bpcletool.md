@@ -10,6 +10,7 @@ skills: [UI, Visual Design, JS/Jquery, CSS/SCSS]
 summary: BPCLEtool is a web application that helps health organisations improve and maintain clinical education best practices.  Originally developed for the Victorian Department of Health, BPCLEtool is used by hundreds of health organisations across Victoria.
 feature_image: /assets/bpcle.png
 site_url: http://bpcletool.net.au
+priority: 3
 
 sections:
 -   |

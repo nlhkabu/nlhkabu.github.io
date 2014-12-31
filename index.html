@@ -10,7 +10,8 @@ learning: Behavior Driven Development with <a href="http://pythonhosted.org/beha
         <h3>Selected Projects</h3>
     </div>
     <div class="project-list">
-        {% for project in site.projects %}
+        {% assign projects = site.projects | sort:'priority'  %}
+        {% for project in projects %}
             <div class="project">
                 <div class="container">
                     <h2>{{ project.title }}</h2>

@@ -21,6 +21,7 @@ summary: <descriptive text used for project introduction and meta description>
 feature_image: /assets/<image name>.png
 site_url: <absolute path to live site url>
 github_url: <absolute path to source code url>
+priority: <Integer between 1 and 5 where 1 == important.  Determines ordering of projects on Homepage>
 sections: # Each section is separated by horizontal padding and borders - use these instead of content
 - |
   ## <title of a section>
