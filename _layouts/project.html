@@ -33,14 +33,12 @@ layout: default
 
     {% if page.site_url or page.github_url %}
         <div class="project-links container">
-            <div class="container">
-                {% if page.site_url %}
-                    <a href="{{ page.site_url }}" class="button primary">Visit Site</a>
-                {% endif %}
-                {% if page.github_url %}
-                    <a href="http://github.com{{ page.github_url }}" class="button">View Source on GitHub</a>
-                {% endif %}
-            </div>
+            {% if page.site_url %}
+                <a href="{{ page.site_url }}" class="button primary">Visit Site</a>
+            {% endif %}
+            {% if page.github_url %}
+                <a href="http://github.com{{ page.github_url }}" class="button">View Source on GitHub</a>
+            {% endif %}
         </div>
     {% endif %}
 </section>
