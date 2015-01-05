@@ -3,6 +3,7 @@
 body {
     position: relative;
     background-color: $white;
+    overflow-x: hidden;
 }
 
 .container {
@@ -22,6 +23,19 @@ body {
 
 img {
     max-width: 100%;
+}
+
+figure {
+    border: 1px solid $content-border;
+    background-color: $content-bg;
+    padding: 20px 20px 0 20px;
+    margin: 40px 0;
+
+    figcaption {
+        margin-top: 20px;
+        padding: 20px 0;
+        border-top: 1px dotted $content-border;
+    }
 }
 
 /* Header */
