@@ -81,4 +81,4 @@ This is just my favourite of *many* videos I have watched on [pyvideo](http://py
 
 I'm certainly keen to keep learning and engaging with the Python community.  I'd like to see more mentoring going on, which I hope [Connect](/connect) can help with.  Personally, I'd like to offer my skills and knowledge to help others - not only because I feel this is a great way of giving back, but also because this will help me to cement my knowledge.
 
-On a technical front, I'm currently exploring all manners of techniques and strategies for testing - at the moment that means BDD with [behave](http://pythonhosted.org/behave/).  Watch this space!
+On a technical front, I'm currently exploring all manners of techniques and strategies for testing - at the moment that means BDD with [behave](http://pythonhosted.org/behave/).  I'm excited and optimistic about my future with Python.
