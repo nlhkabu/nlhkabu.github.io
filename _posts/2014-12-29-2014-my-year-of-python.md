@@ -1,9 +1,9 @@
 ---
 layout: post
 colors:
-    default: 59b32d
-    dark: 499f1f
-    light: 9dde7c
+    default: 69b754
+    dark: 52a93b
+    light: aed2a4
 
 title: 2014&#58; My Year of Python
 summary: At the end of 2013, I decided that 2014 would be my year of Python.  It's been a difficult but rewarding journey.
