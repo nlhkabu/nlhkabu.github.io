@@ -9,7 +9,7 @@ title: 2014&#58; My Year of Python
 summary: At the end of 2013, I decided that 2014 would be my year of Python.  It's been a difficult but rewarding journey.
 ---
 
-At the end of 2013 (and after much convincing from ojh), I decided to make 2014 my 'year of Python'.  I chose a year because I felt that would be enough time to get involved to see if I liked the work and the community - and make a decision as to whether Python (and web development in general) is for me.
+At the end of 2013 (and after much convincing from [ojh](https://github.com/ojh)), I decided to make 2014 my 'year of Python'.  I chose a year because I felt that would be enough time to get involved to see if I liked the work and the community - and make a decision as to whether Python (and web development in general) is for me.
 
 Here's what I did, what I've learnt and where I'm going:
 
