@@ -1,5 +1,9 @@
 /* Site Structure */
 
+html {
+    height: 100%;
+}
+
 body {
     position: relative;
     background-color: $white;
@@ -340,5 +344,38 @@ article {
         font-size: 20px;
         text-align: center;
         color: rgba(0, 0, 0, .2);
+    }
+}
+
+
+/* Error page */
+
+.error-page {
+    padding: 0 20px;
+    background-color: $highlight;
+    text-align: center;
+    color: $white;
+    display: table;
+    width: 100%;
+    height: 100%;
+
+    .error-content {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    h1 {
+        font-size: 100px;
+        line-height: 100px;
+        margin: -20px 0 0 0;
+    }
+
+    .dead-bird {
+        margin-top: 30px;
+        width: 90px;
+    }
+
+    a {
+        color: $white;
     }
 }
