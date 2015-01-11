@@ -87,11 +87,16 @@ $(document).ready(function(){
         'sun',
         'volcano',
         'whale',
-        'wheat' ]
+        'wheat'
+    ]
 
     function getImage(){
         var img = randomSelect(images);
-        $('.banner').append('<img src="/assets/banner-images/' + img + '.svg" alt="decorative image" class="banner-image ' + img + '">')
+        var imgTag = '<img src="/assets/banner-images/' + img + '.svg" alt="' + img + '" class="banner-image ' + img + '">'
+
+        $(imgTag).load(function() {
+          $(this).appendTo('.banner');
+        });
     }
 
     getImage();
