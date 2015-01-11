@@ -62,6 +62,23 @@
             width: 40%;
             margin: 0 4%;
             float: left;
+
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+                margin: 0;
+                float: none;
+
+                ul {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .skill-lists {
+                padding: 16px 0;
+            }
         }
 
         .cv {
@@ -71,7 +88,6 @@
 
     #professional {
         background-color: $contrast;
-
     }
 
     #personal {
