@@ -75,6 +75,15 @@ header {
         display: none;
         padding: 10px;
         text-align: right;
+        font-family: 'Raleway';
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+
+        .fa {
+            margin-right: 3px;
+        }
 
         @media only screen and (max-width: 750px) {
             display: block;
