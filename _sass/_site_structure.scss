@@ -351,12 +351,12 @@ article {
 /* Error page */
 
 .error-page {
-    padding: 0 20px;
+    padding: 0 5%;
     background-color: $highlight;
     text-align: center;
     color: $white;
     display: table;
-    width: 100%;
+    width: 90%;
     height: 100%;
 
     .error-content {
