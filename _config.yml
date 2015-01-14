@@ -4,7 +4,7 @@ highlighter: pygments
 permalink: /:year/:month/:day/:title.html
 
 sass:
-    sass_dir: _sass
+    sass_dir: /assets/css/_sass
     style: :compressed
 
 collections:

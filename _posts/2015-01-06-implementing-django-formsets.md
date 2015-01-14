@@ -16,7 +16,7 @@ Firstly, if you haven't already, go and [read the docs](https://docs.djangoproje
 Formsets are for dealing with sets of identical data.  For example in Connect, I have a form where the user can save multiple links to their public profile, with each link having both a URL and an anchor:
 
 <figure>
-    <img src="/assets/formset-animation.gif" alt="Animation of a formset in action"/>
+    <img src="/assets/img/formset-animation.gif" alt="Animation of a formset in action"/>
     <figcaption>A Django formset in action.</figcaption>
 </figure>
 

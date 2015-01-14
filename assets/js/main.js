@@ -92,7 +92,7 @@ $(document).ready(function(){
 
     function getImage(){
         var img = randomSelect(images);
-        var imgTag = '<img src="/assets/banner-images/' + img + '.svg" alt="' + img + '" class="banner-image ' + img + '">'
+        var imgTag = '<img src="/assets/img/banner-images/' + img + '.svg" alt="' + img + '" class="banner-image ' + img + '">'
 
         $(imgTag).load(function() {
           $(this).appendTo('.banner');
