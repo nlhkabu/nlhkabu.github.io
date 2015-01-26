@@ -17,7 +17,14 @@ layout: default
 
     {% if page.feature_image %}
         <div class="project-img">
-            <img src="{{ page.feature_image }}" alt="{{ page.title }}" />
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="{{ page.feature_image['large'] }}" media="(min-width: 701px)">
+                <source srcset="{{ page.feature_image['medium'] }}" media="(min-width: 401px)">
+                <source srcset="{{ page.feature_image['small'] }}" media="(max-width: 400px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="{{ page.feature_image['small'] }}" alt="{{ page.title }}">
+            </picture>
         </div>
     {% endif %}
 

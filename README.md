@@ -18,10 +18,13 @@ colors:
 title: <page title>
 skills: [<skill 1>, <skill 2>] # e.g. HTML, UI, Django, etc.
 summary: <descriptive text used for project introduction and meta description>
-feature_image: /assets/<image name>.png
+feature_image:
+    small: /assets/<image name>.png # For screens smaller than 400px
+    medium: /assets/<image name>.png # For screens smaller than 700px
+    large: /assets/<image name>.png # For screens larger than 700px
 site_url: <absolute path to live site url>
 github_url: <absolute path to source code url>
-priority: <Integer between 1 and 5 where 1 == important.  Determines ordering of projects on Homepage>
+priority: <Integer between 1 and 5> # 1 == important.  Determines ordering of projects on Homepage
 sections: # Each section is separated by horizontal padding and borders - use these instead of content
 - |
   ## <title of a section>

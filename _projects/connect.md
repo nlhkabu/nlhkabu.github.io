@@ -8,7 +8,11 @@ colors:
 title: Connect
 skills: [Django, TDD, BDD, HTML, CSS/SCSS, UI, Visual Design]
 summary: Connect is a moderated web application that helps people connect with each other based on skills, interests and location.  Connect is currently in development and due for a full-feature release in early 2015.
-feature_image: /assets/img/connect.png
+feature_image:
+    small: /assets/img/connect-small.png
+    medium: /assets/img/connect-medium.png
+    large: /assets/img/connect-large.png
+
 priority: 1
 
 sections:
