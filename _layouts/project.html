@@ -17,7 +17,7 @@ layout: default
 
     {% if page.feature_image %}
         <div class="project-img">
-            <picture>
+            <picture data-proofer-ignore>
                 <!--[if IE 9]><video style="display: none;"><![endif]-->
                 <source srcset="{{ page.feature_image['large'] }}" media="(min-width: 701px)">
                 <source srcset="{{ page.feature_image['medium'] }}" media="(min-width: 401px)">
