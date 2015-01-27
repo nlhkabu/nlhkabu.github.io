@@ -6,7 +6,7 @@ $(document).ready(function(){
 
     $('.toggle-nav').click(function(e){
         e.preventDefault();
-        nav.slideToggle();
+        nav.toggle();
     });
 
     // Reset when window switches to desktop view
