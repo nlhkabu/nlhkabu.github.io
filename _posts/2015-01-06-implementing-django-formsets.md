@@ -5,12 +5,12 @@ colors:
     dark: 643077
     light: ae8abc
 
-title: Implementing Django Formsets - A Beginners Guide
-summary: A step-by-step guide for setting up and testing a standard Django formset.
+title: "Beginner Tutorial : Implementing Django Formsets"
+summary: A step-by-step tutorial for setting up and testing a standard Django formset.
 ---
 I've noticed on #django IRC that many people need guidance on formsets, and as I've now used them in a couple of my projects &mdash; most recently, [Connect](/connect/) &mdash; I thought I could offer a short how-to based on my own experiences.
 
-Firstly, if you haven't already, go and [read the docs](https://docs.djangoproject.com/en/1.7/topics/forms/formsets/).  If you're still confused, or want an end-to-end guide, then read on.  The code contained in this guide has been tested to work with Django 1.7.
+Firstly, if you haven't already, go and [read the docs](https://docs.djangoproject.com/en/1.7/topics/forms/formsets/).  If you're still confused, or want an end-to-end tutorial, then read on.  The code contained in this tutorial has been tested to work with Django 1.7.
 
 ## What Does a Formset Do?
 Formsets are for dealing with sets of identical data.  For example in Connect, I have a form where the user can save multiple links to their public profile, with each link having both a URL and an anchor:
