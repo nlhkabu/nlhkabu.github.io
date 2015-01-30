@@ -48,6 +48,7 @@ colors:
   light: <hex code for borders - do not include a hash symbol>
 title: <post title>
 summary: <descriptive text used for post introduction and meta description>
+comments: <status> # Set to 'on' to enable disqus comments.  Otherwise omit.
 ---
 
 <markdown content here>

@@ -26,7 +26,14 @@ layout: default
                 <span class="meta">
                     <a href="/atom.xml"><i class="fa fa-rss"></i></a>
                 </span>
-                <p class="meta">Questions, comments?  <a href="mailto:n.harris@kabucreative.com.au">Email me</a>.</p>
+
+                {% if page.comments == 'on' %}
+                    {% include comments.html %}
+                {% else %}
+                    <p class="meta">
+                        Comments are not enabled on this post.&nbsp;&nbsp;Please <a href="mailto:n.harris@kabucreative.com.au">email me</a> instead.
+                    </p>
+                {% endif %}
             </div>
         </div>
 
