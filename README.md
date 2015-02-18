@@ -74,7 +74,12 @@ New (randomly selected) images can be added to the banner by:
 * Adding the image name to the `images` array in `js/main.js`
 * Adding image specific styling in `_sass/_banner_images.scss`
 
+## Serving Locally
 
+```bash
+$ jekyll serve
+$ jekyll serve --drafts # Serve articles in drafts folder
+```
 
 
 
