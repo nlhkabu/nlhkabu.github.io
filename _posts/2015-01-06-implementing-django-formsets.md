@@ -5,7 +5,7 @@ colors:
     dark: 643077
     light: ae8abc
 
-title: "Beginner Tutorial : Implementing Django Formsets"
+title: "Tutorial : Implementing Django Formsets"
 summary: A step-by-step tutorial for setting up and testing a standard Django formset.
 comments: 'on'
 ---
