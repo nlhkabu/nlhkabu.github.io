@@ -33,11 +33,12 @@ figure {
 
 
     figcaption {
-        margin: 5px 5px 0 5px;
-        padding: 3px 7px;
+        margin: 0;
+        padding: 4px 7px 6px 7px;
         font-size: 13px;
-        display: inline-block;
+        display: block;
         background-color: $content-border;
+        font-weight: bold;
     }
 
     .highlight {
@@ -46,7 +47,7 @@ figure {
         margin-bottom: 0;
 
         pre {
-            margin-top: 5px;
+            margin-top: 10px;
         }
     }
 }
@@ -56,12 +57,13 @@ figure.img-figure {
     margin: 40px 0;
 
     figcaption {
-        padding: 20px;
+        padding: 10px 0;
         background-color: transparent;
         display: block;
         margin-top: 20px;
         border-top: 1px dotted $content-border;
         font-style: italic;
+        font-weight: normal;
     }
 }
 

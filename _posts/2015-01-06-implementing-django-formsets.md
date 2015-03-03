@@ -36,7 +36,7 @@ _This how-to, however, is going to focus on creating a standard formset using cu
 First we need to set out our link form. This is just a standard Django form.
 
 <figure>
-    <figcaption>forms.py:</figcaption>
+    <figcaption>forms.py</figcaption>
     {% highlight python linenos %}
     from django import forms
 
@@ -61,7 +61,7 @@ First we need to set out our link form. This is just a standard Django form.
 As our formset will need to be nested inside a profile form, let's go ahead and create that now:
 
 <figure>
-    <figcaption>forms.py:</figcaption>
+    <figcaption>forms.py</figcaption>
     {% highlight python linenos %}
     class ProfileForm(forms.Form):
         """
@@ -96,7 +96,7 @@ We also want to verify that all links have both an anchor and URL.  We _could_ s
 If you don't want any custom validation on your formset, you can skip this step entirely.
 
 <figure>
-    <figcaption>forms.py:</figcaption>
+    <figcaption>forms.py</figcaption>
     {% highlight python linenos %}
     from django.forms.formsets import BaseFormSet
 
@@ -160,7 +160,7 @@ To save our data we can build a list of UserLinks and save this to the user's pr
 We are also going to use the [messages framework](https://docs.djangoproject.com/en/1.7/ref/contrib/messages/) to tell our users whether their profile was updated.
 
 <figure>
-    <figcaption>views.py:</figcaption>
+    <figcaption>views.py</figcaption>
     {% highlight python linenos %}
     from django.contrib import messages
     from django.contrib.auth.decorators import login_required
@@ -243,7 +243,7 @@ My personal preference is to individually specify each form field so I can wrap 
 
 We also want to use [this jQuery plugin](https://github.com/elo80ka/django-dynamic-formset) for dynamically adding and removing forms.  Full documentation can be found [here](https://github.com/elo80ka/django-dynamic-formset/blob/master/docs/usage.rst).
 <figure>
-    <figcaption>edit_profile.html:</figcaption>
+    <figcaption>edit_profile.html</figcaption>
     {% highlight html %}
     {% raw %}
     {% load staticfiles %}
@@ -327,7 +327,7 @@ Most of the examples below are _variations_ on posting the same data either to t
 We can test the `ProfileForm` by passing data variations to the object and checking for validation errors.
 
 <figure>
-    <figcaption>tests/test_forms.py:</figcaption>
+    <figcaption>tests/test_forms.py</figcaption>
     {% highlight python linenos %}
     from django.test import TestCase
     from myapp.factories import UserFactory
@@ -373,7 +373,7 @@ We can test our formset by either:
 2. Posting data directly to the view.  This allows us to check for specific errors using `assertFormsetError`.
 
 <figure>
-    <figcaption>tests/test_forms.py:</figcaption>
+    <figcaption>tests/test_forms.py</figcaption>
     {% highlight python linenos %}
     from django.core.urlresolvers import reverse
     from django.test import TestCase
@@ -474,7 +474,7 @@ We can test our formset by either:
 Finally, we need to check that when we do submit valid data, that data is saved to our user's profile.
 
 <figure>
-    <figcaption>tests/test_views.py:</figcaption>
+    <figcaption>tests/test_views.py</figcaption>
     {% highlight python linenos %}
     from django.core.urlresolvers import reverse
     from django.test import TestCase
