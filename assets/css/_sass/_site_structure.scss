@@ -28,16 +28,39 @@ img {
 }
 
 figure {
-    border: 1px solid $content-border;
     background-color: $content-bg;
+    border: 1px solid $content-border;
+
+
+    figcaption {
+        margin: 5px 5px 0 5px;
+        padding: 3px 7px;
+        font-size: 13px;
+        display: inline-block;
+        background-color: $content-border;
+    }
+
+    .highlight {
+        border: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        pre {
+            margin-top: 5px;
+        }
+    }
+}
+
+figure.img-figure {
     padding: 20px 20px 0 20px;
     margin: 40px 0;
 
     figcaption {
+        padding: 20px;
+        background-color: transparent;
+        display: block;
         margin-top: 20px;
-        padding: 20px 0;
         border-top: 1px dotted $content-border;
-        font-size: 13px;
         font-style: italic;
     }
 }
