@@ -138,10 +138,10 @@ More complex scenarios can also include `And` or `But` keywords.  _For example_:
 
 ### Putting it All Together
 
-Here's our `filter user` feature written as a Gherkin feature file:
+Here's our `filter users` feature written as a Gherkin feature file:
 
 <figure>
-    <figcaption>filter_user.feature</figcaption>
+    <figcaption>filter_users.feature</figcaption>
     {% highlight gherkin linenos %}
     Feature: Filter users by interest
     As a standard user
@@ -175,7 +175,7 @@ You've probably noticed that our scenarios use a common pattern.  They're also a
 To fix this we can include more context in our `Background` and refactor our three scenarios into one `Scenario Outline`:
 
 <figure>
-    <figcaption>filter_user.feature</figcaption>
+    <figcaption>filter_users.feature</figcaption>
     {% highlight gherkin linenos %}
     Feature: Filter users by interest
     As a standard user
