@@ -45,12 +45,18 @@ p, li, q {
 
 blockquote {
     border-left: 2px solid $light-grey;
-    padding-left: 10px;
-    margin-top: 30px;
+    padding-left: 20px;
+    margin: 40px;
+
+    @media only screen and (max-width: 750px) {
+        margin: 40px 0;
+    }
 }
 
-blockquote q {
-    font-size: 14px;
+blockquote q,
+blockquote p {
+    font-family: "Raleway";
+    font-size: 20px;
     font-style: italic;
     display: block;
     margin: 1em 0;
