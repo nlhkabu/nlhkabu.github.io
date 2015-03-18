@@ -10,7 +10,7 @@ layout: default
         <div class="container main">
             {% if page.summary %}
                 <div class="summary">
-                    <p>{{ page.summary }}</p>
+                    <p>{{ page.summary | markdownify }}</p>
                 </div>
             {% endif %}
 
