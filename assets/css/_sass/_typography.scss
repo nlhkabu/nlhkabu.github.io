@@ -99,6 +99,37 @@ code {
     font-size: 13px;
 }
 
+.note-header,
+.note {
+    display: block;
+    font-size: 14px;
+}
+
+.note-header {
+    color: #fff;
+    background-color: #BC0736;
+    font-family: "Raleway";
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ececec;
+    border-radius: 3px 3px 0 0;
+    margin-top: 20px;
+}
+
+.note {
+    padding: 10px;
+    border-radius: 0 0 3px 3px;
+    background-color: #f8e8ec;
+    color: #BC0736;
+    margin-bottom: 20px;
+
+    p {
+        margin: 0;
+        font-size: 14px;
+    }
+}
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
