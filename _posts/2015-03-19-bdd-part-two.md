@@ -29,7 +29,7 @@ This guide has been tested to work with the following stack:
 * Phantom JS 1.9.8
 
 ## Revisiting our feature file
-For reference, let's take a quick look at the `Filter Users` feature we wrote in [the first part]() of this series:
+For reference, let's take a quick look at the `Filter Users` feature we wrote in [the first part](http://whoisnicoleharris.com/2015/03/16/bdd-part-one.html) of this series:
 
 <figure>
     <figcaption>filter_users.feature</figcaption>
