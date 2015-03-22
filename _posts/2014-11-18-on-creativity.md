@@ -1,9 +1,9 @@
 ---
 layout: post
 colors:
-    default: 18a4a2
-    dark: 129a98
-    light: 8fd7d6
+    default: 1C6987
+    dark: 125c77
+    light: 92c2d4
 
 title: On Creativity
 summary: The perception of coding as a non-creative pursuit is problematic.

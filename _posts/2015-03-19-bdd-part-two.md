@@ -1,9 +1,9 @@
 ---
 layout: post
 colors:
-    default: eda019
-    dark: e7970b
-    light: f9d391
+    default: 18a4a2
+    dark: 129a98
+    light: 8fd7d6
 
 title: Beginning BDD with Django - Part Two
 summary: Part two of a two-part tutorial on Behaviour Driven Development with Django. In this part we use [Behave](http://pythonhosted.org/behave/) to write and run our tests.
