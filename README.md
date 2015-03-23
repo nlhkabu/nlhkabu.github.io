@@ -65,6 +65,39 @@ summary: <descriptive text used meta description>
 learning: <description of what I'm currently learning> # e.g. Behavior Driven Development with <a href="http://pythonhosted.org/behave/">behave</a>
 ---
 ```
+## Special Layouts
+
+To add a note, use:
+
+```html
+<div class="note-header">
+    <i class="fa fa-exclamation-circle"></i>
+    Note
+</div>
+<div class="note">
+    <p>Note content goes here.</p>
+</div>
+```
+
+To add an image figure:
+
+```html
+<figure class="img-figure">
+    <img here/>
+    <figcaption>Caption here.</figcaption>
+</figure>
+```
+
+To add a code block, inside a figure:
+
+```html
+<figure>
+    <figcaption>filename</figcaption>
+    {% highlight python linenos %}
+      Your code here - be sure to check the indentation!
+    {% endhighlight%}
+</figure>
+```
 
 ## Adding new decorative images
 
