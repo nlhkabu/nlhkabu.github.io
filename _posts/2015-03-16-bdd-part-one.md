@@ -230,4 +230,4 @@ Then I see 2 users
 
 That's it!  We've defined our feature and written our feature file!
 
-In the next post we'll explore how we can write Python code to utilise our feature file and run it as an automated test.
+In the [next post](http://whoisnicoleharris.com/2015/03/19/bdd-part-two.html) we'll explore how we can write Python code to utilise our feature file and run it as an automated test.
