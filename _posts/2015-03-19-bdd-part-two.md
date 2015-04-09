@@ -189,7 +189,7 @@ major_tom = UserFactory(first_name='Major', last_name='Tom')
 django = InterestFactory(name='Django')
 public_speaking = InterestFactory(name='Public Speaking')
 lucy_diamond = UserFactory(first_name='Lucy', last_name='Diamond',
-                           interests=(django, public_speaking)
+                           interests=(django, public_speaking))
 {% endhighlight%}
 
 #### Configuring environment.py
