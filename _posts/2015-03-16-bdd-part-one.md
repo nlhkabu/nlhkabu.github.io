@@ -28,7 +28,7 @@ I'm not going to go into why you should test your application.  I assume that by
 
 To do this, we need to step back and ask ourselves *why* are we building software in the first place and *how* we can assess the success of our application.
 
-In a great talk titled [building the minimum badass user](http://businessofsoftware.org/2013/02/kathy-sierra-building-the-minimum-badass-user-business-of-software-a-masterclass-in-thinking-about-software-product-development/), Kathy Sierra argues that a successful application is one that people *want to use* and *tell their friends about*.  The key to delivering this?  Making our **user** awesome:
+In a great talk titled <a href="http://businessofsoftware.org/2013/02/kathy-sierra-building-the-minimum-badass-user-business-of-software-a-masterclass-in-thinking-about-software-product-development/" data-proofer-ignore>building the minimum badass user</a>, Kathy Sierra argues that a successful application is one that people *want to use* and *tell their friends about*.  The key to delivering this?  Making our **user** awesome:
 
 > "People aren't using the app because they like the app or they like you. They're doing it because they like themselves."
 
