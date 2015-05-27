@@ -9,7 +9,7 @@
     <id>{{ site.url }}</id>
     <author>
         <name>Nicole Harris</name>
-        <email>n.harris@kabucreative.com.au</email>
+        <email>n.harris@kabucreative.com</email>
     </author>
     {% for post in site.posts %}
         <entry>
