@@ -1,12 +1,12 @@
 ---
 layout: post
 colors:
-    default: 7F0000
-    dark: 630202
-    light: cb7373
+    default: e4232c
+    dark: dc1721
+    light: fb8d92
 
 title: My First Djangocon
-summary: I recently returned from Wales and a week of learning and hacking at DjangoCon EU - where I met a whole lot of lovely people and learnt heaps of new things. These are my notes.
+summary: I recently returned from Wales and a week of learning and hacking at DjangoCon EU - where I met a whole lot of lovely people and learned heaps of new things. These are my notes.
 comments: 'on'
 ---
 
@@ -14,7 +14,7 @@ DjangoCon Europe was held for a week in Cardiff, Wales. It was my first conferen
 
 ## Talks
 
-I enjoyed the vast majority of the talks and managed to take something out of almost every one of them. Without a doubt the most memorable talk was a lightning talk by Russell Keith-Magee, where he talked about his feelings of doubt and inedequacy and disclosed that he had been going though a major depressive episode. In his talk, Russell used his own position within the community to urge others to seek help if they need it - including with the Cardiff University wellbeing team who the organisers had arranged to be on hand for three days of the conference. Thank-you Russell, and get well soon :)
+I enjoyed the vast majority of the talks and managed to take something out of almost every one of them. Without a doubt the most memorable talk was a lightning talk by Russell Keith-Magee, where he talked about his feelings of doubt and inadequacy and disclosed that he had been going though a major depressive episode. In his talk, Russell used his own position within the community to urge others to seek help if they need it - including with the Cardiff University wellbeing team who the organisers had arranged to be on hand for three days of the conference. Thank-you Russell, and get well soon :)
 
 On a practical level two other talks stood out to me - Hanna Kollo's *Avoiding monoliths* and David Winterbottom's *How to write a view*. Both were really talks about application and code structure - topics that I've been considering more and more as [Connect](/connect) has grown.
 
@@ -24,7 +24,7 @@ A few other things I learned:
 * Pytest is awesome and I should totally be using it.  And (apparently) it's not at all difficult to make the switch.
 * Security is hard...
 
-... and web accessability is important!
+... and web accessibility is important!
 
 ## Sprints
 
