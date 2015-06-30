@@ -92,7 +92,6 @@ Next we'll need to create a new `bdd` app where we can save our existing feature
 project_root/
     bdd/
         init.py
-        models.py # empty, but required to make this a Django app
         features/
             filter_users.feature
             environment.py
