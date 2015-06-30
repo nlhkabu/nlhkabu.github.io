@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+    // Activate fastclick
+    $(function() {
+        FastClick.attach(document.body);
+    });
+
     // Toggle mobile nav
 
     var nav = $('.main-nav');
