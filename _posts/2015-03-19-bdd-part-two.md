@@ -220,10 +220,6 @@ def before_all(context):
     if context.browser.driver_name == 'PhantomJS':
         context.browser.driver.set_window_size(1280, 1024)
 
-    # Now, let's set the URL we're going to use to visit our pages.
-    # In this case we'll use Django's default LiveServerTestCase port
-    context.server_url = 'http://localhost:8081/'
-
 def before_scenario(context, scenario):
     # Reset the database before each scenario
     # This means we can create, delete and edit objects within an
@@ -243,7 +239,7 @@ def after_all(context):
 </figure>
 
 The `context` variable is an instance of [behave.runner.Context](http://pythonhosted.org/behave/api.html#behave.runner.Context).
-This variable holds additional contextual information during the running of tests, so we can pass it things like the `server_url` and retreive that value later.
+This variable holds additional contextual information during the running of tests, so we could also pass it additional information and retreive that value later.
 
 ### Running our Tests
 Now, we've setup our environment, we're ready to run our tests!
@@ -379,9 +375,10 @@ def impl(context):
     # Therefore our password for this user will be 'pass'.
 
     # We visit the login page
-    # Remember that server_url we set in our environment.py? Here it is again!
+    # context.config.server_url is by default set to http://localhost:8081
+    # (Thanks to Cynthia Kiser for pointing this out.)
     # In this example we're visiting http://localhost:8081/accounts/login/
-    context.browser.visit(context.server_url + 'accounts/login/')
+    context.browser.visit(context.config.server_url + 'accounts/login/')
 
     # Next, we log in our user by interacting with the login form
     # Splinter has a handy fill function that helps us fill form fields based
@@ -435,7 +432,7 @@ def impl(context, checked):
 
     # First we visit the page where we see all the users.
     # In our example, this happens to be the root domain.
-    context.browser.visit(context.server_url)
+    context.browser.visit(context.context.config.server_url)
 
     # Then we get the list of interests
     checked = checked.split(', ');
