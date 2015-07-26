@@ -194,8 +194,8 @@ lucy_diamond = UserFactory(first_name='Rocky', last_name='Raccoon',
 #### Configuring environment.py
 We can use our environment.py file to define what should happen before and after certain points in our tests.  There are [several hooks](http://pythonhosted.org/behave/api.html#environment-file-functions) we can utilise, but for our example, we're going to focus on:
 
-* `before_all` Code defined here will run before all of our tests begin.  We'll use this hook to set up our browser
-* `after_all` Code defined here will run after all of our tests finish.  We'll use this hook to quit our browser
+* `before_all` Code defined here will run before all of our tests begin.  We'll use this hook to set up our browser.
+* `after_all` Code defined here will run after all of our tests finish.  We'll use this hook to quit our browser.
 * `before_scenario` Code defined here runs before each individual scenario.  We'll use this to setup (and teardown) our database.  This will help us keep our data clean between each scenario.
 
 Our example:
