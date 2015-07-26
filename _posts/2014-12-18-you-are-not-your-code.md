@@ -37,5 +37,5 @@ Technologies change.  Requirements change.  You are going to face many, many pro
 ### Your Delivery
 Have you delivered something that is important to yourself, others, society?  This is infinitely more valuable than perfection in your code or anything else.
 
-That's not to say you shouldn't strive to [be a professional](https://www.youtube.com/watch?v=p0O1VVqRSK0).  To deliver clean, maintainable code.  You should.
+That's not to say you shouldn't strive to <a href="https://www.youtube.com/watch?v=p0O1VVqRSK0" data-proofer-ignore>be a professional</a>.  To deliver clean, maintainable code.  You should.
 But remember that you are not your code.  You are so much more.
