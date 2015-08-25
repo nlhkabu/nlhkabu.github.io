@@ -47,7 +47,7 @@ sections:
     *  Dedicated moderator dashboard, including moderation logs (allowing moderators to review each other's actions)
 
 
-    Though initially devised for the PyLadies Australia community, Connect has been built so that other communities or organisation's can modify the system to suit their needs.
+    Though initially devised for the PyLadies Australia community, Connect has been built so that other communities or organisations can modify the system to suit their needs.
     For example, skills and interests are added via the Django administration - allowing customisation for a particular audience.
 
 ---
