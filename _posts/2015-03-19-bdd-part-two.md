@@ -362,10 +362,6 @@ To log in a user, we navigate to the login page and interact with the login form
     <figcaption>filter_users.py</figcaption>
 {% highlight python linenos %}
 from accounts.factories import UserFactory
-from accounts.models import Interest
-
-@given('there are many users, each with different interests')
-from accounts.factories import InterestFactory, UserFactory
 
 @given('I am a logged in user')
 def impl(context):
