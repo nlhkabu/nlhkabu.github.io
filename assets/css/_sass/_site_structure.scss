@@ -312,6 +312,10 @@ article {
             margin-top: 40px;
             border-top: 1px solid #ececec;
             padding-top: 40px;
+
+            .post-message a {
+                text-decoration: underline;
+            }
         }
     }
 }
