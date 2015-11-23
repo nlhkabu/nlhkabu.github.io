@@ -84,6 +84,14 @@ After installing all of the above, update `settings.py`:
 1. Add `django-behave` to `INSTALLED_APPS`
 2. Set `TEST_RUNNER = 'django_behave.runner.DjangoBehaveTestSuiteRunner'`
 
+<div class="note-header">
+    <i class="fa fa-exclamation-circle"></i>
+    Note
+</div>
+<div class="note">
+    <p>We'll be using Django's built in test runner throughout this tutorial.  But if you prefer to use PyTest, then you should check out <a href="https://github.com/pytest-dev/pytest-django">pytest-django</a> and <a href="https://github.com/pytest-dev/pytest-bdd">pytest-bdd</a>.</p>
+</div>
+
 
 ### Folder structure
 Next we'll need to create a new `bdd` app where we can save our existing feature file as `filter_users.feature`:
