@@ -110,9 +110,6 @@ New (randomly selected) images can be added to the banner by:
 ## Serving Locally
 
 ```bash
-$ jekyll serve
-$ jekyll serve --drafts # Serve articles in drafts folder
+$ bundle exec jekyll serve
+$ bundle exec jekyll serve --drafts # Serve articles in drafts folder
 ```
-
-
-
