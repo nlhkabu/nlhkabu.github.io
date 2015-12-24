@@ -7,7 +7,7 @@ colors:
 
 title: Connect
 skills: [Django, TDD, BDD, HTML, CSS/SCSS, UI, Visual Design]
-summary: Connect is a moderated web application that helps people connect with each other based on skills, interests and location.  Connect is currently in development and due for a full-feature release in 2015.
+summary: Connect is a moderated web application that helps people connect with each other based on skills, interests and location.  Connect is currently in development and due for a full-feature release in 2016.
 feature_image:
     small: /assets/img/connect-small.png
     medium: /assets/img/connect-medium.png
@@ -20,7 +20,7 @@ priority: 1
 sections:
 -   |
     ##The Problem
-    On the relaunch of PyLadies Australia in early 2014, I received enquiries from all over Australia; of women wanting to join, and men wanting to help.
+    On the relaunch of PyLadies Australia, I received enquiries from all over Australia; of women wanting to join, and men wanting to help.
 
     There were a few clusters of interest in Sydney and Melbourne, but otherwise, interested parties were spread across Australia's other capital cities and rural locations.
 
