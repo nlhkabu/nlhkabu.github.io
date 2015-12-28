@@ -15,7 +15,7 @@ feature_image:
 
 github_url: https://github.com/nlhkabu/connect
 
-priority: 1
+priority: 2
 
 sections:
 -   |
