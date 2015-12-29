@@ -41,7 +41,7 @@ sections:
 
     #### Making the UI Accessible
 
-    I've paid a lot of attention to making sure that the UI works for every Python community member who visits the site. For users with poor eyesight, I've chosen clear, high contrast colours and large font sizes. I also wanted to make sure that the site worked well for users who use screen readers. For this, I contacted [Xavier Dutreilh](http://xavier.dutreilh.com/), who presented a great talk about accessibility at [DjangoCon Europe](whoisnicoleharris.com/2015/06/15/my-first-djangocon.html). Xavier generously agreed to audit the site, from which we have plans for [a number of accessibility improvements](https://github.com/pypa/warehouse/labels/accessibility).
+    I've paid a lot of attention to making sure that the UI works for every Python community member who visits the site. For users with poor eyesight, I've chosen clear, high contrast colours and large font sizes. I also wanted to make sure that the site worked well for users who use screen readers. For this, I contacted [Xavier Dutreilh](http://xavier.dutreilh.com/), who presented a great talk about accessibility at [DjangoCon Europe](http://whoisnicoleharris.com/2015/06/15/my-first-djangocon.html). Xavier generously agreed to audit the site, from which we have plans for [a number of accessibility improvements](https://github.com/pypa/warehouse/labels/accessibility).
 
     #### Device &amp; Browser Support
 
