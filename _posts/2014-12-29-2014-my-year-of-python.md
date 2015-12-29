@@ -29,7 +29,7 @@ This year I also volunteered to design the PyCon Australia 2014 logo and website
 
 The process of putting together the logo was fairly straightforward as I had total creative freedom in this respect.  The website itself was first designed in HTML, CSS & JS and then integrated into the CMS - a system that worked really well.
 
-#### What I'd do Differently
+#### What I'd Do Differently
 
 In the end the branding was a bit all-over-the-place, as I didn't have oversight on all visual materials.  It would have been nice to have a list of *all* of the places the logo would be used to make sure everything was visually coherant.  For example the logo on the slide templates really should have sat on a white background.
 

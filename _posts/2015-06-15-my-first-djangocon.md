@@ -5,7 +5,7 @@ colors:
     dark: dc1721
     light: fb8d92
 
-title: My First Djangocon
+title: My First DjangoCon
 summary: I recently returned from Wales and a week of learning and hacking at DjangoCon EU - where I met a whole lot of lovely people and learned heaps of new things. These are my notes.
 comments: 'on'
 ---

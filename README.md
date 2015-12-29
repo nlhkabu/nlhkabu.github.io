@@ -4,6 +4,24 @@
 
 This website is built with [Jekyll](http://jekyllrb.com) and hosted on Github Pages.
 
+## Writing Style
+
+A few rules to keep things consistent:
+
+All titles should be in [Title Case](http://www.grammar-monster.com/lessons/capital_letters_title_case.htm). If you are not sure, use [this website](http://titlecapitalization.com/) selecting 'Chicago Manual of Style'.
+
+Always use an &amp; instead of 'and' in titles.
+
+Unless a list item contains a full sentence, do not add a full stop at the end, i.e:
+
+```
+# Acceptable use of full stop
+ - Posting data directly to the view. This allows us to check for specific errors using `assertFormsetError`.
+
+# Not acceptable use of a full stop
+ - My list item
+ ```
+
 ## Adding New Projects
 
 New projects should be added to the `_projects` folder, named as `<slug>.md`.  Available front matter:
@@ -54,7 +72,7 @@ comments: <status> # Set to 'on' to enable disqus comments.  Otherwise omit.
 <markdown content here>
 ```
 
-## Editing the homepage
+## Editing the Homepage
 `index.html` can be edited directly.  Available front matter:
 
 ```yaml
@@ -99,7 +117,7 @@ To add a code block, inside a figure:
 </figure>
 ```
 
-## Adding new decorative images
+## Adding New Decorative Images
 
 New (randomly selected) images can be added to the banner by:
 

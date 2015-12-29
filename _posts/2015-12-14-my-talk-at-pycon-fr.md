@@ -5,7 +5,7 @@ colors:
     dark: 731659
     light: F0B1DF
 
-title: Learning Python, Learning French - A talk from PyConFr
+title: Learning Python, Learning French - My Talk from PyConFr
 summary: A talk exploring my experience of learning Python and French at the same time. Presented at [PyConFr](http://www.pycon.fr/2015/).
 comments: 'on'
 ---

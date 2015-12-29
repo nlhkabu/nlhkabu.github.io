@@ -101,7 +101,7 @@ Technically, only the feature name is required here.
 However, I also like to describe the feature using the `As a, I want, So that` pattern established earlier.
 This keeps our user's needs front of mind.
 
-#### Lines 5-7: [Setting up the background](http://pythonhosted.org/behave/gherkin.html#background)
+#### Lines 5-7: [Setting Up the Background](http://pythonhosted.org/behave/gherkin.html#background)
 
 A feature's `Background` outlines the contextual information we need for the scenarios that follow.
 For our example, we're going to need `Interests` and `Users` in the database so we can filter our users.
@@ -136,7 +136,7 @@ More complex scenarios can also include `And` or `But` keywords.  _For example_:
     {% endhighlight %}
 </figure>
 
-### Putting it All Together
+### Putting It All Together
 
 Here's our `filter users` feature written as a Gherkin feature file:
 

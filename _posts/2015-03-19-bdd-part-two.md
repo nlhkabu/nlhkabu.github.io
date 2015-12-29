@@ -28,7 +28,7 @@ This guide has been tested to work with the following stack:
 * Django Behave 0.1.2
 * Phantom JS 1.9.8
 
-## Revisiting our feature file
+## Revisiting Our Feature File
 For reference, let's take a quick look at the `Filter Users` feature we wrote in [the first part](http://whoisnicoleharris.com/2015/03/16/bdd-part-one.html) of this series:
 
 <figure>
@@ -93,7 +93,7 @@ After installing all of the above, update `settings.py`:
 </div>
 
 
-### Folder structure
+### Folder Structure
 Next we'll need to create a new `bdd` app where we can save our existing feature file as `filter_users.feature`:
 
 {% highlight bash %}
@@ -117,7 +117,7 @@ project_root/
 
 Remember to add `bdd` to your `INSTALLED_APPS` in your `settings.py` file.
 
-### Setting up our test environment
+### Setting Up Our Test Environment
 
 #### Creating Factories
 
@@ -249,7 +249,7 @@ def after_all(context):
 The `context` variable is an instance of [behave.runner.Context](http://pythonhosted.org/behave/api.html#behave.runner.Context).
 This variable holds additional contextual information during the running of tests, so we could also pass it additional information and retreive that value later.
 
-### Running our Tests
+### Running Our Tests
 Now, we've setup our environment, we're ready to run our tests!
 In your terminal run:
 

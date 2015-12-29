@@ -31,7 +31,7 @@ Django comes with a number of 'batteries included' formsets.  There are [formset
 
 _This how-to, however, is going to focus on creating a standard formset using custom forms_.
 
-## Step 1.  Create Your Forms
+## Step 1. Create Your Forms
 
 First we need to set out our link form. This is just a standard Django form.
 
@@ -148,7 +148,7 @@ If you don't want any custom validation on your formset, you can skip this step 
     {% endhighlight %}
 </figure>
 
-## Step 3.  Hook Up Your View
+## Step 3. Hook Up Your View
 
 Now we can use Django's built in `formset_factory` to generate our formset.
 As the name suggests, this function takes a form and returns a formset.  At its most basic, we _only_ need to pass it the form we want to repeat - in this case our `LinkForm`.  However, as we have created a custom `BaseLinkFormSet`, we _also_ need to tell our factory to use this instead of using Django's default `BaseFormSet`.
@@ -510,16 +510,3 @@ Finally, we need to check that when we do submit valid data, that data is saved 
 
 ## Conclusion
 That's it!  We have a working _tested_ formset saving our user's links.  If you found this article useful, please share it.  If you have a comment or question, please get in touch!
-
-
-
-
-
-
-
-
-
-
-
-
-
