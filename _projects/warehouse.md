@@ -15,6 +15,7 @@ feature_image:
 
 site_url: http://warehouse.python.org
 github_url: https://github.com/pypa/warehouse
+
 priority: 1
 
 sections:
