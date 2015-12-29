@@ -1,4 +1,4 @@
-# Source for whoisNicoleHarris.com
+# Source for WhoIsNicoleHarris.com
 
 <img src="https://travis-ci.org/nlhkabu/nlhkabu.github.io.svg?branch=master" alt="CI status"/>
 
@@ -8,18 +8,18 @@ This website is built with [Jekyll](http://jekyllrb.com) and hosted on Github Pa
 
 A few rules to keep things consistent:
 
-All titles should be in [Title Case](http://www.grammar-monster.com/lessons/capital_letters_title_case.htm). If you are not sure, use [this website](http://titlecapitalization.com/) selecting 'Chicago Manual of Style'.
+1. All titles should be in [Title Case](http://www.grammar-monster.com/lessons/capital_letters_title_case.htm). If you are not sure, use [this website](http://titlecapitalization.com/) selecting 'Chicago Manual of Style'.
 
-Always use an &amp; instead of 'and' in titles.
+2. Always use an ampersand (`&`) instead of 'and' in titles
 
-Unless a list item contains a full sentence, do not add a full stop at the end, i.e:
+3. Unless a list item contains a full sentence, do not add a full stop at the end, i.e.:
 
 ```
-# Acceptable use of full stop
- - Posting data directly to the view. This allows us to check for specific errors using `assertFormsetError`.
+# OK
+- Posting data directly to the view. This allows us to check for errors using `assertFormsetError`.
 
-# Not acceptable use of a full stop
- - My list item
+# Bad
+- My list item.
  ```
 
 ## Adding New Projects
