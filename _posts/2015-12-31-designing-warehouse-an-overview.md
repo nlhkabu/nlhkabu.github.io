@@ -91,7 +91,7 @@ I'm very excited to report that the work on rewriting the Python Packaging User 
 
 ### Providing Feedback
 
-Finally, we've recently installed a widget on the site to gather community feedback.  Perhaps there is something small that is bothering you, but it doesn't justify opening an issue on the issue tracker. Perhaps there is something big, but you don't like issue trackers, or find them difficult or intimidating to use. Perhaps you just want to put an opinion forward.  In all of these cases, please use our widget - we can only better serve the community if we hear from the community!
+Finally, we're planning on installing a widget on the site to gather community feedback.  Perhaps there is something small that is bothering you, but it doesn't justify opening an issue on the issue tracker. Perhaps there is something big, but you don't like issue trackers, or find them difficult or intimidating to use. Perhaps you just want to put an opinion forward.  In all of these cases, please use our widget - we can only better serve the community if we hear from the community!
 
 ## Wrapping Up
 
