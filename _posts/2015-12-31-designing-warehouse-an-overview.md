@@ -63,7 +63,7 @@ The final piece of the puzzle is ensuring that the site is usable and accessible
 
 This has resulted in a number of technical decisions; the first (and most obvious) is that the design supports a range of devices via responsive media queries.  We're also going to (at least in the short term) continue support for Internet Explorer 8, as we have a number of users, primarily in China, still using this browser.
 
-On the accessibility side, the project has already benefited from one audit from Xavier Dulthreith and we are looking forward to another before the site launches. Planned improvements include the addition of ARIA roles to the HTML, a 'skip to content' link, as well as better labeling of form fields for screen readers.
+On the accessibility side, the project has already benefited from one audit from [Xavier Dutreilh](http://xavier.dutreilh.com/) and we are looking forward to another before the site launches. Planned improvements include the addition of ARIA roles to the HTML, a 'skip to content' link, as well as better labeling of form fields for screen readers.
 
 Lastly, Donald is introducing both localisation and internationalisation to the codebase. Currently PyPI is very US centric - supporting US English and US formats only. We're very excited to be updating the user experience to better support Python users from all over the world, and will be calling for volunteers in early 2016 to assist us in this activity.
 
