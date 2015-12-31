@@ -16,7 +16,7 @@ This article is an attempt to explore our objectives and challenges, provide an 
 
 ## Our Goals
 
-When [Donald](https://caremad.io/about/) (our lead developer) and I first talked about the project, he had some very clear objectives for the redesign:
+When [Donald](http://caremad.io/about/) (our lead developer) and I first talked about the project, he had some very clear objectives for the redesign:
 
 - To update the visual identity
 - To make packages more discoverable; and
