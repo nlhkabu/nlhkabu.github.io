@@ -15,7 +15,7 @@ learning: building a single page application with <a href="http://emberjs.com/">
         {% for project in projects %}
             <div class="project">
                 <div class="container">
-                    <h2>{{ project.title }}</h2>
+                    <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
                     {% if project.skills %}
                         <div class="tags light">
                             {% for skill in project.skills %}
