@@ -37,7 +37,7 @@ sections:
 
     #### Designing the Visual Identity
 
-    PyPI's visual identity has been overhauled to reflect a modern, clean, minimalist aesthetic. A [new logo](https://warehouse.python.org/static/images/logo-small.png) has been designed to represent the Warehouse project and capture the spirit of the redesign. The result is a much stronger brand identity that has pushed the project into the 21st century.
+    PyPI's visual identity has been overhauled to reflect a modern, clean, minimalist aesthetic. [Olivier](https://ojh.github.io/) designed a [new logo](https://warehouse.python.org/static/images/logo-small.png) to represent the Warehouse project and capture the spirit of the redesign. The result is a much stronger brand identity that has pushed the project into the 21st century.
 
     #### Making the UI Accessible
 
