@@ -106,15 +106,10 @@ To add an image figure:
 </figure>
 ```
 
-To add a code block, inside a figure:
+To add a code heading (i.e.- the filename), add the following above the code block:
 
 ```html
-<figure>
-    <figcaption>filename</figcaption>
-    {% highlight python linenos %}
-      Your code here - be sure to check the indentation!
-    {% endhighlight%}
-</figure>
+  <p class="code-heading">FileName</p>
 ```
 
 ## Adding New Decorative Images

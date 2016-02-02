@@ -48,11 +48,11 @@ It helps us step back from the technical implementation and focus on these quest
 
 A common template for defining this is:
 
-{% highlight bash %}
+```
 As a <role>
 I want <feature>
 So that <value>
-{% endhighlight %}
+```
 
 This template also accounts for scenarios where the role is not a user, but rather a system or process (for example, an API).
 
@@ -64,11 +64,11 @@ Let's imagine that we've built most of the app, but are yet to develop one of th
 
 Using the pattern defined earlier, we might describe this feature as:
 
-{% highlight bash %}
+```
 As a standard user
 I want to filter users by their listed interests
 So I can find users who have similar interests to my own
-{% endhighlight %}
+```
 
 ### Feature Files
 
@@ -76,23 +76,21 @@ BDD can be segmented into two parts: the feature file, where we describe the beh
 
 First we'll need to write our feature file.  Feature files use the [Gherkin syntax](http://pythonhosted.org/behave/gherkin.html#gherkin-feature-testing-language) and are saved as `<featurename>.feature`:
 
-<figure>
-    <figcaption>example.feature</figcaption>
-    {% highlight gherkin linenos %}
-    Feature: feature name
-      description
-      further description
+<p class="code-heading">example.feature</p>
+```gherkin
+Feature: feature name
+  description
+  further description
 
-      Background: some requirement of this test
-        Given some setup condition
-          And some other setup action
+  Background: some requirement of this test
+    Given some setup condition
+      And some other setup action
 
-      Scenario: some scenario
-          Given some condition
-           When some action is taken
-           Then some result is expected
-    {% endhighlight %}
-</figure>
+  Scenario: some scenario
+      Given some condition
+       When some action is taken
+       Then some result is expected
+```
 
 
 #### Lines 1-3: Defining the Feature
@@ -122,107 +120,99 @@ Each Scenario contains three types of steps:
 
 More complex scenarios can also include `And` or `But` keywords.  _For example_:
 
-<figure>
-    <figcaption>activate_account.feature</figcaption>
-    {% highlight gherkin linenos %}
-    Scenario: Activate account
-        Given I am a standard user
-        But I have not yet activated my account
-        When I visit my account activation page
-        And I fill out the form
-        But I forget to confirm my password
-        And I submit the form
-        Then I see an error
-    {% endhighlight %}
-</figure>
+<p class="code-heading">activate_account.feature</p>
+```gherkin
+Scenario: Activate account
+    Given I am a standard user
+    But I have not yet activated my account
+    When I visit my account activation page
+    And I fill out the form
+    But I forget to confirm my password
+    And I submit the form
+    Then I see an error
+```
 
 ### Putting It All Together
 
 Here's our `filter users` feature written as a Gherkin feature file:
 
-<figure>
-    <figcaption>filter_users.feature</figcaption>
-    {% highlight gherkin linenos %}
-    Feature: Filter users by interest
-    As a standard user
-    I want to filter users by their listed interests
-    So that I can find users who share my interests
+<p class="code-heading">filter_users.feature</p>
+```gherkin
+Feature: Filter users by interest
+As a standard user
+I want to filter users by their listed interests
+So that I can find users who share my interests
 
-    Background: There are interests and users in the system
-        Given there are a number of interests in the database
-        And there are many users in the database, each with different interests
+Background: There are interests and users in the system
+    Given there are a number of interests in the database
+    And there are many users in the database, each with different interests
 
-    Scenario: Filter users by one interest
-        Given I am a logged in user
-        When I filter the list of users by a single interest
-        Then I only see the users with that interest
+Scenario: Filter users by one interest
+    Given I am a logged in user
+    When I filter the list of users by a single interest
+    Then I only see the users with that interest
 
-    Scenario: Filter users by multiple interests
-        Given I am a logged in user
-        When I filter the list of users by multiple interests
-        Then I see the users with those interests
+Scenario: Filter users by multiple interests
+    Given I am a logged in user
+    When I filter the list of users by multiple interests
+    Then I see the users with those interests
 
-    Scenario: No result
-        Given I am a logged in user
-        When I filter the list of users by an interest that no-one has listed
-        Then I see no users
-    {% endhighlight %}
-</figure>
+Scenario: No result
+    Given I am a logged in user
+    When I filter the list of users by an interest that no-one has listed
+    Then I see no users
+```
 
 #### Refactoring
 
 You've probably noticed that our scenarios use a common pattern.  They're also a little vague.
 To fix this we can include more context in our `Background` and refactor our three scenarios into one `Scenario Outline`:
 
-<figure>
-    <figcaption>filter_users.feature</figcaption>
-    {% highlight gherkin linenos %}
-    Feature: Filter users by interest
-    As a standard user
-    I want to filter users by their listed interests
-    So I can find users who have similar interests to my own
+<p class="code-heading">filter_users.feature</p>
+```gherkin
+Feature: Filter users by interest
+As a standard user
+I want to filter users by their listed interests
+So I can find users who have similar interests to my own
 
-    Background: There are interests and users in the system
-        Given there are a number of interests:
-            |    interest           |
-            |    Django             |
-            |    Testing            |
-            |    Public Speaking    |
-            |    DevOps             |
-            |    PHP                |
+Background: There are interests and users in the system
+    Given there are a number of interests:
+        |    interest           |
+        |    Django             |
+        |    Testing            |
+        |    Public Speaking    |
+        |    DevOps             |
+        |    PHP                |
 
-        And there are many users, each with different interests:
-            |    name           |   interests                  |
-            |    Billie Jean    |   Django, Testing            |
-            |    Rocky Raccoon  |   Django, Public Speaking    |
-            |    Major Tom      |   Testing, Devops            |
-            |    Bobbie McGee   |   Public Speaking, DevOps    |
+    And there are many users, each with different interests:
+        |    name           |   interests                  |
+        |    Billie Jean    |   Django, Testing            |
+        |    Rocky Raccoon  |   Django, Public Speaking    |
+        |    Major Tom      |   Testing, Devops            |
+        |    Bobbie McGee   |   Public Speaking, DevOps    |
 
-    Scenario Outline: Filter users
-        Given I am a logged in user
-        When I filter the list of users by <filter>
-        Then I see <num> users
+Scenario Outline: Filter users
+    Given I am a logged in user
+    When I filter the list of users by <filter>
+    Then I see <num> users
 
-        Examples:
-            |    filter             |    num    |
-            |    Django             |    2      |
-            |    Django, Testing    |    3      |
-            |    PHP                |    0      |
-    {% endhighlight %}
-</figure>
+    Examples:
+        |    filter             |    num    |
+        |    Django             |    2      |
+        |    Django, Testing    |    3      |
+        |    PHP                |    0      |
+```
 
 First we define the interests and users in the background using tables.  This makes our data easy to read, whilst providing hooks that we'll use later in our Python code.
 
 Next, we compile our scenarios into one `Scenario Outline`, specifying the skills and number of users based on the information defined in our new `Background`.
 When we run our tests, a `Scenario` will be created out of each (non heading) line in the example table.  So, the first line would become...
 
-{% highlight gherkin %}
-
+```gherkin
 Given I am a logged in user
 When I filter the list of users by Django
 Then I see 2 users
-
-{% endhighlight %}
+```
 
 ... and so on.
 

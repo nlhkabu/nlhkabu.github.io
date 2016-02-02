@@ -1,7 +1,11 @@
 url: http://www.whoisnicoleharris.com
-timezone: Australia/Melbourne
-highlighter: pygments
+timezone: Europe/London
 permalink: /:year/:month/:day/:title.html
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 sass:
     sass_dir: /assets/css/_sass

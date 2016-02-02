@@ -29,48 +29,48 @@ This guide has been tested to work with the following stack:
 * Phantom JS 1.9.8
 
 ## Revisiting Our Feature File
+
 For reference, let's take a quick look at the `Filter Users` feature we wrote in [the first part](http://whoisnicoleharris.com/2015/03/16/bdd-part-one.html) of this series:
 
-<figure>
-    <figcaption>filter_users.feature</figcaption>
-    {% highlight gherkin linenos %}
-    Feature: Filter users by interest
-    As a standard user
-    I want to filter users by their listed interests
-    So I can find users who have similar interests to my own
+<p class="code-heading">filter_users.feature</p>
+```gherkin
+Feature: Filter users by interest
+As a standard user
+I want to filter users by their listed interests
+So I can find users who have similar interests to my own
 
-    Background: There are interests and users in the system
-        Given there are a number of interests:
-            |    interest           |
-            |    Django             |
-            |    Testing            |
-            |    Public Speaking    |
-            |    DevOps             |
-            |    PHP                |
+Background: There are interests and users in the system
+    Given there are a number of interests:
+        |    interest           |
+        |    Django             |
+        |    Testing            |
+        |    Public Speaking    |
+        |    DevOps             |
+        |    PHP                |
 
-        And there are many users, each with different interests:
-            |    name           |   interests                  |
-            |    Billie Jean    |   Django, Testing            |
-            |    Rocky Raccoon  |   Django, Public Speaking    |
-            |    Major Tom      |   Testing, Devops            |
-            |    Bobbie McGee   |   Public Speaking, DevOps    |
+    And there are many users, each with different interests:
+        |    name           |   interests                  |
+        |    Billie Jean    |   Django, Testing            |
+        |    Rocky Raccoon  |   Django, Public Speaking    |
+        |    Major Tom      |   Testing, Devops            |
+        |    Bobbie McGee   |   Public Speaking, DevOps    |
 
-    Scenario Outline: Filter users
-        Given I am a logged in user
-        When I filter the list of users by <filter>
-        Then I see <num> users
+Scenario Outline: Filter users
+    Given I am a logged in user
+    When I filter the list of users by <filter>
+    Then I see <num> users
 
-        Examples:
-            |    filter             |    num    |
-            |    Django             |    2      |
-            |    Django, Testing    |    3      |
-            |    PHP                |    0      |
-    {% endhighlight %}
-</figure>
+    Examples:
+        |    filter             |    num    |
+        |    Django             |    2      |
+        |    Django, Testing    |    3      |
+        |    PHP                |    0      |
+```
 
 Remember that?  Great! Let's get started.
 
 ## Dependencies
+
 First off, we'll need to install our dependencies:
 
 * [Behave](http://pythonhosted.org/behave/) will run our BDD tests.
@@ -94,18 +94,19 @@ After installing all of the above, update `settings.py`:
 
 
 ### Folder Structure
+
 Next we'll need to create a new `bdd` app where we can save our existing feature file as `filter_users.feature`:
 
-{% highlight bash %}
+```
 project_root/
-    bdd/
-        init.py
-        features/
-            filter_users.feature
-            environment.py
-            steps/
-                filter_users.py
-{% endhighlight %}
+  bdd/
+    init.py
+    features/
+      filter_users.feature
+      environment.py
+      steps/
+        filter_users.py
+```
 
 <div class="note-header">
     <i class="fa fa-exclamation-circle"></i>
@@ -125,16 +126,15 @@ Because we've already written our feature file, we know that we'll need `Users` 
 
 We'll setup our factories in the same application that our `User` and `Interest` models are defined:
 
-{% highlight bash %}
+```
 project_root/
     accounts/
         models.py # Our User and Interest models live here
         factories.py # This is where we'll create our Factory Boy factories
-{% endhighlight %}
+```
 
-<figure>
-    <figcaption>factories.py</figcaption>
-{% highlight python linenos %}
+<p class="code-heading">factories.py</p>
+```python
 import factory
 from django.contrib.auth.hashers import make_password
 from .models import Interest, User
@@ -170,8 +170,7 @@ class InterestFactory(factory.django.DjangoModelFactory):
         model = Interest
 
     name = factory.Sequence(lambda n: 'interest{}'.format(n))
-{% endhighlight%}
-</figure>
+```
 
 Let's go over whats going on here:
 
@@ -185,7 +184,7 @@ Finally, to define the many-to-many relationship between `User` and `Interest`, 
 
 Voila!  Now we're all set to create mock objects in our tests.  For example, we can:
 
-{% highlight python linenos %}
+```python
 # Create a User with the default settings
 user = UserFactory() # Will generate a user with the name 'Standard User'
 
@@ -197,9 +196,10 @@ django = InterestFactory(name='Django')
 public_speaking = InterestFactory(name='Public Speaking')
 lucy_diamond = UserFactory(first_name='Rocky', last_name='Raccoon',
                            interests=(django, public_speaking))
-{% endhighlight%}
+```
 
 #### Configuring environment.py
+
 We can use our environment.py file to define what should happen before and after certain points in our tests.  There are [several hooks](http://pythonhosted.org/behave/api.html#environment-file-functions) we can utilise, but for our example, we're going to focus on:
 
 * `before_all` Code defined here will run before all of our tests begin.  We'll use this hook to set up our browser.
@@ -208,9 +208,8 @@ We can use our environment.py file to define what should happen before and after
 
 Our example:
 
-<figure>
-    <figcaption>environment.py</figcaption>
-{% highlight python linenos %}
+<p class="code-heading">environment.py</p>
+```python
 from behave import *
 from splinter.browser import Browser
 from django.core import management
@@ -243,23 +242,23 @@ def after_all(context):
     # Quit our browser once we're done!
     context.browser.quit()
     context.browser = None
-{% endhighlight%}
-</figure>
+```
 
 The `context` variable is an instance of [behave.runner.Context](http://pythonhosted.org/behave/api.html#behave.runner.Context).
 This variable holds additional contextual information during the running of tests, so we could also pass it additional information and retreive that value later.
 
 ### Running Our Tests
+
 Now, we've setup our environment, we're ready to run our tests!
 In your terminal run:
 
-{% highlight bash %}
+```
 python manage.py test bdd
-{% endhighlight %}
+```
 
 You'll see:
 
-{% highlight bash %}
+```
 Failing scenarios:
   bdd/features/filter_users.feature:22  Filter users
   bdd/features/filter_users.feature:22  Filter users
@@ -269,11 +268,11 @@ Failing scenarios:
 0 scenarios passed, 3 failed, 0 skipped
 0 steps passed, 0 failed, 0 skipped, 15 undefined
 Took 0m0.000s
-{% endhighlight %}
+```
 
 Why?  Because Behave can't find any instructions (known as steps) for each of our scenarios.  Conveniently, Behave provides us with some default snippets.  Copy these from your terminal and paste them into the `filter_users.py` file - grouping common steps together:
 
-{% highlight python linenos %}
+```python
 from behave import * # We'll need to import all from behave first
 
 # Then we can copy the snippets into our file
@@ -312,8 +311,7 @@ def impl(context):
 @then('I see 0 users')
 def impl(context):
     assert False
-{% endhighlight %}
-
+```
 
 Step functions are defined using step decorators, here shown as `@given`, `@then` and `@when`.  These are universally imported when you import Behave; you do not need to import them individually.
 
@@ -323,34 +321,33 @@ The decorated function (in this case `def impl()`) can be named anything - It do
 
 
 ### Writing Test Code
+
 Let's go through each of our steps and write our test code.
 
 #### 1. Given there are a number of interests
+
 For this step, we'll need to use our `InterestFactory` to create the interests listed in our feature file.  We can access the name of our interests by looping over each row in our `context.table` using the `interest` column heading as a key.
 
-<figure>
-    <figcaption>filter_users.py</figcaption>
-{% highlight python linenos %}
+<p class="code-heading">filter_users.py</p>
+```python
 from behave import *
 from accounts.factories import InterestFactory
 
 @given('there are a number of interests')
 def impl(context):
     interests = [InterestFactory(name=row['interest']) for row in context.table]
-{% endhighlight %}
-</figure>
-
+```
 
 #### 2. And there are many users, each with different interests
+
 In this step we create our users by:
 
 1.  Splitting the items listed under our 'interest' heading into list items
 2.  Fetching the interests (that we created in our last step) from the database
 3.  Creating a new user with our `UserFactory`, passing in the the interest objects
 
-<figure>
-    <figcaption>filter_users.py</figcaption>
-{% highlight python linenos %}
+<p class="code-heading">filter_users.py</p>
+```python
 from accounts.factories import UserFactory
 from accounts.models import Interest
 
@@ -360,15 +357,14 @@ def impl(context):
         interest_names = row['interests'].split(', ')
         interests = Interest.objects.filter(name__in=interest_names)
         UserFactory(email=row['email'], interests=interests)
-{% endhighlight %}
-</figure>
+```
 
 #### 3. Given I am a logged in user
+
 To log in a user, we navigate to the login page and interact with the login form.  Here we can start to appreciate the power of [Splinter](https://splinter.readthedocs.org/en/latest/index.html) for browsing, finding and filling in form fields.
 
-<figure>
-    <figcaption>filter_users.py</figcaption>
-{% highlight python linenos %}
+<p class="code-heading">filter_users.py</p>
+```python
 from accounts.factories import UserFactory
 
 @given('I am a logged in user')
@@ -392,16 +388,15 @@ def impl(context):
 
     # Finally we find the submit button (by its CSS attribute) and click on it!
     context.browser.find_by_css('form input[type=submit]').first.click()
-{% endhighlight %}
-</figure>
+```
 
 At this point it might be helpful to see our tests running in a 'real' browser.  To do this, we need to install [Selenium](http://docs.seleniumhq.org/).
 
 Now we can tell Splinter to run our tests using Firefox (rather than the default PhantomJS):
 
-{% highlight bash %}
+```
 $ python ./manage.py test bdd --behave_browser firefox
-{% endhighlight %}
+```
 
 <div class="note-header">
     <i class="fa fa-exclamation-circle"></i>
@@ -412,25 +407,23 @@ $ python ./manage.py test bdd --behave_browser firefox
 </div>
 
 #### 4. When I filter the list of users by ...
+
 We can combine each of our filter steps into one single step by using Behave's [step parameters](http://pythonhosted.org/behave/tutorial.html?highlight=context#step-parameters).
 
 First, we need to change our feature file, wrapping our `filter` variable in string formatting:
 
-<figure>
-    <figcaption>filter_users.feature</figcaption>
-{% highlight gherkin linenos %}
+<p class="code-heading">filter_users.feature</p>
+```gherkin
 Scenario Outline: Filter users
     ...
     When I filter the list of users by "<filter>"
     ...
-{% endhighlight %}
-</figure>
+```
 
 This allows us to write one (and only one) step for each filter step:
 
-<figure>
-    <figcaption>filter_users.py</figcaption>
-{% highlight python linenos %}
+<p class="code-heading">filter_users.py</p>
+```python
 @when('I filter the list of users by "{checked}"')
 def impl(context, checked):
 
@@ -449,26 +442,23 @@ def impl(context, checked):
 
     # Finally, we submit the form
     context.browser.find_by_css('form input[type=submit]').first.click()
-{% endhighlight %}
-</figure>
+```
 
 #### 5. Then I see ... users
+
 Finally, we can use the same pattern to count the number of users in our results.
 
-<figure>
-    <figcaption>filter_users.feature</figcaption>
-{% highlight gherkin linenos %}
+<p class="code-heading">filter_users.feature</p>
+```gherkin
 Scenario Outline: Filter users
     ...
     ...
     Then I see "<num>" users
-{% endhighlight %}
-</figure>
+```
 
 And in our python file:
-<figure>
-    <figcaption>filter_users.py</figcaption>
-{% highlight python linenos %}
+<p class="code-heading">filter_users.py</p>
+```python
 @then('I see "{count}" users')
 def impl(context, count):
     # Assuming there is a <div class="user-card"></div> for each user
@@ -477,8 +467,7 @@ def impl(context, count):
     # We can now assert that the number of users on the page
     # is equal to the number we expect
     assert len(users) == int(count)
-{% endhighlight %}
-</figure>
+```
 
 
 ## Wrapping Up
