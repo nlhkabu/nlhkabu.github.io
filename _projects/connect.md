@@ -19,7 +19,7 @@ priority: 2
 
 sections:
 -   |
-    ##The Problem
+    ## The Problem
     On the relaunch of PyLadies Australia, I received enquiries from all over Australia; of women wanting to join, and men wanting to help.
 
     There were a few clusters of interest in Sydney and Melbourne, but otherwise, interested parties were spread across Australia's other capital cities and rural locations.
@@ -31,7 +31,7 @@ sections:
     * How can I ensure a safe and welcoming space?
 
 -   |
-    ##The Solution
+    ## The Solution
 
     Connect is a web application developed in Django and designed to be a friendly, accessible space for members to meet.  Each member has:
 

@@ -19,7 +19,7 @@ priority: 3
 
 sections:
 -   |
-    ##The Problem
+    ## The Problem
     The BPCLE Framework was developed by [Darcy Associates](http://darcyassociates.com.au/) for the Victorian Department of Health, in order to define best practices in clinical learning environments.
     As part of this process, Darcy Associates also developed a prototype excel application that allowed health organisations to rate themselves against the framework and discover how they could improve their educational environments.
 
@@ -33,7 +33,7 @@ sections:
     * Maintaining visual consistency as new features were added to the application
 
 -   |
-    ##The Solution
+    ## The Solution
 
     My first port of call was to develop a series of wireframes to:
 
