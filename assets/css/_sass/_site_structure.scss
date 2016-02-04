@@ -309,6 +309,10 @@ article {
             margin-top: 40px;
             border-top: 1px solid #ececec;
             padding-top: 40px;
+
+            a {
+              color: $highlight-dark;
+            }
         }
     }
 }
