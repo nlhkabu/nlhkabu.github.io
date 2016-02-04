@@ -3,6 +3,7 @@
 code {
     background-color: $content-bg;
     border: 1px solid $content-border;
+    padding: 2px;
 }
 
 .code-heading {
@@ -24,6 +25,7 @@ code {
     code {
         background-color: transparent;
         border: 0;
+        padding: 0;
     }
 }
 
