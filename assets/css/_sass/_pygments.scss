@@ -18,14 +18,29 @@ code {
 .highlight {
     background: $content-bg;
     border: 1px solid $content-border;
-    padding: 10px 15px;
+    padding: 0 15px;
     margin: 0 0 25px 0;
     overflow-x: auto;
+    font-size: 13px;
+    line-height: 21px;
 
     code {
         background-color: transparent;
         border: 0;
         padding: 0;
+    }
+
+    .lineno {
+        color: #ccc;
+        font-size: 11px;
+        line-height: 21px;
+        margin-right: 15px;
+    }
+
+    @media only screen and (max-width: 750px) {
+      .code {
+        padding-right: 15px;
+      }
     }
 }
 
@@ -88,10 +103,3 @@ code {
 .highlight .vg { color: #008080 } /* Name.Variable.Global */
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
-
-
-.highlight .lineno {
-    color: #ccc;
-    margin-right: 10px;
-    font-size: 11px;
-}
