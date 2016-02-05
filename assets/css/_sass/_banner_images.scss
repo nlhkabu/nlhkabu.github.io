@@ -24,7 +24,7 @@
     .bird {
         width: 86px;
         margin-left: 115px;
-        top: 93px;
+        top: 83px;
 
         @media only screen and (max-width: 370px) {
             margin-left: 0;
@@ -115,7 +115,7 @@
 
     .hearts {
         width: 50px;
-        top: 80px;
+        top: 70px;
         margin-left: -210px;
 
         @media only screen and (max-width: 500px) {
@@ -154,7 +154,7 @@
         width: 110px;
         top: 0;
         left: 50%;
-        margin-left: -220px;
+        margin-left: -230px;
 
         @media only screen and (max-width: 600px) {
             margin-left: 0;
@@ -164,12 +164,12 @@
 
     .martini {
         width: 60px;
-        bottom: 40px;
+        bottom: 30px;
     }
 
     .monster {
         width: 150px;
-        bottom: 10px;
+        bottom: 5px;
     }
 
     .moon {
@@ -192,7 +192,7 @@
     .mushrooms {
         width: 100px;
         margin-left: -230px;
-        top: 120px;
+        top: 110px;
 
         @media only screen and (max-width: 600px) {
             width: 100px;
@@ -204,7 +204,7 @@
 
     .rocket {
         width: 100px;
-        bottom: 20px;
+        bottom: 25px;
         margin-left: -230px;
 
         @media only screen and (max-width: 600px) {
@@ -228,7 +228,7 @@
     .snail {
         width: 60px;
         margin-left: 165px;
-        bottom: 140px;
+        bottom: 130px;
 
         @media only screen and (max-width: 410px) {
             margin-left: 0;
@@ -238,7 +238,7 @@
 
     .snowflakes {
         width: 250px;
-        top: 45px;
+        top: 35px;
         margin-left: -190px;
 
         @media only screen and (max-width: 650px) {
@@ -274,7 +274,7 @@
 
     .volcano {
         width: 150px;
-        bottom: 10px;
+        bottom: 5px;
     }
 
     .whale {
@@ -293,4 +293,3 @@
         bottom: 0;
     }
 }
-
