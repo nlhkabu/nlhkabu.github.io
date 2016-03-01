@@ -17,7 +17,7 @@ links:
 -   url: http://bpcletool.net.au
     text: View Application
 
-priority: 3
+priority: 4
 
 sections:
 -   |

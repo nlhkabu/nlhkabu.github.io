@@ -17,7 +17,7 @@ links:
 -   url: https://github.com/nlhkabu/connect
     text: View source on GitHub
 
-priority: 2
+priority: 3
 
 sections:
 -   |
