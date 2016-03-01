@@ -10,7 +10,7 @@ layout: default
     {% if page.summary %}
         <div class="container">
             <div class="project-intro">
-                <p>{{ page.summary }}</p>
+                <p>{{ page.summary | markdownify }}</p>
             </div>
         </div>
     {% endif %}
@@ -38,15 +38,12 @@ layout: default
         </div>
     {% endfor %}
 
-    {% if page.site_url or page.github_url %}
-        <div class="project-links container">
-            {% if page.site_url %}
-                <a href="{{ page.site_url }}" class="button primary">Visit Site</a>
-            {% endif %}
-            {% if page.github_url %}
-                <a href="{{ page.github_url }}" class="button">View Source on GitHub</a>
-            {% endif %}
-        </div>
+    {% if page.links %}
+      <div class="project-links container">
+          {% for link in page.links %}
+              <a href="{{ link.url }}" class="button{% if forloop.first %} primary{% endif %}">{{ link.text }}</a>
+          {% endfor %}
+      <div>
     {% endif %}
 </section>
 
@@ -79,5 +76,3 @@ layout: default
         </div>
     </section>
 {% endif %}
-
-

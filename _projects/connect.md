@@ -13,7 +13,9 @@ feature_image:
     medium: /assets/img/connect-medium.png
     large: /assets/img/connect-large.png
 
-github_url: https://github.com/nlhkabu/connect
+links:
+-   url: https://github.com/nlhkabu/connect
+    text: View source on GitHub
 
 priority: 2
 

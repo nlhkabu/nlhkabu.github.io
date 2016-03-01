@@ -12,9 +12,12 @@ feature_image:
     small: /assets/img/warehouse-small.png
     medium: /assets/img/warehouse-medium.png
     large: /assets/img/warehouse-large.png
-
-site_url: http://warehouse.python.org
-github_url: https://github.com/pypa/warehouse
+    
+links:
+-   url: http://warehouse.python.org
+    text: Visit Site
+-   url: https://github.com/pypa/warehouse
+    text: View source on GitHub
 
 priority: 1
 

@@ -13,7 +13,9 @@ feature_image:
     medium: /assets/img/bpcle-medium.png
     large: /assets/img/bpcle-large.png
 
-site_url: http://bpcletool.net.au
+links:
+-   url: http://bpcletool.net.au
+    text: View Application
 
 priority: 3
 
