@@ -237,8 +237,8 @@ My personal preference is to individually specify each form field so I can wrap 
 We also want to use [this jQuery plugin](https://github.com/elo80ka/django-dynamic-formset) for dynamically adding and removing forms.  Full documentation can be found [here](https://github.com/elo80ka/django-dynamic-formset/blob/master/docs/usage.rst).
 
 <p class="code-heading">edit_profile.html</p>
-```html
 {% raw %}
+```html
 {% load staticfiles %}
 
 {% if messages %}
@@ -304,8 +304,8 @@ We also want to use [this jQuery plugin](https://github.com/elo80ka/django-dynam
         deleteText: 'remove'
     });
 </script>
-{% endraw %}
 ```
+{% endraw %}
 
 ## Unit Testing
 
