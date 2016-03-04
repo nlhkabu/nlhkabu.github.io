@@ -8,6 +8,7 @@ colors:
 title: "Tutorial : Implementing Django Formsets"
 summary: A step-by-step tutorial for setting up and testing a standard Django formset.
 comments: 'on'
+promo: 'on'
 ---
 I've noticed on #django IRC that many people need guidance on formsets, and as I've now used them in a couple of my projects &mdash; most recently, [Connect](/connect/) &mdash; I thought I could offer a short how-to based on my own experiences.
 

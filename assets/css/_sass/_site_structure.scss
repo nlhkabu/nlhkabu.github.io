@@ -414,3 +414,14 @@ article {
         color: $white;
     }
 }
+
+// Cross promotion for Oreilly screencast
+.promo {
+    margin-top: 40px;
+    border: 1px solid $highlight-light;
+    padding: 20px;
+
+    h2 {
+      margin-top: 0;
+    }
+}

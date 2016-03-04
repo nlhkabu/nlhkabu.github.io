@@ -16,6 +16,10 @@ layout: default
 
             {{ content }}
 
+            {% if page.promo == 'on' %}
+                {% include oreilly-promo.html %}
+            {% endif %}
+
             <div class="meta-block">
                 <span class="meta">
                     {% assign d = page.date | date: "%-d" %}
