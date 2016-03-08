@@ -61,7 +61,7 @@ Our goal is to complete this work by early 2016 to coincide with the launch of t
 
 The final piece of the puzzle is ensuring that the site is usable and accessible for *all* of our community members, whether they are using a phone, screen reader or an old, unpopular browser.
 
-This has resulted in a number of technical decisions; the first (and most obvious) is that the design supports a range of devices via responsive media queries.  We're also going to (at least in the short term) continue support for Internet Explorer 8, as we have a number of users, primarily in China, still using this browser.
+This has resulted in a number of technical decisions; the first (and most obvious) is that the design supports a range of devices via responsive media queries.  We're also going to (at least in the short term) continue support for Internet Explorer <strike>8</strike> 9, as we have a number of users, primarily in China, still using this browser. See [this issue](https://github.com/pypa/warehouse/issues/979) for more information.
 
 On the accessibility side, the project has already benefited from one audit from [Xavier Dutreilh](http://xavier.dutreilh.com/) and we are looking forward to another before the site launches. Planned improvements include the addition of ARIA roles to the HTML, a 'skip to content' link, as well as better labeling of form fields for screen readers.
 

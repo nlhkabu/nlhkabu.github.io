@@ -48,7 +48,7 @@ sections:
 
     #### Device &amp; Browser Support
 
-    Of course, accessibility in 2016 also means supporting users on a huge variety of devices and browsers. At the moment, very few PyPI users browse the site on their phones or tablets - but we expect this may change now that the new design has full device support via responsive CSS break points. We're also going to be supporting all the way back to Internet Explorer 8, as we still have a number of users (primarily in China) using this browser.
+    Of course, accessibility in 2016 also means supporting users on a huge variety of devices and browsers. At the moment, very few PyPI users browse the site on their phones or tablets - but we expect this may change now that the new design has full device support via responsive CSS break points. We're also going to (at least in the short term) continue support for Internet Explorer <strike>8</strike> 9, as we have a number of users, primarily in China, still using this browser. See [this issue](https://github.com/pypa/warehouse/issues/979) for more information.
 
     #### Validating Design Decisions
 
