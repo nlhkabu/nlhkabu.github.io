@@ -11,7 +11,7 @@ comments: 'on'
 
 ---
 
-The talk explored the organisational state of Python packaging, the current state of the [Python Packaging Index](](https://pypi.python.org)), and introduced the [Warehouse project](https://pypi.io) - the [codebase](https://github.com/pypa/warehouse/) that will soon power PyPI.
+The talk explored the organisational state of Python packaging, the current state of the [Python Packaging Index](https://pypi.python.org), and introduced the [Warehouse project](https://pypi.io) - the [codebase](https://github.com/pypa/warehouse/) that will soon power PyPI.
 
 I'd like to thank the organisers of PyCon France for the opportunity to speak to such an engaged audience and for delivering an excellent conference overall. Special mention to all those French speakers who, during the conference, patiently corrected my stumbling French and helped me build my vocabulary.
 
