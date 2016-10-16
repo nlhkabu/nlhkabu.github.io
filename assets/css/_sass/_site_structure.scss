@@ -64,6 +64,32 @@ figure.img-figure {
     }
 }
 
+/* Responsive iframes*/
+
+.embed-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  /*
+    A padding percentage must be provided for each embedded container.
+    The percentage will depend on the resolution / ratio of the embedded object.
+    Because this value differs per embed, the percentage can be added with
+    inline CSS.
+  */
+
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
 /* Header */
 
 header {

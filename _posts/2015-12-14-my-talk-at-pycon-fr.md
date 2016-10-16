@@ -17,11 +17,15 @@ I'd like to thank the organisers of PyConFr for having me - it was a terrific co
 The talk is in English, with a brief introduction in French (for which I have provided subtitles). Enjoy!
 
 <figure class="img-figure centered">
-    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/n2WjDQaowBo' frameborder='0' allowfullscreen></iframe></div>
+    <div class='embed-container' style="padding-bottom: 56.25%">
+      <iframe src='https://www.youtube.com/embed/n2WjDQaowBo' frameborder='0' allowfullscreen></iframe>
+    </div>
     <figcaption>Or watch on <a href="https://www.youtube.com/watch?v=n2WjDQaowBo">YouTube</a></figcaption>
 </figure>
 
 
 And here is a copy of my slides for the curious:
 
-<style>.embed-container { position: relative; padding-bottom: 66.5%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://docs.google.com/presentation/d/1OiFhksppWqe_YAwx0OwAkocDCFeHmm5mQhvsjav35kQ/embed?start=false&loop=false&delayms=60000' frameborder='0' width='750' height='497' allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe></div>
+<div class="embed-container" style="padding-bottom: 66.4%; top: 15px;">
+  <iframe src='https://docs.google.com/presentation/d/1OiFhksppWqe_YAwx0OwAkocDCFeHmm5mQhvsjav35kQ/embed?start=false&loop=false&delayms=60000' frameborder='0' width='750' height='497' allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>
+</div>
