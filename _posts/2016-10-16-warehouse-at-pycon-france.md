@@ -15,7 +15,16 @@ The talk explored the organisational state of Python packaging, the current stat
 
 I'd like to thank the organisers of PyCon France for the opportunity to speak to such an engaged audience and for delivering an excellent conference overall. Special mention to all those French speakers who, during the conference, patiently corrected my stumbling French and helped me build my vocabulary.
 
-Here is a copy of the slides, stay tuned for the video:
+The organisers of PyCon France have put together [a fabulous video](http://www.demo.openveo.com/publish/video/SJ6ZOSHyx?fullscreen) that combines the video of the talk with the slide display. If you'd like to view the talk, this is the best format.
+
+I've also embedded the raw video and slide presentation here for posterity. Enjoy!
+
+<figure class="img-figure centered">
+    <div class='embed-container' style="padding-bottom: 56.25%">
+      <iframe src="https://www.youtube.com/embed/v_wFF2wEG_A" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <figcaption>Or watch on <a href="https://www.youtube.com/watch?v=v_wFF2wEG_A?|">YouTube</a></figcaption>
+</figure>
 
 <div class="embed-container" style="top: 15px; padding-bottom: 78.9%">
   <iframe src="https://docs.google.com/presentation/d/1PEcnSNTrIFKTbgGn1nSueB4dwOMCd1xyHmO0IVEHVec/embed?start=false&loop=false&delayms=3000" frameborder="0" width="750" height="591" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
