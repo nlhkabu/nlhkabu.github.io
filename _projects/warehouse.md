@@ -7,7 +7,7 @@ colors:
 
 title: Warehouse - The Future of PyPI
 skills: [UI, Visual Design, CSS/SCSS]
-summary: Warehouse is the next generation Python Package Repository, designed to replace the legacy code base that currently powers PyPI. Warehouse is due for public release in early 2016.
+summary: Warehouse is the next generation Python Package Repository, designed to replace the legacy code base that currently powers PyPI. Warehouse is due for public release in 2017.
 feature_image:
     small: /assets/img/warehouse-small.png
     medium: /assets/img/warehouse-medium.png
