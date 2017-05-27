@@ -194,7 +194,7 @@ major_tom = UserFactory(first_name='Major', last_name='Tom')
 # Create a User with Interests
 django = InterestFactory(name='Django')
 public_speaking = InterestFactory(name='Public Speaking')
-lucy_diamond = UserFactory(first_name='Rocky', last_name='Raccoon',
+lucy_diamond = UserFactory(first_name='Lucy', last_name='Diamond',
                            interests=(django, public_speaking))
 ```
 
