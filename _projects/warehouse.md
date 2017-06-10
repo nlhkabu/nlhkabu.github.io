@@ -24,7 +24,7 @@ priority: 2
 sections:
 -   |
     ## The Problem
-    In mid-2015, I took on a new role within the Python community - redesigning [Warehouse](https://warehouse.python.org/) (the new PyPI), a project due for public release in 2016.
+    In mid-2015, I took on a new role within the Python community - redesigning [Warehouse](https://warehouse.python.org/) (the new PyPI), a project due for public release in 2017.
 
     It's an exciting project, with lots of questions to address, including:
 
