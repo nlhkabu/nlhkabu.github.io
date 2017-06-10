@@ -14,6 +14,16 @@ I've noticed on #django IRC that many people need guidance on formsets, and as I
 
 Firstly, if you haven't already, go and [read the docs](https://docs.djangoproject.com/en/1.7/topics/forms/formsets/).  If you're still confused, or want an end-to-end tutorial, then read on.  The code contained in this tutorial has been tested to work with Django 1.7.
 
+## Table of Contents
+
+- [What Does a Formset Do?](#what-does-a-formset-do)
+- [Step 1: Create Your Forms](#step-1-create-your-forms)
+- [Step 2. Create Your Formset](#step-2--create-your-formset)
+- [Step 3. Hook Up Your View](#step-3-hook-up-your-view)
+- [Step 4. HTML / JS](#step-4-html--js)
+- [Unit Testing](#unit-testing)
+- [Conclusion](#conclusion)
+
 ## What Does a Formset Do?
 
 Formsets are for dealing with sets of identical data.  For example in Connect, I have a form where the user can save multiple links to their public profile, with each link having both a URL and an anchor:

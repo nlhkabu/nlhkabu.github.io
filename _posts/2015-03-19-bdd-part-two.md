@@ -28,6 +28,15 @@ This guide has been tested to work with the following stack:
 * Django Behave 0.1.2
 * Phantom JS 1.9.8
 
+## Table of Contents
+
+- [Revisiting Our Feature File](#revisiting-our-feature-file)
+- [Dependencies](#dependencies)
+- [Folder Structure](#folder-structure)
+- [Running Our Tests](#running-our-tests)
+- [Writing Test Code](#writing-test-code)
+- [Wrapping Up](#wrapping-up)
+
 ## Revisiting Our Feature File
 
 For reference, let's take a quick look at the `Filter Users` feature we wrote in [the first part](http://whoisnicoleharris.com/2015/03/16/bdd-part-one.html) of this series:
@@ -93,7 +102,7 @@ After installing all of the above, update `settings.py`:
 </div>
 
 
-### Folder Structure
+## Folder Structure
 
 Next we'll need to create a new `bdd` app where we can save our existing feature file as `filter_users.feature`:
 
@@ -118,9 +127,9 @@ project_root/
 
 Remember to add `bdd` to your `INSTALLED_APPS` in your `settings.py` file.
 
-### Setting Up Our Test Environment
+## Setting Up Our Test Environment
 
-#### Creating Factories
+### Creating Factories
 
 Because we've already written our feature file, we know that we'll need `Users` and `Interests` in the database to run our test scenarios.  To create these, we'll use [Factory Boy](https://factoryboy.readthedocs.org/en/latest/) - a features replacement tool.
 
@@ -198,7 +207,7 @@ lucy_diamond = UserFactory(first_name='Lucy', last_name='Diamond',
                            interests=(django, public_speaking))
 ```
 
-#### Configuring environment.py
+### Configuring environment.py
 
 We can use our environment.py file to define what should happen before and after certain points in our tests.  There are [several hooks](http://pythonhosted.org/behave/api.html#environment-file-functions) we can utilise, but for our example, we're going to focus on:
 
@@ -247,7 +256,7 @@ def after_all(context):
 The `context` variable is an instance of [behave.runner.Context](http://pythonhosted.org/behave/api.html#behave.runner.Context).
 This variable holds additional contextual information during the running of tests, so we could also pass it additional information and retreive that value later.
 
-### Running Our Tests
+## Running Our Tests
 
 Now, we've setup our environment, we're ready to run our tests!
 In your terminal run:
@@ -320,11 +329,11 @@ Step decorators use a string to match your Gherkin feature file step - this must
 The decorated function (in this case `def impl()`) can be named anything - It doesn't matter.  The only thing you must do is pass it the `context` that we mentioned earlier.
 
 
-### Writing Test Code
+## Writing Test Code
 
 Let's go through each of our steps and write our test code.
 
-#### 1. Given there are a number of interests
+### 1. Given there are a number of interests
 
 For this step, we'll need to use our `InterestFactory` to create the interests listed in our feature file.  We can access the name of our interests by looping over each row in our `context.table` using the `interest` column heading as a key.
 
@@ -338,7 +347,7 @@ def impl(context):
     interests = [InterestFactory(name=row['interest']) for row in context.table]
 ```
 
-#### 2. And there are many users, each with different interests
+### 2. And there are many users, each with different interests
 
 In this step we create our users by:
 
@@ -359,7 +368,7 @@ def impl(context):
         UserFactory(email=row['email'], interests=interests)
 ```
 
-#### 3. Given I am a logged in user
+### 3. Given I am a logged in user
 
 To log in a user, we navigate to the login page and interact with the login form.  Here we can start to appreciate the power of [Splinter](https://splinter.readthedocs.org/en/latest/index.html) for browsing, finding and filling in form fields.
 
@@ -406,7 +415,7 @@ $ python ./manage.py test bdd --behave_browser firefox
     <p>Running with Firefox is significantly slower than with PhantomJS, so unless I'm debugging, I tend to stick with running PhantomJS locally and test with other, heavier browsers on my continuous integration server.</p>
 </div>
 
-#### 4. When I filter the list of users by ...
+### 4. When I filter the list of users by ...
 
 We can combine each of our filter steps into one single step by using Behave's [step parameters](http://pythonhosted.org/behave/tutorial.html?highlight=context#step-parameters).
 
@@ -444,7 +453,7 @@ def impl(context, checked):
     context.browser.find_by_css('form input[type=submit]').first.click()
 ```
 
-#### 5. Then I see ... users
+### 5. Then I see ... users
 
 Finally, we can use the same pattern to count the number of users in our results.
 

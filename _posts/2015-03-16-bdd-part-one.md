@@ -22,6 +22,15 @@ By the end of both articles, I hope you will be able to answer the following que
 
 Let's do it!
 
+## Table of Contents
+
+- [Why BDD](#why-bdd)
+- [How BDD Can Help](#how-bdd-can-help)
+- [An Example](#an-example)
+  - [Feature Files](#feature-files)
+  - [Putting It All Together](#putting-it-all-together)
+- [Conclusion](#conclusion)
+
 ## Why BDD
 
 I'm not going to go into why you should test your application.  I assume that by reading this article you're already sold on the benefits of testing.  Instead I'm going to focus on why you should specifically consider *BDD* for your next app.
