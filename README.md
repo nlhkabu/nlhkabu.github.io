@@ -2,7 +2,7 @@
 
 <img src="https://travis-ci.org/nlhkabu/nlhkabu.github.io.svg?branch=master" alt="CI status"/>
 
-This website is built with [Jekyll](http://jekyllrb.com) and hosted on Github Pages.
+This website is built with [Jekyll](http://jekyllrb.com) and hosted on Github Pages. Install it with [bundler](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
 
 ## Writing Style
 
@@ -70,6 +70,19 @@ comments: <status> # Set to 'on' to enable disqus comments.  Otherwise omit.
 ---
 
 <markdown content here>
+```
+
+### Generating a TOC
+
+A table of content can be generated using [kramdown's built in functionality](https://kramdown.gettalong.org/converter/html.html#toc). A 'feeder' list must be provided for kramdown to replace with the real TOC.
+
+Example:
+
+```
+## Table of Contents
+
+* Kramdown will replace me with toc
+{:toc}
 ```
 
 ## Editing the Homepage
