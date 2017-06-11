@@ -16,13 +16,8 @@ Firstly, if you haven't already, go and [read the docs](https://docs.djangoproje
 
 ## Table of Contents
 
-- [What Does a Formset Do?](#what-does-a-formset-do)
-- [Step 1: Create Your Forms](#step-1-create-your-forms)
-- [Step 2. Create Your Formset](#step-2--create-your-formset)
-- [Step 3. Hook Up Your View](#step-3-hook-up-your-view)
-- [Step 4. HTML / JS](#step-4-html--js)
-- [Unit Testing](#unit-testing)
-- [Conclusion](#conclusion)
+* Kramdown will replace me with toc
+{:toc}
 
 ## What Does a Formset Do?
 

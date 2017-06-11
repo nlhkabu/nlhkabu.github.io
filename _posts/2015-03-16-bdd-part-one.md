@@ -24,12 +24,8 @@ Let's do it!
 
 ## Table of Contents
 
-- [Why BDD](#why-bdd)
-- [How BDD Can Help](#how-bdd-can-help)
-- [An Example](#an-example)
-  - [Feature Files](#feature-files)
-  - [Putting It All Together](#putting-it-all-together)
-- [Conclusion](#conclusion)
+* Kramdown will replace me with toc
+{:toc}
 
 ## Why BDD
 

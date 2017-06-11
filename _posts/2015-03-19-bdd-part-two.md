@@ -30,12 +30,8 @@ This guide has been tested to work with the following stack:
 
 ## Table of Contents
 
-- [Revisiting Our Feature File](#revisiting-our-feature-file)
-- [Dependencies](#dependencies)
-- [Folder Structure](#folder-structure)
-- [Running Our Tests](#running-our-tests)
-- [Writing Test Code](#writing-test-code)
-- [Wrapping Up](#wrapping-up)
+* Kramdown will replace me with toc
+{:toc}
 
 ## Revisiting Our Feature File
 
