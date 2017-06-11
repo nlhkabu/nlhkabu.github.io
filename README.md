@@ -79,10 +79,10 @@ A table of content can be generated using [kramdown's built in functionality](ht
 Example:
 
 ```
-## Table of Contents
+## Contents
 {:.no_toc}
 
-* Kramdown will replace me with toc
+* -
 {:toc}
 ```
 
