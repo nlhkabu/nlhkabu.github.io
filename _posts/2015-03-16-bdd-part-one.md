@@ -23,6 +23,7 @@ By the end of both articles, I hope you will be able to answer the following que
 Let's do it!
 
 ## Table of Contents
+{:.no_toc}
 
 * Kramdown will replace me with toc
 {:toc}

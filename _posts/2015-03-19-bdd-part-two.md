@@ -29,6 +29,7 @@ This guide has been tested to work with the following stack:
 * Phantom JS 1.9.8
 
 ## Table of Contents
+{:.no_toc}
 
 * Kramdown will replace me with toc
 {:toc}

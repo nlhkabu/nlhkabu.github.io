@@ -15,6 +15,7 @@ I've noticed on #django IRC that many people need guidance on formsets, and as I
 Firstly, if you haven't already, go and [read the docs](https://docs.djangoproject.com/en/1.7/topics/forms/formsets/).  If you're still confused, or want an end-to-end tutorial, then read on.  The code contained in this tutorial has been tested to work with Django 1.7.
 
 ## Table of Contents
+{:.no_toc}
 
 * Kramdown will replace me with toc
 {:toc}

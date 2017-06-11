@@ -74,12 +74,13 @@ comments: <status> # Set to 'on' to enable disqus comments.  Otherwise omit.
 
 ### Generating a TOC
 
-A table of content can be generated using [kramdown's built in functionality](https://kramdown.gettalong.org/converter/html.html#toc). A 'feeder' list must be provided for kramdown to replace with the real TOC.
+A table of content can be generated using [kramdown's built in functionality](https://kramdown.gettalong.org/converter/html.html#toc). A 'feeder' list must be provided for kramdown to replace with the real TOC.  You can exclude titles from the TOC with `{:.no_toc}`
 
 Example:
 
 ```
 ## Table of Contents
+{:.no_toc}
 
 * Kramdown will replace me with toc
 {:toc}
@@ -145,4 +146,3 @@ $ bundle exec jekyll serve --drafts # Serve articles in drafts folder
 ```bash
 $ bundle update
 ```
-
