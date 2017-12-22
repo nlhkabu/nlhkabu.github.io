@@ -7,7 +7,7 @@ colors:
 
 title: Warehouse - The Future of PyPI
 skills: [UI, Visual Design, CSS/SCSS]
-summary: Warehouse is the next generation Python Package Repository, designed to replace the legacy code base that currently powers PyPI. Warehouse is due for public release in 2017.
+summary: Warehouse is the next generation Python Package Repository, designed to replace the legacy code base that currently powers PyPI. Warehouse is due for public release in 2018.
 feature_image:
     small: /assets/img/warehouse-small.png
     medium: /assets/img/warehouse-medium.png
@@ -24,7 +24,7 @@ priority: 2
 sections:
 -   |
     ## The Problem
-    In mid-2015, I took on a new role within the Python community - redesigning [Warehouse](https://warehouse.python.org/) (the new PyPI), a project due for public release in 2017.
+    In mid-2015, I took on a new role within the Python community - redesigning [Warehouse](https://warehouse.python.org/) (the new PyPI), a project due for public release in 2018.
 
     It's an exciting project, with lots of questions to address, including:
 
@@ -48,9 +48,9 @@ sections:
 
     #### Device &amp; Browser Support
 
-    Of course, accessibility in 2016 also means supporting users on a huge variety of devices and browsers. At the moment, very few PyPI users browse the site on their phones or tablets - but we expect this may change now that the new design has full device support via responsive CSS break points. We're also going to (at least in the short term) continue support for Internet Explorer <strike>8</strike> 9, as we have a number of users, primarily in China, still using this browser. See [this issue](https://github.com/pypa/warehouse/issues/979) for more information.
+    Of course, accessibility in 2018 also means supporting users on a huge variety of devices and browsers. At the moment, very few PyPI users browse the site on their phones or tablets - but we expect this may change now that the new design has full device support via responsive CSS break points. We're also going to (at least in the short term) continue support for Internet Explorer <strike>8</strike> 9, as we have a number of users, primarily in China, still using this browser. See [this issue](https://github.com/pypa/warehouse/issues/979) for more information.
 
     #### Validating Design Decisions
 
-    Feedback from the Python community has been overwhelmingly positive and many users are very excited about the new design. That said, validating design is not just about public opinion; it's about *testing* the design with a range of users and use cases.  For this reason, we're planning on conducting a series of usability tests with a range of Python users; from complete beginners to long time users. So stay tuned in 2016!
+    Feedback from the Python community has been overwhelmingly positive and many users are very excited about the new design. That said, validating design is not just about public opinion; it's about *testing* the design with a range of users and use cases.  For this reason, we're planning on conducting a series of usability tests with a range of Python users; from complete beginners to long time users. So stay tuned in 2018!
 ---
