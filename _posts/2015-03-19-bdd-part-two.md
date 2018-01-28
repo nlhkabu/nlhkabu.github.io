@@ -83,7 +83,7 @@ First off, we'll need to install our dependencies:
 * [Django Behave](https://github.com/django-behave/django-behave) will let us run our Behave tests via the Django test runner.
 * [PhantomJS](http://phantomjs.org/) will drive our interactions with the browser.
 * [Splinter](https://github.com/cobrateam/splinter) sits on top of PhantomJS (and others) and will help us write simpler, more elegant test code.
-* [Factory Boy](https://factoryboy.readthedocs.org/en/latest/) will allow us to mock Users and Interests to use in our tests.
+* [Factory Boy](https://factoryboy.readthedocs.org/en/latest/) will allow us to generate Users and Interests to use in our tests.
 
 After installing all of the above, update `settings.py`:
 
@@ -188,7 +188,7 @@ For the email field (in our UserFactory) and name field (in our InterestFactory)
 
 Finally, to define the many-to-many relationship between `User` and `Interest`, we need to setup our interests as a method using the [post_generation](https://factoryboy.readthedocs.org/en/latest/reference.html#factory.post_generation) hook.
 
-Voila!  Now we're all set to create mock objects in our tests.  For example, we can:
+Voila!  Now we're all set to create objects in our tests.  For example, we can:
 
 ```python
 # Create a User with the default settings
@@ -240,7 +240,7 @@ def before_scenario(context, scenario):
     # other scenarios
     management.call_command('flush', verbosity=0, interactive=False)
 
-    # At this stage we can (optionally) mock additional data to setup in the database.
+    # At this stage we can (optionally) generate additional data to setup in the database.
     # For example, if we know that all of our tests require a 'SiteConfig' object,
     # we could create it here.
 
