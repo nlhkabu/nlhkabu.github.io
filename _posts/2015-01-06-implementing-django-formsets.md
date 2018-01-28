@@ -44,7 +44,7 @@ _This how-to, however, is going to focus on creating a standard formset using cu
 First we need to set out our link form. This is just a standard Django form.
 
 <p class="code-heading">forms.py</p>
-```python
+{% highlight python %}
 from django import forms
 
 class LinkForm(forms.Form):
@@ -62,12 +62,12 @@ class LinkForm(forms.Form):
                         'placeholder': 'URL',
                     }),
                     required=False)
-```
+{% endhighlight %}
 
 As our formset will need to be nested inside a profile form, let's go ahead and create that now:
 
 <p class="code-heading">forms.py</p>
-```python
+{% highlight python %}
 class ProfileForm(forms.Form):
     """
     Form for user to update their own profile details
@@ -89,7 +89,7 @@ class ProfileForm(forms.Form):
                                         widget=forms.TextInput(attrs={
                                             'placeholder': 'Last Name',
                                         }))
-```
+{% endhighlight %}
 
 ## Step 2.  Create Your Formset
 
@@ -100,7 +100,7 @@ We also want to verify that all links have both an anchor and URL.  We _could_ s
 If you don't want any custom validation on your formset, you can skip this step entirely.
 
 <p class="code-heading">forms.py</p>
-```python
+{% highlight python %}
 from django.forms.formsets import BaseFormSet
 
 class BaseLinkFormSet(BaseFormSet):
@@ -148,7 +148,7 @@ class BaseLinkFormSet(BaseFormSet):
                         'All links must have a URL.',
                         code='missing_URL'
                     )
-```
+{% endhighlight %}
 
 ## Step 3. Hook Up Your View
 
@@ -162,7 +162,7 @@ To save our data we can build a list of UserLinks and save this to the user's pr
 We are also going to use the [messages framework](https://docs.djangoproject.com/en/1.7/ref/contrib/messages/) to tell our users whether their profile was updated.
 
 <p class="code-heading">views.py</p>
-``` python
+{% highlight python %}
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.urlresolvers import reverse
@@ -230,7 +230,7 @@ def test_profile_settings(request):
     }
 
     return render(request, 'our_template.html', context)
-```
+{% endhighlight %}
 
 ## Step 4. HTML / JS
 
@@ -244,8 +244,8 @@ My personal preference is to individually specify each form field so I can wrap 
 We also want to use [this jQuery plugin](https://github.com/elo80ka/django-dynamic-formset) for dynamically adding and removing forms.  Full documentation can be found [here](https://github.com/elo80ka/django-dynamic-formset/blob/master/docs/usage.rst).
 
 <p class="code-heading">edit_profile.html</p>
+{% highlight html %}
 {% raw %}
-```html
 {% load staticfiles %}
 
 {% if messages %}
@@ -311,8 +311,8 @@ We also want to use [this jQuery plugin](https://github.com/elo80ka/django-dynam
         deleteText: 'remove'
     });
 </script>
-```
 {% endraw %}
+{% endhighlight %}
 
 ## Unit Testing
 
@@ -327,7 +327,7 @@ Most of the examples below are _variations_ on posting the same data either to t
 We can test the `ProfileForm` by passing data variations to the object and checking for validation errors.
 
 <p class="code-heading">tests/test_forms.py</p>
-```python
+{% highlight python %}
 from django.test import TestCase
 from myapp.factories import UserFactory
 from myapp.forms import ProfileForm
@@ -362,7 +362,7 @@ class ProfileFormTest(TestCase):
 
         self.assertEqual(len(errors), 1)
         self.assertEqual(errors[0].code, 'required')
-```
+{% endhighlight %}
 
 #### Test the Formset
 
@@ -372,7 +372,7 @@ We can test our formset by either:
 2. Posting data directly to the view.  This allows us to check for specific errors using `assertFormsetError`.
 
 <p class="code-heading">tests/test_forms.py</p>
-```python
+{% highlight python %}
 from django.core.urlresolvers import reverse
 from django.test import TestCase
 from myapp.factories import UserFactory
@@ -465,14 +465,14 @@ class LinkFormsetTest(TestCase):
         response = self.post_data('', 'http://mylink.com')
 
         self.raise_formset_error(response, 'All links must have an anchor.')
-```
+{% endhighlight %}
 
 #### Testing Our View
 
 Finally, we need to check that when we do submit valid data, that data is saved to our user's profile.
 
 <p class="code-heading">tests/test_views.py</p>
-```python
+{% highlight python %}
 from django.core.urlresolvers import reverse
 from django.test import TestCase
 from myapp.factories import UserFactory
@@ -502,7 +502,7 @@ class ProfileSettingsTest(TestCase):
         self.assertEqual(user.last_name, 'New Last Name')
         self.assertEqual(user_link.anchor, 'My Link')
         self.assertEqual(user_link.url, 'http://mylink.com/')
-```
+{% endhighlight %}
 
 ## Conclusion
 

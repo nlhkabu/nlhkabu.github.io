@@ -54,11 +54,11 @@ It helps us step back from the technical implementation and focus on these quest
 
 A common template for defining this is:
 
-```
+{% highlight text %}
 As a <role>
 I want <feature>
 So that <value>
-```
+{% endhighlight %}
 
 This template also accounts for scenarios where the role is not a user, but rather a system or process (for example, an API).
 
@@ -70,11 +70,11 @@ Let's imagine that we've built most of the app, but are yet to develop one of th
 
 Using the pattern defined earlier, we might describe this feature as:
 
-```
+{% highlight text %}
 As a standard user
 I want to filter users by their listed interests
 So I can find users who have similar interests to my own
-```
+{% endhighlight %}
 
 ### Feature Files
 
@@ -83,7 +83,7 @@ BDD can be segmented into two parts: the feature file, where we describe the beh
 First we'll need to write our feature file.  Feature files use the [Gherkin syntax](http://pythonhosted.org/behave/gherkin.html#gherkin-feature-testing-language) and are saved as `<featurename>.feature`:
 
 <p class="code-heading">example.feature</p>
-```gherkin
+{% highlight gherkin %}
 Feature: feature name
   description
   further description
@@ -96,7 +96,7 @@ Feature: feature name
       Given some condition
        When some action is taken
        Then some result is expected
-```
+{% endhighlight %}
 
 
 #### Lines 1-3: Defining the Feature
@@ -127,7 +127,7 @@ Each Scenario contains three types of steps:
 More complex scenarios can also include `And` or `But` keywords.  _For example_:
 
 <p class="code-heading">activate_account.feature</p>
-```gherkin
+{% highlight gherkin %}
 Scenario: Activate account
     Given I am a standard user
     But I have not yet activated my account
@@ -136,14 +136,14 @@ Scenario: Activate account
     But I forget to confirm my password
     And I submit the form
     Then I see an error
-```
+{% endhighlight %}
 
 ### Putting It All Together
 
 Here's our `filter users` feature written as a Gherkin feature file:
 
 <p class="code-heading">filter_users.feature</p>
-```gherkin
+{% highlight gherkin %}
 Feature: Filter users by interest
 As a standard user
 I want to filter users by their listed interests
@@ -167,7 +167,7 @@ Scenario: No result
     Given I am a logged in user
     When I filter the list of users by an interest that no-one has listed
     Then I see no users
-```
+{% endhighlight %}
 
 #### Refactoring
 
@@ -175,7 +175,7 @@ You've probably noticed that our scenarios use a common pattern.  They're also a
 To fix this we can include more context in our `Background` and refactor our three scenarios into one `Scenario Outline`:
 
 <p class="code-heading">filter_users.feature</p>
-```gherkin
+{% highlight gherkin %}
 Feature: Filter users by interest
 As a standard user
 I want to filter users by their listed interests
@@ -207,18 +207,18 @@ Scenario Outline: Filter users
         |    Django             |    2      |
         |    Django, Testing    |    3      |
         |    PHP                |    0      |
-```
+{% endhighlight %}
 
 First we define the interests and users in the background using tables.  This makes our data easy to read, whilst providing hooks that we'll use later in our Python code.
 
 Next, we compile our scenarios into one `Scenario Outline`, specifying the skills and number of users based on the information defined in our new `Background`.
 When we run our tests, a `Scenario` will be created out of each (non heading) line in the example table.  So, the first line would become...
 
-```gherkin
+{% highlight gherkin %}
 Given I am a logged in user
 When I filter the list of users by Django
 Then I see 2 users
-```
+{% endhighlight %}
 
 ... and so on.
 
