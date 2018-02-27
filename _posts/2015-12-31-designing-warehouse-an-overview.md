@@ -100,3 +100,15 @@ Warehouse is an exciting, interesting and challenging project to work on, and I'
 There is still lots to do and many challenges ahead, but I am confident that the final site will deliver significant improvements to the user experience for Python users across the globe.
 
 Stay tuned for my next article which will explore the new design in more depth.
+
+## Update (27th Feb, 2018)
+
+My intention to write a series of posts on this subject was never realised - so instead, here an update on the project (and this article):
+
+- Last year, the PSF's Packaging Working Group applied for and recived a Mozilla Open Source Support grant to focus on Warehouse ([more detail here](https://pyfound.blogspot.com/2017/11/the-psf-awarded-moss-grant-pypi.html)). I'm amongst the group of developers who can now dedicate paid time to focus on getting the new PyPI up to standard and fully replacing legacy PyPI.
+- Warehouse is now available to try at [the pre-production site](https://pypi.org).
+- There has been lots of great work completed on the [Python Packaging User Guide](https://packaging.python.org/en/latest/) - Warehouse is taking full advantage of this by liberally linking to relevant documentation.
+- Instead of installing a feedback widget on the site, we decided to go with prominent links to open new GitHub issues, at least for now.
+- There has been a big focus on making it easier to dive into the Warehouse codebase, with [several "good first issue" items](https://github.com/pypa/warehouse/labels/good%20first%20issue) and an [improved "Getting Started" guide](https://warehouse.readthedocs.io/development/getting-started/). Maintainer Ernest W. Durbin III will even [help you with a one-on-one session and give you stickers](https://twitter.com/EWDurbin/status/955415184339849217)!
+- After [much discussion](https://github.com/pypa/warehouse/issues/402) we removed localisation and internationalisation functionality from the codebase, but [are working on bringing it back in a sustainable way](https://github.com/pypa/warehouse/issues/1453).
+- You can follow [the Warehouse development roadmap](https://wiki.python.org/psf/WarehouseRoadmap) or watch [our rollout board on GitHub](https://github.com/pypa/warehouse/projects/1) to see as we progress towards launch.
