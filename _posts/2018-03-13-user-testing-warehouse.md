@@ -7,15 +7,15 @@ colors:
 
 title: User Testing Warehouse
 summary: Warehouse is the the next generation Python Packaging Index. I recently conducted a series of user tests on the management user interface. This article explores what user testing is, how we applied it and what I'm hoping to do next.
-comments: 'off'
+comments: 'on'
 
 ---
 
 User testing is a user experience methodology that places the user at the center of design decisions. UX professionals conduct user tests to challenge their design concepts and validate that the UI works as they intended.
 
-User tests typically involve asking a target user to carry out a series of real world tasks on the UI. Testers can then identify problems in the UI - where the user gets lost or confused, or can't work out how to complete out the assigned task.
+User tests typically involve asking a target user to carry out a series of real world tasks on the UI. Testers can then identify problems in the UI - where the user gets lost or confused, or can't work out how to complete the assigned task.
 
-Recurring problems are then raised as design issues for the team to fix.
+Any identified problems can then be raised as design issues for the team to fix.
 
 ## User Testing Warehouse
 
@@ -27,7 +27,7 @@ The test I constructed was simple: asking users about their current use of PyPI,
 
 Over three weeks, I ran tests with six different users, with each test taking between 25 minutes and one hour, the duration depending on how much the test subject had to say.
 
-As expected, the tests highlighted a number of problems in the UI, which in turn prompted me to open or tag [20 issues](https://github.com/pypa/warehouse/issues?q=is%3Aissue+label%3A%22user+testing%22) in our issue tracker. The vast majority of these tickets are simple changes that have been tagged as [good first issues](https://github.com/pypa/warehouse/issues?q=is%3Aissue+label%3A%22good+first+issue%22) - which should in turn help with our efforts to outreach to new contributors.
+As expected, the tests highlighted a number of problems in the UI, which in turn prompted me to open or tag [20 issues](https://github.com/pypa/warehouse/issues?q=is%3Aissue+label%3A%22user+testing%22) in our issue tracker. The vast majority of these tickets are simple changes that have been tagged as [good first issues](https://github.com/pypa/warehouse/issues?q=is%3Aissue+label%3A%22good+first+issue%22) - which should in turn help with our efforts to reach out to new contributors.
 
 Several of the test participants also raised new ideas, for which I will open new tickets soon.
 
@@ -53,6 +53,6 @@ So, how can you help?
 
 Firstly, if you are a developer, please consider contributing to [Warehouse](https://github.com/pypa/warehouse). Right now, we have lots of tickets marked as [good first issues](https://github.com/pypa/warehouse/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) in our [issue tracker](https://github.com/pypa/warehouse/issues). Because of our MOSS funding, we are also able to be more responsive to your questions and provide you with more support to [get started](https://warehouse.readthedocs.io/development/getting-started/). If you're planning on attending PyCon North America, or EuroPython, our team is planning on running [conference sprints](https://wiki.python.org/psf/PackagingSprints) - this is a great opportunity to hack with members of the team and work with others on the project.
 
-If you are interested in learning how to **conduct** user tests, please [fill out this form](https://goo.gl/forms/vdqr14IzHwIQLfAc2). If you have any questions about what's involved, you can also email me directly at n.harris[at]kabucreative.com.
+**If you are interested in learning how to _conduct_ user tests**, please [fill out this form](https://goo.gl/forms/vdqr14IzHwIQLfAc2). If you have any questions about what's involved, you can also email me directly at n.harris[at]kabucreative.com.
 
-Finally, if you'd like to volunteer to be a test participant, please [fill out this form](https://goo.gl/forms/KsgCZKWRHPS572gp2). We can't guarantee you'll be selected to be a test participant (this will depend on timezone compatibility, amongst other factors), however we'd love to know you're interested!
+Finally, **if you'd like to volunteer to be a test _participant_**, please [fill out this form](https://goo.gl/forms/KsgCZKWRHPS572gp2).
