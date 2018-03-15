@@ -6,7 +6,7 @@ colors:
   light: 669dbd
 
 title: User Testing Warehouse
-summary: Warehouse is the the next generation Python Packaging Index. I recently conducted a series of user tests on the management user interface. This article explores what user testing is, how we applied it and what I'm hoping to do next.
+summary: Warehouse is the the next generation Python Package Index. I recently conducted a series of user tests on the management user interface. This article explores what user testing is, how we applied it and what I'm hoping to do next.
 comments: 'on'
 
 ---
