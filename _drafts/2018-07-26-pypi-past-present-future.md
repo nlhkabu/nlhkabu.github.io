@@ -11,7 +11,7 @@ comments: 'off'
 
 ---
 
-Earlier this year, the organisers of [EuroPython](https://europython.eu/) asked me if I'd like to present a keynote about the [Python Package Index (PyPI)](http://pypi.org). I, of course, jumped at the opportunity - these are the slides, links, resources and statistics resulting from my presentation.
+Earlier this year, the organisers of [EuroPython](https://europython.eu/) asked me if I'd like to present a keynote about the [Python Package Index (PyPI)](http://pypi.org). I, of course, jumped at the opportunity. These are the slides, links, resources and statistics resulting from that presentation.
 
 I will upload the video here once it becomes available. Enjoy!
 
