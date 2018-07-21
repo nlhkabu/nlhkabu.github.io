@@ -19,7 +19,7 @@ links:
 -   url: https://github.com/pypa/warehouse
     text: View source on GitHub
 
-priority: 2
+priority: 1
 
 sections:
 -   |

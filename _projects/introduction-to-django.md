@@ -17,7 +17,7 @@ links:
 -   url: http://shop.oreilly.com/product/0636920045533.do
     text: View via O'Reilly
 
-priority: 1
+priority: 2
 
 sections:
 -   |
