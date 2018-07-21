@@ -51,4 +51,8 @@ I will also be running a PyPI sprint at [EuroPython](https://ep2018.europython.e
 
 If you are a [PyPI](https://pypi.org) user and notice an accessibility issue on the site, please report it [via our issue tracker](https://github.com/pypa/warehouse/issues/new). We take these issues seriously, so will try our best to respond as soon as possible.
 
-If you are a developer, and would like to help make the Python ecosystem a more friendly and welcoming place, we'd love you to make a PyPI PR addressing an [accessibility issue](https://github.com/pypa/warehouse/issues?q=is%3Aopen+is%3Aissue+label%3Aaccessibility). We do our best to support new contributors - just comment on the issue you'd like to work on, and let us know if you need any help!
+If you are a developer, and would like to help make the Python ecosystem a more friendly and welcoming place, we'd love you to make a PyPI PR addressing an [accessibility issue](https://github.com/pypa/warehouse/issues?q=is%3Aopen+is%3Aissue+label%3Aaccessibility). We do our best to support new contributors - just comment on the issue you'd like to work on, and let us know if you need any help
+
+## Addendum - 21st July 2018
+
+The [Python Packaging Working Group](https://wiki.python.org/psf/PackagingWG/Charter) continues to seek funding to improve PyPI. With more funding, the team aims to make the accessibility improvements highlighted by this audit, as well as identify and address other accessibility issues. To donate to the working group, visit [donate.pypi.org](http://donate.pypi.org/) - donations can be made on a single, or recurring basis. Every donation is appreciated!
