@@ -48,7 +48,7 @@ I used [infogram](https://infogram.com) to generate the graphs for my presentati
 I'd like to extend a big thank you to the following people:
 
 - The EuroPython organising team for giving me the opportunity to present
-- [Ernest W. Durbin III](https://twitter.com/EWDurbin), [Dustin Ingram](https://twitter.com/di_codes), [Donald Stufft](https://twitter.com/dstufft) and [Sumana Harihareswara](https://twitter.com/brainwane) for digging up facts and figures for my presentation and for being create co-contributors on the Warehouse project
+- [Ernest W. Durbin III](https://twitter.com/EWDurbin), [Dustin Ingram](https://twitter.com/di_codes), [Donald Stufft](https://twitter.com/dstufft) and [Sumana Harihareswara](https://twitter.com/brainwane) for digging up facts and figures for my presentation and for being great co-contributors on the Warehouse project
 - [Aina Requena Lafuente](https://twitter.com/ainarela) for the lovely illustrations
 - My colleagues at PeopleDoc for reviewing my presentation - your feedback was really valuable
 - All packaging contributors - past and present :)
