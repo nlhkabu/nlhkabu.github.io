@@ -1,9 +1,9 @@
 ---
 layout: post
 colors:
-  default: 085784
-  dark: 024f7b
-  light: 4395c4
+  default: 006DAD
+  dark: 005d92
+  light: 669dbd
 
 title: "EuroPython Keynote - PyPI: Past, Present and Future"
 summary: Slides, notes and resources from my 2018 EuroPython keynote.
