@@ -13,7 +13,7 @@ comments: 'off'
 
 Earlier this year, the organisers of [EuroPython](https://europython.eu/) asked me if I'd like to present a keynote about the [Python Package Index (PyPI)](http://pypi.org). I, of course, jumped at the opportunity. These are the slides, links, resources and statistics resulting from that presentation.
 
-I will upload the video here once it becomes available. Enjoy!
+I will upload the video here once it becomes available. In the meantime - enjoy!
 
 ## Slides
 <div class="embed-container" style="padding-bottom: 66.4%;">
@@ -24,7 +24,7 @@ I will upload the video here once it becomes available. Enjoy!
 ## Links and Resources
 
 ### On Python Packaging
-- [Python Packaging Working Group](https://wiki.python.org/psf/PackagingWG/Charter): a sub-body of the PSF dedicated to raise funds to advance the state of Python packaging. You can [donate to this group here](https://donate.pypi.org).
+- [Python Packaging Working Group](https://wiki.python.org/psf/PackagingWG/Charter): a sub-body of the PSF dedicated to raising funds to advance the state of Python packaging. You can [donate to this group here](https://donate.pypi.org).
 - [Python Packaging Authority](https://www.pypa.io/): a group of developers who maintain major Python packaging projects (including PyPI). This group also maintains the [Python Packaging User Guide](https://packaging.python.org/) which is the authoritative guide to Python Packaging. PyPA projects [can be found on GitHub](https://github.com/pypa/). There is also a really interesting [history of Python Packaging](https://www.pypa.io/en/latest/history/) in the PyPA documentation.
 
 ### On PyPI / Warehouse
