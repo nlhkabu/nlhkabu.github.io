@@ -72,12 +72,10 @@ In total, 1,926 people participated in the exercise. Here are the results:
 
 <div class="infogram-embed" data-id="aafb06e8-4bc6-4e49-8bbe-9e2525b18ddf" data-type="interactive" data-title="&amp;quot;Buy a Feature&amp;quot; - PyPI research"></div><script>!function(e,t,n,s){var i="InfogramEmbeds",o=e.getElementsByTagName(t)[0],d=/^http:/.test(e.location)?"http:":"https:";if(/^\/{2}/.test(s)&&(s=d+s),window[i]&&window[i].initialized)window[i].process&&window[i].process();else if(!e.getElementById(n)){var a=e.createElement(t);a.async=1,a.id=n,a.src=s,o.parentNode.insertBefore(a,o)}}(document,"script","infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/aafb06e8-4bc6-4e49-8bbe-9e2525b18ddf" style="color:#989898!important;text-decoration:none!important;" target="_blank">"Buy a Feature" - PyPI research</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
 
-<br/>
-
 157 people chose to purchase a wildcard item - meaning that they forefeited some of their budget to request something different. I am in the process of moving these suggestions into our issue tracker. The full list can be [viewed here](https://github.com/pypa/warehouse/issues/4335).
 
 ## Next Steps
 
-In the coming months, we will continue to [conduct user tests](https://whoisnicoleharris.com/2018/03/13/user-testing-warehouse.html) to qualify the insights we have discovered from this research. From there, I plan on compiling a (weighted) list of problems with the current interface and propose interface adjustments that may address these problems.
+In the coming months, we will continue to [conduct user tests](https://whoisnicoleharris.com/2018/03/13/user-testing-warehouse.html) to qualify the results of this research, and identify flaws in the current interface.
 
-Stay tuned!
+After this, I will work to propose a new interface that responds to our discoveries, in an effort to better serve the Python community.
