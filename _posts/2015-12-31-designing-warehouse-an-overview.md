@@ -6,11 +6,11 @@ colors:
   light: 669dbd
 
 title: Designing Warehouse - An Overview
-summary: This is the first in a series of posts exploring the redesign of Warehouse - the replacement codebase for the Python Packaging Index (PyPI).
+summary: This is the first in a series of posts exploring the redesign of Warehouse - the replacement codebase for the Python Package Index (PyPI).
 comments: 'on'
 
 ---
-For the last six months, I have been working with the Python Packaging Authority (PyPA) to design [Warehouse](https://warehouse.python.org/) - the new [codebase](https://github.com/pypa/warehouse) that will soon replace the [Python Packaging Index](https://pypi.python.org/pypi) (PyPI).
+For the last six months, I have been working with the Python Packaging Authority (PyPA) to design [Warehouse](https://warehouse.python.org/) - the new [codebase](https://github.com/pypa/warehouse) that will soon replace the [Python Package Index](https://pypi.python.org/pypi) (PyPI).
 
 This article is an attempt to explore our objectives and challenges, provide an overview of our activities so far, and engage the wider Python community to help us move forward.
 
