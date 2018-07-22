@@ -34,10 +34,10 @@ The idea was to price each feature on the current page according to the space it
 
 ### Limitations
 
-No research method is perfect, and there are certainly limitations to this exercise:
+No research method is perfect, and there were certainly limitations to this exercise:
 
-1. Both the pricing and the budget are subjective
-2. Participants may choose a lower priced item to use all of their allocated budget, even if this item is not their ideal choice
+1. Both the pricing and the budget were subjective
+2. Participants may have chosen a lower priced item to use all of their allocated budget, even if this item was not their ideal choice
 3. As the Google Form contained no budget validation, we relied on trust (and good mathematics!) to ensure participants didn't overspend their budget
 
 
