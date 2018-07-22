@@ -77,6 +77,21 @@ blockquote cite {
     margin-top: 10px;
 }
 
+table {
+  font-size: 15px;
+  width: 100%;
+  text-align: left;
+  margin: 40px 0;
+
+  tbody tr:nth-child(odd) {
+    background-color: $light-grey;
+  }
+
+  td, th {
+    padding: 6px 3px;
+  }
+}
+
 .light,
 .light a {
     color: $white;
