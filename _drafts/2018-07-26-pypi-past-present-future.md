@@ -34,7 +34,7 @@ I will upload the video here once it becomes available. In the meantime - enjoy!
 - [Powering the Python Package Index](https://caremad.io/posts/2016/05/powering-pypi/): an article from Donald Stufft (PyPI / Warehouse maintainer) that discusses what it takes to power PyPI. This article is now slightly out of date, as the figures have grown over the past two years.
 - ["A new package index for Python"](https://lwn.net/Articles/751458/): LWN.net article from Sumana Harihareswara (Warehouse project manager) covering the past, present and future of PyPI.
 - ["Markdown Descriptions on PyPI"](https://dustingram.com/articles/2018/03/16/markdown-descriptions-on-pypi): article from Dustin Ingram (PyPI / Warehoue maintainer) on the steps to enable Markdown on your PyPI project descriptions
-- I have also published a number of articles about the design and build of Warehouse on this blog. [Visit the homepage](https://whoisnicoleharris.com/#writing) for a list of all articles.
+- I have also published a number of articles about the Warehouse project, covering [design objectives](https://whoisnicoleharris.com/2015/12/31/designing-warehouse-an-overview.html), [user testing](https://whoisnicoleharris.com/2018/03/13/user-testing-warehouse.html), [accessibility](https://whoisnicoleharris.com/2018/05/17/warehouse-accessibility.html) and [user research](https://whoisnicoleharris.com/2018/07/22/pypi-user-research.html)
 
 
 ## Statistics
