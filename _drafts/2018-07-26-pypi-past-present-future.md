@@ -11,9 +11,9 @@ comments: 'off'
 
 ---
 
-Earlier this year, the organisers of [EuroPython](https://europython.eu/) asked me if I'd like to present a keynote about the [Python Package Index (PyPI)](http://pypi.org). I, of course, jumped at the opportunity. These are the slides, links, resources and statistics resulting from that presentation.
+Earlier this year, the organisers of [EuroPython](https://europython.eu/) asked me if I'd like to present a keynote about the [Python Package Index](http://pypi.org)(PyPI). These are the slides, links, resources and statistics resulting from that presentation.
 
-I will upload the video here once it becomes available. In the meantime - enjoy!
+I will upload the video here once it becomes available. In the meantime, enjoy!
 
 ## Slides
 <div class="embed-container" style="padding-bottom: 66.4%;">
@@ -31,9 +31,9 @@ I will upload the video here once it becomes available. In the meantime - enjoy!
 - [pypi.org](https://pypi.org): the web interface for the Python Package Index
 - [Warehouse](https://github.com/pypa/warehouse): the codebase currently powering PyPI. If you'd like to contribute, please visit our [issue tracker](https://github.com/pypa/warehouse/issues). Issues set aside for new contributors [are found here](https://github.com/pypa/warehouse/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
 - [PSF announcement of MOSS award](http://pyfound.blogspot.com/2017/11/the-psf-awarded-moss-grant-pypi.html): Details of the award from Mozilla that funded Warehouse development between Dec 2017 and May 2018.
-- [Powering the Python Package Index](https://caremad.io/posts/2016/05/powering-pypi/): an article from Donald Stufft (PyPI / Warehouse maintainer) that discusses what it takes to power PyPI. This article is now slightly out of date, as the figures have grown over the past two years.
+- [Powering the Python Package Index](https://caremad.io/posts/2016/05/powering-pypi/): an article from Donald Stufft (PyPI / Warehouse maintainer) that discusses what it takes to power PyPI. This article is now slightly out of date (as the figures have grown over the past two years), but is still a very interesting read.
 - ["A new package index for Python"](https://lwn.net/Articles/751458/): LWN.net article from Sumana Harihareswara (Warehouse project manager) covering the past, present and future of PyPI.
-- ["Markdown Descriptions on PyPI"](https://dustingram.com/articles/2018/03/16/markdown-descriptions-on-pypi): article from Dustin Ingram (PyPI / Warehoue maintainer) on the steps to enable Markdown on your PyPI project descriptions
+- ["Markdown Descriptions on PyPI"](https://dustingram.com/articles/2018/03/16/markdown-descriptions-on-pypi): article from Dustin Ingram (PyPI / Warehouse maintainer) on the steps required to enable Markdown on your PyPI project descriptions
 - I have also published a number of articles about the Warehouse project, covering [design objectives](https://whoisnicoleharris.com/2015/12/31/designing-warehouse-an-overview.html), [user testing](https://whoisnicoleharris.com/2018/03/13/user-testing-warehouse.html), [accessibility](https://whoisnicoleharris.com/2018/05/17/warehouse-accessibility.html) and [user research](https://whoisnicoleharris.com/2018/07/22/pypi-user-research.html)
 
 
@@ -50,5 +50,5 @@ I'd like to extend a big thank you to the following people:
 - The EuroPython organising team for giving me the opportunity to present
 - [Ernest W. Durbin III](https://twitter.com/EWDurbin), [Dustin Ingram](https://twitter.com/di_codes), [Donald Stufft](https://twitter.com/dstufft) and [Sumana Harihareswara](https://twitter.com/brainwane) for digging up facts and figures for my presentation and for being great co-contributors on the Warehouse project
 - [Aina Requena Lafuente](https://twitter.com/ainarela) for the lovely illustrations
-- My colleagues at PeopleDoc for reviewing my presentation - your feedback was really valuable
-- All packaging contributors - past and present :)
+- My colleagues at PeopleDoc for reviewing my presentation
+- All packaging contributors - past, present and future :)
