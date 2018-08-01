@@ -56,6 +56,25 @@ I used [infogram](https://infogram.com) to generate the graphs for my presentati
 
 <div class="infogram-embed" data-id="4e7b0b39-4b7c-4cdf-81c6-6c425be6f1a1" data-type="interactive" data-title="Bar Chart"></div><script>!function(e,t,n,s){var i="InfogramEmbeds",o=e.getElementsByTagName(t)[0],d=/^http:/.test(e.location)?"http:":"https:";if(/^\/{2}/.test(s)&&(s=d+s),window[i]&&window[i].initialized)window[i].process&&window[i].process();else if(!e.getElementById(n)){var a=e.createElement(t);a.async=1,a.id=n,a.src=s,o.parentNode.insertBefore(a,o)}}(document,"script","infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/4e7b0b39-4b7c-4cdf-81c6-6c425be6f1a1" style="color:#989898!important;text-decoration:none!important;" target="_blank">Bar Chart</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
 
+## Images
+
+Thanks to [Alina Cristea](http://alinacristea.daportfolio.com/), the official conference photographer, for taking the following images:
+
+<figure class="img-figure">
+    <img src="/assets/img/europython1.jpg" alt="On stage, presenting"/>
+    <figcaption>Image by Alina Cristea. <a href="https://www.flickr.com/photos/alina-cristea/42945165484/in/album-72157697856140041/">View on Flickr</a></figcaption>
+</figure>
+
+<figure class="img-figure">
+    <img src="/assets/img/europython2.jpg" alt="On stage, presenting"/>
+    <figcaption>Image by Alina Cristea. <a href="https://www.flickr.com/photos/alina-cristea/42945163604/in/album-72157697856140041/">View on Flickr</a></figcaption>
+</figure>
+
+<figure class="img-figure">
+    <img src="/assets/img/europython3.jpg" alt="On stage, presenting"/>
+    <figcaption>Image by Alina Cristea. <a href="https://www.flickr.com/photos/alina-cristea/42945162474/in/album-72157697856140041/">View on Flickr</a></figcaption>
+</figure>
+
 ## Thanks!
 
 I'd like to extend a big thank you to the following people:
