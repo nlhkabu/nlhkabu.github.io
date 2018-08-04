@@ -62,18 +62,14 @@ Thanks to [Alina Cristea](http://alinacristea.daportfolio.com/), the official co
 
 <figure class="img-figure">
     <img src="/assets/img/europython1.jpg" alt="On stage, presenting"/>
-    <figcaption>Image by Alina Cristea. <a href="https://www.flickr.com/photos/alina-cristea/42945165484/in/album-72157697856140041/">View on Flickr</a></figcaption>
-</figure>
-
-<figure class="img-figure">
-    <img src="/assets/img/europython2.jpg" alt="On stage, presenting"/>
     <figcaption>Image by Alina Cristea. <a href="https://www.flickr.com/photos/alina-cristea/42945163604/in/album-72157697856140041/">View on Flickr</a></figcaption>
 </figure>
 
 <figure class="img-figure">
-    <img src="/assets/img/europython3.jpg" alt="On stage, presenting"/>
-    <figcaption>Image by Alina Cristea. <a href="https://www.flickr.com/photos/alina-cristea/42945162474/in/album-72157697856140041/">View on Flickr</a></figcaption>
+    <img src="/assets/img/europython2.jpg" alt="On stage, presenting"/>
+    <figcaption>Image by Alina Cristea.</figcaption>
 </figure>
+
 
 ## Thanks!
 
