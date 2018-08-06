@@ -87,6 +87,6 @@ I'd like to extend a big thank you to the following people:
 Since presenting my keynote, [Ernest](https://twitter.com/EWDurbin) has dug up some more information on PyPI's history, so I thought I'd share it here:
 
 1. The original Python Package Index was born on Friday, the 1st of November 2002, with both the original commit and first package uploaded on that day. The first upload was for the [roundup](https://pypi.org/project/roundup/) project - the codebase that still powers [bugs.python.org](http://bugs.python.org/)
-2. The Index was moved from the "Dinsdale" server in Holland to the Oregon State University Open Souce Lab on the 14th of August, 2012
+2. The Index was moved from the "Dinsdale" server in Holland to the Oregon State University Open Source Lab on the 14th of August, 2012
 
 Thanks Ernest!
