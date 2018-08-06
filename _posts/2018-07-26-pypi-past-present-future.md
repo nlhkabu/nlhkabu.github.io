@@ -50,6 +50,7 @@ I would like to thank the organisers for the opportunity to present, and the aud
 - ["Markdown Descriptions on PyPI"](https://dustingram.com/articles/2018/03/16/markdown-descriptions-on-pypi): article from Dustin Ingram (PyPI / Warehouse maintainer) on the steps required to enable Markdown on your PyPI project descriptions
 - I have also published a number of articles about the Warehouse project, covering [design objectives](https://whoisnicoleharris.com/2015/12/31/designing-warehouse-an-overview.html), [user testing](https://whoisnicoleharris.com/2018/03/13/user-testing-warehouse.html), [accessibility](https://whoisnicoleharris.com/2018/05/17/warehouse-accessibility.html) and [user research](https://whoisnicoleharris.com/2018/07/22/pypi-user-research.html)
 
+
 ## Statistics
 
 I used [infogram](https://infogram.com) to generate the graphs for my presentation. Happily, these can also be embedded:
@@ -80,3 +81,12 @@ I'd like to extend a big thank you to the following people:
 - [Aina Requena Lafuente](https://twitter.com/ainarela) for the lovely illustrations
 - My colleagues at PeopleDoc for reviewing my presentation
 - All packaging contributors - past, present and future :)
+
+## Addendum (6th Aug, 2018)
+
+Since presenting my keynote, [Ernest](https://twitter.com/EWDurbin) has dug up some more information on PyPI's history, so I thought I'd share it here:
+
+1. The original Python Package Index was born on Friday, the 1st of November 2002, with both the original commit and first package uploaded on that day. The first upload was for the [roundup](https://pypi.org/project/roundup/) project - the codebase that still powers [bugs.python.org](http://bugs.python.org/)
+2. The Index was moved from the "Dinsdale" server in Holland to the Oregon State University Open Souce Lab on the 14th of August, 2012
+
+Thanks Ernest!
