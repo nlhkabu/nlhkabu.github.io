@@ -77,16 +77,16 @@ Thanks to [Alina Cristea](http://alinacristea.daportfolio.com/), the official co
 I'd like to extend a big thank you to the following people:
 
 - The EuroPython organising team for giving me the opportunity to present
-- [Ernest W. Durbin III](https://twitter.com/EWDurbin), [Dustin Ingram](https://twitter.com/di_codes), [Donald Stufft](https://twitter.com/dstufft) and [Sumana Harihareswara](https://twitter.com/brainwane) for digging up facts and figures for my presentation and for being great co-contributors on the Warehouse project
+- [Ee W. Durbin III](https://twitter.com/EWDurbin), [Dustin Ingram](https://twitter.com/di_codes), [Donald Stufft](https://twitter.com/dstufft) and [Sumana Harihareswara](https://twitter.com/brainwane) for digging up facts and figures for my presentation and for being great co-contributors on the Warehouse project
 - [Aina Requena Lafuente](https://twitter.com/ainarela) for the lovely illustrations
 - My colleagues at PeopleDoc for reviewing my presentation
 - All packaging contributors - past, present and future :)
 
 ## Addendum (6th Aug, 2018)
 
-Since presenting my keynote, [Ernest](https://twitter.com/EWDurbin) has dug up some more information on PyPI's history, so I thought I'd share it here:
+Since presenting my keynote, [Ee](https://twitter.com/EWDurbin) has dug up some more information on PyPI's history, so I thought I'd share it here:
 
 1. The original Python Package Index was born on Friday, the 1st of November 2002, with both the original commit and first package uploaded on that day. The first upload was for the [roundup](https://pypi.org/project/roundup/) project - the codebase that still powers [bugs.python.org](http://bugs.python.org/)
 2. The Index was moved from the "Dinsdale" server in Holland to the Oregon State University Open Source Lab on the 14th of August, 2012
 
-Thanks Ernest!
+Thanks Ee!

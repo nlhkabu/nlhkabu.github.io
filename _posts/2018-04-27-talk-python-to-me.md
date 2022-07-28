@@ -6,7 +6,7 @@ colors:
   light: 669dbd
 
 title: My guest appearance on the Talk Python to Me podcast
-summary: Together with Ernest Durbin III and Dustin Ingram, I had the opportunity to speak about the new PyPI on the Talk Python to Me podcast
+summary: Together with Ee Durbin III and Dustin Ingram, I had the opportunity to speak about the new PyPI on the Talk Python to Me podcast
 comments: 'off'
 
 ---

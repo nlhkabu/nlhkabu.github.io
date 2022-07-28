@@ -33,7 +33,7 @@ Several of the test participants also raised new ideas, for which I will open ne
 
 In total, this round of testing took 15 hours - encompassing writing the testing script, recruiting users, running the tests, and opening related tickets.
 
-A big thanks to Ernest W. Durbin III, Nicolas Dubois, Łukasz Langa, Russell Keith-Magee, Alex Chan and Eliot Berriot for participating in these tests.
+A big thanks to Ee W. Durbin III, Nicolas Dubois, Łukasz Langa, Russell Keith-Magee, Alex Chan and Eliot Berriot for participating in these tests.
 
 ## Next Steps
 
