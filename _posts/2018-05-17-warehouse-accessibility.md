@@ -1,21 +1,20 @@
 ---
 layout: post
 colors:
-  default: 006DAD
-  dark: 005d92
-  light: 669dbd
+  default: 18a4a2
+  dark: 129a98
+  light: 8fd7d6
 
 title: Accessibility on Warehouse (PyPI)
 summary: On Global Accessibility Awareness Day it's a good time to reflect on how we approach accessibility on the Python Package Index.
-comments: 'on'
-
+comments: "on"
 ---
 
 This year [Global Accessibility Awareness Day](http://globalaccessibilityawarenessday.org/) is being marked on May 17th. The purpose of this day is to raise awareness about digital inclusion - and how people who work in the digital space can ensure their software works for the largest possible group of users.
 
 Accessibility is an important subject; as a digital designer, it is my responsibility to do everything that I can to design solutions that include, rather than exclude, users.
 
-On the Python Package Index, accessibility has been baked into the design from the beginning: from the selection of high-contrast colors, to the large default text size, to the way that our HTML markup is structured. However, like everything, meeting accessibility standards and including all users regardless of their impairments is an *ongoing* task that will never be complete.
+On the Python Package Index, accessibility has been baked into the design from the beginning: from the selection of high-contrast colors, to the large default text size, to the way that our HTML markup is structured. However, like everything, meeting accessibility standards and including all users regardless of their impairments is an _ongoing_ task that will never be complete.
 
 To that end, earlier this year, I contacted [Axcess Lab](http://axesslab.com/) to ask if one of their team members would be interested in dedicating some of their awesome [open-source project time](https://axesslab.com/paying-open-source/) to the Python Package Index. Lucky for us, [Mattias](https://github.com/JazzBrotha) volunteered to assist, and has since completed an accessibility audit on [pypi.org](https://pypi.org) (thanks Mattias!!!).
 

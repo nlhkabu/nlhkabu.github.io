@@ -1,13 +1,13 @@
 ---
 layout: post
 colors:
-    default: 881A6A
-    dark: 731659
-    light: F0B1DF
+  default: 18a4a2
+  dark: 129a98
+  light: 8fd7d6
 
 title: Learning Python, Learning French - My Talk from PyConFr
 summary: A talk exploring my experience of learning Python and French at the same time. Presented at [PyConFr](http://www.pycon.fr/2015/).
-comments: 'on'
+comments: "on"
 ---
 
 In October 2015, I had the opportunity to present at [PyConFr](http://www.pycon.fr/2015/) in the beautiful city of [Pau](https://en.wikipedia.org/wiki/Pau,_Pyr%C3%A9n%C3%A9es-Atlantiques). My talk explored my experiences of learning Python and French at the same time and looked at what the Python community could take from the language learning community to better help new learners.
@@ -22,7 +22,6 @@ The talk is in English, with a brief introduction in French (for which I have pr
     </div>
     <figcaption>Or watch on <a href="https://www.youtube.com/watch?v=n2WjDQaowBo">YouTube</a></figcaption>
 </figure>
-
 
 And here is a copy of my slides for the curious:
 

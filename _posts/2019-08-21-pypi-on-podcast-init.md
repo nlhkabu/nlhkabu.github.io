@@ -1,14 +1,13 @@
 ---
 layout: post
 colors:
-  default: 006DAD
-  dark: 005d92
-  light: 669dbd
+  default: 18a4a2
+  dark: 129a98
+  light: 8fd7d6
 
 title: "Talking about PyPI on podcast.__init__"
 summary: "Together with William Woodruff, I recently featured on <code>podcast.__init__</code> to discuss security, accessibility and localisation on PyPI"
-comments: 'off'
-
+comments: "off"
 ---
 
 <p>A big thank you to <a href="https://twitter.com/TobiasMacey">Tobias Macey</a> for hosting us.</p>

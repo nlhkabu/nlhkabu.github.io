@@ -1,14 +1,13 @@
 ---
 layout: post
 colors:
-  default: 006DAD
-  dark: 005d92
-  light: 669dbd
+  default: 18a4a2
+  dark: 129a98
+  light: 8fd7d6
 
 title: User Testing Warehouse
 summary: Warehouse is the the next generation Python Package Index. I recently conducted a series of user tests on the management user interface. This article explores what user testing is, how we applied it and what I'm hoping to do next.
-comments: 'on'
-
+comments: "on"
 ---
 
 User testing is a user experience methodology that places the user at the center of design decisions. UX professionals conduct user tests to challenge their design concepts and validate that the UI works as they intended.

@@ -1,14 +1,13 @@
 ---
 layout: post
 colors:
-  default: 006DAD
-  dark: 005d92
-  light: 669dbd
+  default: 18a4a2
+  dark: 129a98
+  light: 8fd7d6
 
 title: PyPI User Research
 summary: A brief summary of the recent user research conducted for pypi.org
-comments: 'off'
-
+comments: "off"
 ---
 
 Along with [user testing](https://whoisnicoleharris.com/2018/03/13/user-testing-warehouse.html), user research is an important part of developing robust user experiences. Truly understanding your users - what motivates them, what they want, and how they use your product or website is essential for making better design decisions.
@@ -40,7 +39,6 @@ No research method is perfect, and there were certainly limitations to this exer
 2. Participants may have chosen a lower priced item to use all of their allocated budget, even if this item was not their ideal choice.
 3. As the Google Form contained no budget validation, we relied on trust (and good mathematics!) to ensure participants didn't overspend their budget.
 
-
 ### Results
 
 In total, 1,926 people participated in the exercise. Here are the results:
@@ -48,27 +46,26 @@ In total, 1,926 people participated in the exercise. Here are the results:
 **Participants = Total number of participants who selected this feature**<br/>
 **Percentage = Percentage of participants who selected this feature**
 
-| Feature | Participants | Percentage |
-|---|---|---|
-| Project description |	1466 | 76.19% |
-| Required Python version	| 1349 | 70% |
-| Links to project online	| 1337 | 69.4% |
-| Date project last updated	| 1235 | 64.1% |
-| Licence	| 1059 | 55% |
-| Project name and release no. | 1001 | 52% |
-| Version status | 854 | 44.3% |
-| Release history	| 813 | 42.2% |
-| GitHub statistics	| 780 | 40.5% |
-| Project summary	| 752 | 39% |
-| Requires distribution	| 647 | 33.6% |
-| Download files	| 638 | 33.1% |
-| Author	| 619 | 32.1% |
-| Tags	| 461 | 23.9% |
-| Trove classifiers	| 441 | 22.9% |
-| Maintainers	| 424 | 22% |
-| Statistics instructions	| 266 | 13.8% |
-| Wildcard (new feature)	| 157 | 8.2% |
-
+| Feature                      | Participants | Percentage |
+| ---------------------------- | ------------ | ---------- |
+| Project description          | 1466         | 76.19%     |
+| Required Python version      | 1349         | 70%        |
+| Links to project online      | 1337         | 69.4%      |
+| Date project last updated    | 1235         | 64.1%      |
+| Licence                      | 1059         | 55%        |
+| Project name and release no. | 1001         | 52%        |
+| Version status               | 854          | 44.3%      |
+| Release history              | 813          | 42.2%      |
+| GitHub statistics            | 780          | 40.5%      |
+| Project summary              | 752          | 39%        |
+| Requires distribution        | 647          | 33.6%      |
+| Download files               | 638          | 33.1%      |
+| Author                       | 619          | 32.1%      |
+| Tags                         | 461          | 23.9%      |
+| Trove classifiers            | 441          | 22.9%      |
+| Maintainers                  | 424          | 22%        |
+| Statistics instructions      | 266          | 13.8%      |
+| Wildcard (new feature)       | 157          | 8.2%       |
 
 <div class="infogram-embed" data-id="aafb06e8-4bc6-4e49-8bbe-9e2525b18ddf" data-type="interactive" data-title="&amp;quot;Buy a Feature&amp;quot; - PyPI research"></div><script>!function(e,t,n,s){var i="InfogramEmbeds",o=e.getElementsByTagName(t)[0],d=/^http:/.test(e.location)?"http:":"https:";if(/^\/{2}/.test(s)&&(s=d+s),window[i]&&window[i].initialized)window[i].process&&window[i].process();else if(!e.getElementById(n)){var a=e.createElement(t);a.async=1,a.id=n,a.src=s,o.parentNode.insertBefore(a,o)}}(document,"script","infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/aafb06e8-4bc6-4e49-8bbe-9e2525b18ddf" style="color:#989898!important;text-decoration:none!important;" target="_blank">"Buy a Feature" - PyPI research</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
 

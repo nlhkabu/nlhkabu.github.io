@@ -1,14 +1,13 @@
 ---
 layout: post
 colors:
-  default: 085784
-  dark: 024f7b
-  light: 4395c4
+  default: 18a4a2
+  dark: 129a98
+  light: 8fd7d6
 
 title: Interview Series - UX & UI at PeopleDoc
 summary: A three part series on how we approach UX and UI at PeopleDoc.
-comments: 'off'
-
+comments: "off"
 ---
 
 As part of my work at [PeopleDoc](http://www.people-doc.com/), I was recently interviewed by [Nicole Lindenbaum](https://twitter.com/NicolePeopleDoc) on our approach to UX and the development of PeopleDoc UI - our internal design system.

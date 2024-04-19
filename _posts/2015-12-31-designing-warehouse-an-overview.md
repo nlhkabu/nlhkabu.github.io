@@ -1,15 +1,15 @@
 ---
 layout: post
 colors:
-  default: 006DAD
-  dark: 005d92
-  light: 669dbd
+  default: 18a4a2
+  dark: 129a98
+  light: 8fd7d6
 
 title: Designing Warehouse - An Overview
 summary: This is the first in a series of posts exploring the redesign of Warehouse - the replacement codebase for the Python Package Index (PyPI).
-comments: 'on'
-
+comments: "on"
 ---
+
 For the last six months, I have been working with the Python Packaging Authority (PyPA) to design [Warehouse](https://warehouse.python.org/) - the new [codebase](https://github.com/pypa/warehouse) that will soon replace the [Python Package Index](https://pypi.python.org/pypi) (PyPI).
 
 This article is an attempt to explore our objectives and challenges, provide an overview of our activities so far, and engage the wider Python community to help us move forward.
@@ -20,7 +20,7 @@ When [Donald](https://github.com/dstufft) (our lead developer) and I first talke
 
 - To update the visual identity
 - To make packages more discoverable; and
-- To look after *both* kinds of users, namely, users *and* package maintainers
+- To look after _both_ kinds of users, namely, users _and_ package maintainers
 
 To this list, I added a two of my own objectives:
 
@@ -34,56 +34,57 @@ So now you see our goals, let's take a look at the solution we've come up with s
 
 ### Making the UI Welcoming
 
-Python is used by many community and educational organisations to introduce newcomers to programming.  By extension, PyPI might be the first package manager that some of our users have ever seen.  This is a big responsibility, but also an opportunity to make a small part of the learning journey easier.
+Python is used by many community and educational organisations to introduce newcomers to programming. By extension, PyPI might be the first package manager that some of our users have ever seen. This is a big responsibility, but also an opportunity to make a small part of the learning journey easier.
 
-In designing the user interface, I tried to make no assumptions about prior knowledge. Don't know what pip is?  That's ok - we'll link you to the appropriate help section.  Not sure what to do with an MD5 hash?  No worries - there's a help popover for that.
+In designing the user interface, I tried to make no assumptions about prior knowledge. Don't know what pip is? That's ok - we'll link you to the appropriate help section. Not sure what to do with an MD5 hash? No worries - there's a help popover for that.
 
 The colours, fonts, text sizes and spacing were also designed to be large, friendly and accessible (we'll talk more about accessibility later) - all in an attempt to make new coders comfortable with the tool at hand.
 
-Now - you might be thinking - "but most PyPI users are *not* beginners, so why design for them?"  The answer is simple: a site designed for beginners can be used by everyone; a site designed for experts may alienate and confuse beginners. Of course, getting this right is a challenge, so we'll be usability testing the design to find a balance that works for users of all experience levels.
+Now - you might be thinking - "but most PyPI users are _not_ beginners, so why design for them?" The answer is simple: a site designed for beginners can be used by everyone; a site designed for experts may alienate and confuse beginners. Of course, getting this right is a challenge, so we'll be usability testing the design to find a balance that works for users of all experience levels.
 
 ### Helping Users Overcome Obstacles
 
-To ensure that *all* of our users are getting the most out of PyPI, it's not enough just to design an interface - I needed to look at the whole user experience. This meant thinking about an individual's experience moving through the site, and asking myself:
+To ensure that _all_ of our users are getting the most out of PyPI, it's not enough just to design an interface - I needed to look at the whole user experience. This meant thinking about an individual's experience moving through the site, and asking myself:
 
 - Where could our users be getting 'stuck'?
 - How can I help them on their way?
 
-Not only did this mode of thinking influence a lot of my *interface* design decisions, it also led me to explore the documentation resources that are currently available.
+Not only did this mode of thinking influence a lot of my _interface_ design decisions, it also led me to explore the documentation resources that are currently available.
 
-Currently, the [Python Packaging User Guide](https://packaging.python.org/en/latest/) is the authoritative resource on Python packaging.  Unfortunately, it is not linked to from PyPI itself; and while the content is of very high quality, the tutorials are written through the lens of a more experienced Pythonista. I wanted something with a much lower threshold... something that would really hold the user's hand when they got stuck.
+Currently, the [Python Packaging User Guide](https://packaging.python.org/en/latest/) is the authoritative resource on Python packaging. Unfortunately, it is not linked to from PyPI itself; and while the content is of very high quality, the tutorials are written through the lens of a more experienced Pythonista. I wanted something with a much lower threshold... something that would really hold the user's hand when they got stuck.
 
 In October I put out a call for help writing two new tutorials to help beginners; one for users who have never installed a package, and one for users who want to upload their first package to PyPI. My hope was that I'd attract a couple of technical writers to the project, but after an incredible response from the Python community (and consulting with [Marcus](https://github.com/qwcode) and the PyPA team) we've settled on something more ambitious: to edit the current packaging guide to include new tutorials, while improving and extending the documentation in general.
 
-Our goal is to complete this work by early 2016 to coincide with the launch of the new Warehouse codebase. This will facilitate extensive linking between the two resources,  and dramatically improve the overall user experience.
+Our goal is to complete this work by early 2016 to coincide with the launch of the new Warehouse codebase. This will facilitate extensive linking between the two resources, and dramatically improve the overall user experience.
 
 ## Ensuring the Site Is Inclusive
 
-The final piece of the puzzle is ensuring that the site is usable and accessible for *all* of our community members, whether they are using a phone, screen reader or an old, unpopular browser.
+The final piece of the puzzle is ensuring that the site is usable and accessible for _all_ of our community members, whether they are using a phone, screen reader or an old, unpopular browser.
 
-This has resulted in a number of technical decisions; the first (and most obvious) is that the design supports a range of devices via responsive media queries.  We're also going to (at least in the short term) continue support for Internet Explorer <strike>8</strike> 9, as we have a number of users, primarily in China, still using this browser. See [this issue](https://github.com/pypa/warehouse/issues/979) for more information.
+This has resulted in a number of technical decisions; the first (and most obvious) is that the design supports a range of devices via responsive media queries. We're also going to (at least in the short term) continue support for Internet Explorer <strike>8</strike> 9, as we have a number of users, primarily in China, still using this browser. See [this issue](https://github.com/pypa/warehouse/issues/979) for more information.
 
 On the accessibility side, the project has already benefited from one audit from [Xavier Dutreilh](http://xavier.dutreilh.com/) and we are looking forward to another before the site launches. Planned improvements include the addition of ARIA roles to the HTML, a 'skip to content' link, as well as better labeling of form fields for screen readers.
 
 Lastly, Donald is introducing both localisation and internationalisation to the codebase. Currently PyPI is very US centric - supporting US English and US formats only. We're very excited to be updating the user experience to better support Python users from all over the world, and will be calling for volunteers in early 2016 to assist us in this activity.
 
 ## How You Can Help
-So what's next?  And importantly - how can you help?
+
+So what's next? And importantly - how can you help?
 
 ### Contributing Code
 
-We have a huge amount of work to complete before launching Warehouse, and would love to see some new faces working on the project. If you have skills in Python, HTML, SCSS, or JavaScript, then please check out the [open issues](https://github.com/pypa/warehouse/issues) on the issue tracker.  Thanks to Donald's hard work, the project itself is [easy to set up](https://warehouse.readthedocs.org/development/getting-started/) and [extensively documented](https://warehouse.readthedocs.org/).  If you've never contributed to an open-source project before, or are new to web development, we'd love to accept your first pull request! We have labelled a number of issues on the issue tracker as ['easy'](https://github.com/pypa/warehouse/issues?q=is%3Aopen+is%3Aissue+label%3Aeasy) - start here!
+We have a huge amount of work to complete before launching Warehouse, and would love to see some new faces working on the project. If you have skills in Python, HTML, SCSS, or JavaScript, then please check out the [open issues](https://github.com/pypa/warehouse/issues) on the issue tracker. Thanks to Donald's hard work, the project itself is [easy to set up](https://warehouse.readthedocs.org/development/getting-started/) and [extensively documented](https://warehouse.readthedocs.org/). If you've never contributed to an open-source project before, or are new to web development, we'd love to accept your first pull request! We have labelled a number of issues on the issue tracker as ['easy'](https://github.com/pypa/warehouse/issues?q=is%3Aopen+is%3Aissue+label%3Aeasy) - start here!
 
 ### Participating in Usability Testing
 
 As already mentioned, I am planning on running a number of usability testing sessions. The objectives of these sessions is to ask:
 
-- Are the design decisions *really* helping new learners?
+- Are the design decisions _really_ helping new learners?
 - Have I got the balance right for more experienced Pythonistas?
 - Is it clear what each page does?
 - Can users find help when they need it?
 
-Since making a call for volunteers, over 150 Pythonistas have come forward to participate.  From these, I will ask a variety of users to participate in the tests - the objective being to test with users from different backgrounds and with different levels of Python experience.  If you think that you have a new perspective to bring to this process, please [volunteer here](https://docs.google.com/forms/d/14YJvKOVIzFjXkhUq5y0GnD3FYq4xUuW-oIGypSuvJhQ/viewform).
+Since making a call for volunteers, over 150 Pythonistas have come forward to participate. From these, I will ask a variety of users to participate in the tests - the objective being to test with users from different backgrounds and with different levels of Python experience. If you think that you have a new perspective to bring to this process, please [volunteer here](https://docs.google.com/forms/d/14YJvKOVIzFjXkhUq5y0GnD3FYq4xUuW-oIGypSuvJhQ/viewform).
 
 ### Helping Rewrite PyPUG
 
@@ -91,7 +92,7 @@ I'm very excited to report that the work on rewriting the Python Packaging User 
 
 ### Providing Feedback
 
-Finally, we're planning on installing a widget on the site to gather community feedback.  Perhaps there is something small that is bothering you, but it doesn't justify opening an issue on the issue tracker. Perhaps there is something big, but you don't like issue trackers, or find them difficult or intimidating to use. Perhaps you just want to put an opinion forward.  In all of these cases, please use our widget - we can only better serve the community if we hear from the community!
+Finally, we're planning on installing a widget on the site to gather community feedback. Perhaps there is something small that is bothering you, but it doesn't justify opening an issue on the issue tracker. Perhaps there is something big, but you don't like issue trackers, or find them difficult or intimidating to use. Perhaps you just want to put an opinion forward. In all of these cases, please use our widget - we can only better serve the community if we hear from the community!
 
 ## Wrapping Up
 

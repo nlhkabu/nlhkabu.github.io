@@ -1,14 +1,13 @@
 ---
 layout: post
 colors:
-  default: 006DAD
-  dark: 005d92
-  light: 669dbd
+  default: 18a4a2
+  dark: 129a98
+  light: 8fd7d6
 
 title: "EuroPython Keynote - PyPI: Past, Present and Future"
 summary: Slides, notes and resources from my 2018 EuroPython keynote.
-comments: 'off'
-
+comments: "off"
 ---
 
 In July 2018, I was honoured to keynote at [EuroPython](https://europython.eu/) - the largest European conference for the Python programming language, with over 1,100 attendees.
@@ -50,7 +49,6 @@ I would like to thank the organisers for the opportunity to present, and the aud
 - ["Markdown Descriptions on PyPI"](https://dustingram.com/articles/2018/03/16/markdown-descriptions-on-pypi): article from Dustin Ingram (PyPI / Warehouse maintainer) on the steps required to enable Markdown on your PyPI project descriptions
 - I have also published a number of articles about the Warehouse project, covering [design objectives](https://whoisnicoleharris.com/2015/12/31/designing-warehouse-an-overview.html), [user testing](https://whoisnicoleharris.com/2018/03/13/user-testing-warehouse.html), [accessibility](https://whoisnicoleharris.com/2018/05/17/warehouse-accessibility.html) and [user research](https://whoisnicoleharris.com/2018/07/22/pypi-user-research.html)
 
-
 ## Statistics
 
 I used [infogram](https://infogram.com) to generate the graphs for my presentation. Happily, these can also be embedded:
@@ -70,7 +68,6 @@ Thanks to [Alina Cristea](http://alinacristea.daportfolio.com/), the official co
     <img src="/assets/img/europython2.jpg" alt="On stage, presenting"/>
     <figcaption>Image by Alina Cristea.</figcaption>
 </figure>
-
 
 ## Thanks!
 

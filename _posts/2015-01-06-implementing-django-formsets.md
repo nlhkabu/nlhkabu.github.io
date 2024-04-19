@@ -1,28 +1,29 @@
 ---
 layout: post
 colors:
-    default: 6e3982
-    dark: 643077
-    light: ae8abc
+  default: 18a4a2
+  dark: 129a98
+  light: 8fd7d6
 
 title: "Tutorial : Implementing Django Formsets"
 summary: A step-by-step tutorial for setting up and testing a standard Django formset.
-comments: 'on'
-promo: 'on'
+comments: "on"
+promo: "on"
 ---
+
 I've noticed on #django IRC that many people need guidance on formsets, and as I've now used them in a couple of my projects &mdash; most recently, [Connect](/connect/) &mdash; I thought I could offer a short how-to based on my own experiences.
 
-Firstly, if you haven't already, go and [read the docs](https://docs.djangoproject.com/en/1.7/topics/forms/formsets/).  If you're still confused, or want an end-to-end tutorial, then read on.  The code contained in this tutorial has been tested to work with Django 1.7.
+Firstly, if you haven't already, go and [read the docs](https://docs.djangoproject.com/en/1.7/topics/forms/formsets/). If you're still confused, or want an end-to-end tutorial, then read on. The code contained in this tutorial has been tested to work with Django 1.7.
 
 ## Contents
+
 {:.no_toc}
 
-* -
-{:toc}
+- - {:toc}
 
 ## What Does a Formset Do?
 
-Formsets are for dealing with sets of identical data.  For example in Connect, I have a form where the user can save multiple links to their public profile, with each link having both a URL and an anchor:
+Formsets are for dealing with sets of identical data. For example in Connect, I have a form where the user can save multiple links to their public profile, with each link having both a URL and an anchor:
 
 <figure class="img-figure">
     <img src="/assets/img/formset-animation.gif" alt="Animation of a formset in action"/>
@@ -31,11 +32,11 @@ Formsets are for dealing with sets of identical data.  For example in Connect, I
 
 I also want:
 
-* The formset to be nested _within_ the user's profile form.
-* The user to add or remove as many links as they like.
-* Custom validation checking that no anchor or URL is entered more than once.
+- The formset to be nested _within_ the user's profile form.
+- The user to add or remove as many links as they like.
+- Custom validation checking that no anchor or URL is entered more than once.
 
-Django comes with a number of 'batteries included' formsets.  There are [formsets for models](https://docs.djangoproject.com/en/1.7/topics/forms/modelforms/#model-formsets) and [formsets for models related by a foreign key](https://docs.djangoproject.com/en/1.7/topics/forms/modelforms/#model-formsets).
+Django comes with a number of 'batteries included' formsets. There are [formsets for models](https://docs.djangoproject.com/en/1.7/topics/forms/modelforms/#model-formsets) and [formsets for models related by a foreign key](https://docs.djangoproject.com/en/1.7/topics/forms/modelforms/#model-formsets).
 
 _This how-to, however, is going to focus on creating a standard formset using custom forms_.
 
@@ -48,20 +49,20 @@ First we need to set out our link form. This is just a standard Django form.
 from django import forms
 
 class LinkForm(forms.Form):
-    """
-    Form for individual user links
-    """
-    anchor = forms.CharField(
-                    max_length=100,
-                    widget=forms.TextInput(attrs={
-                        'placeholder': 'Link Name / Anchor Text',
-                    }),
-                    required=False)
-    url = forms.URLField(
-                    widget=forms.URLInput(attrs={
-                        'placeholder': 'URL',
-                    }),
-                    required=False)
+"""
+Form for individual user links
+"""
+anchor = forms.CharField(
+max_length=100,
+widget=forms.TextInput(attrs={
+'placeholder': 'Link Name / Anchor Text',
+}),
+required=False)
+url = forms.URLField(
+widget=forms.URLInput(attrs={
+'placeholder': 'URL',
+}),
+required=False)
 {% endhighlight %}
 
 As our formset will need to be nested inside a profile form, let's go ahead and create that now:
@@ -89,13 +90,14 @@ class ProfileForm(forms.Form):
                                         widget=forms.TextInput(attrs={
                                             'placeholder': 'Last Name',
                                         }))
+
 {% endhighlight %}
 
-## Step 2.  Create Your Formset
+## Step 2. Create Your Formset
 
 For this particular example, we're going to add some validation to our formset, as we want to ensure that there are no duplicate URLs or anchors.
 
-We also want to verify that all links have both an anchor and URL.  We _could_ simply set the fields as `required` on the form itself, _however_ this will prevent our users from submitting empty forms, which is not the behaviour we're looking for here.  From a usability perspective, it would be better to simply _ignore_ forms that are completely empty, raising errors _only if_ a form is partially incomplete.
+We also want to verify that all links have both an anchor and URL. We _could_ simply set the fields as `required` on the form itself, _however_ this will prevent our users from submitting empty forms, which is not the behaviour we're looking for here. From a usability perspective, it would be better to simply _ignore_ forms that are completely empty, raising errors _only if_ a form is partially incomplete.
 
 If you don't want any custom validation on your formset, you can skip this step entirely.
 
@@ -104,13 +106,13 @@ If you don't want any custom validation on your formset, you can skip this step 
 from django.forms.formsets import BaseFormSet
 
 class BaseLinkFormSet(BaseFormSet):
-    def clean(self):
-        """
-        Adds validation to check that no two links have the same anchor or URL
-        and that all links have both an anchor and URL.
-        """
-        if any(self.errors):
-            return
+def clean(self):
+"""
+Adds validation to check that no two links have the same anchor or URL
+and that all links have both an anchor and URL.
+"""
+if any(self.errors):
+return
 
         anchors = []
         urls = []
@@ -148,16 +150,17 @@ class BaseLinkFormSet(BaseFormSet):
                         'All links must have a URL.',
                         code='missing_URL'
                     )
+
 {% endhighlight %}
 
 ## Step 3. Hook Up Your View
 
 Now we can use Django's built in `formset_factory` to generate our formset.
-As the name suggests, this function takes a form and returns a formset.  At its most basic, we _only_ need to pass it the form we want to repeat - in this case our `LinkForm`.  However, as we have created a custom `BaseLinkFormSet`, we _also_ need to tell our factory to use this instead of using Django's default `BaseFormSet`.
+As the name suggests, this function takes a form and returns a formset. At its most basic, we _only_ need to pass it the form we want to repeat - in this case our `LinkForm`. However, as we have created a custom `BaseLinkFormSet`, we _also_ need to tell our factory to use this instead of using Django's default `BaseFormSet`.
 
-In our example, we also want our formset to display all of the existing `UserLinks` for the logged in user.  To do this, we need to build a dict of our user's links and pass this as our `initial_data`.
+In our example, we also want our formset to display all of the existing `UserLinks` for the logged in user. To do this, we need to build a dict of our user's links and pass this as our `initial_data`.
 
-To save our data we can build a list of UserLinks and save this to the user's profile using the `bulk_create` method.  Wrapping this code in a `transaction` will avoid a situation where the old links are deleted, but the connection to the database is lost before the new links are created.
+To save our data we can build a list of UserLinks and save this to the user's profile using the `bulk_create` method. Wrapping this code in a `transaction` will avoid a situation where the old links are deleted, but the connection to the database is lost before the new links are created.
 
 We are also going to use the [messages framework](https://docs.djangoproject.com/en/1.7/ref/contrib/messages/) to tell our users whether their profile was updated.
 
@@ -174,10 +177,10 @@ from myapp.models import UserLink
 
 @login_required
 def test_profile_settings(request):
-    """
-    Allows a user to update their own profile.
-    """
-    user = request.user
+"""
+Allows a user to update their own profile.
+"""
+user = request.user
 
     # Create the formset, specifying the form and formset we want to use.
     LinkFormSet = formset_factory(LinkForm, formset=BaseLinkFormSet)
@@ -230,6 +233,7 @@ def test_profile_settings(request):
     }
 
     return render(request, 'our_template.html', context)
+
 {% endhighlight %}
 
 ## Step 4. HTML / JS
@@ -237,11 +241,11 @@ def test_profile_settings(request):
 Now that we have passed our formset to our template, we can use a `forloop` to
 display each of our forms.
 
-An additional (but not necessarily obvious) step here is to include `{% raw %}{{ link_formset.management_form }}{% endraw %}`.  This is used by Django to manage the forms within the formset.
+An additional (but not necessarily obvious) step here is to include `{% raw %}{{ link_formset.management_form }}{% endraw %}`. This is used by Django to manage the forms within the formset.
 
 My personal preference is to individually specify each form field so I can wrap additional HTML around it, but you can also use the standard shortcuts, such as `{% raw %}{{ form.as_p }}{% endraw %}` within a formset.
 
-We also want to use [this jQuery plugin](https://github.com/elo80ka/django-dynamic-formset) for dynamically adding and removing forms.  Full documentation can be found [here](https://github.com/elo80ka/django-dynamic-formset/blob/master/docs/usage.rst).
+We also want to use [this jQuery plugin](https://github.com/elo80ka/django-dynamic-formset) for dynamically adding and removing forms. Full documentation can be found [here](https://github.com/elo80ka/django-dynamic-formset/blob/master/docs/usage.rst).
 
 <p class="code-heading">edit_profile.html</p>
 {% highlight html %}
@@ -249,9 +253,9 @@ We also want to use [this jQuery plugin](https://github.com/elo80ka/django-dynam
 {% load staticfiles %}
 
 {% if messages %}
-    {% for message in messages %}
-        <p>{{ message }}</p>
-    {% endfor %}
+{% for message in messages %}
+<p>{{ message }}</p>
+{% endfor %}
 {% endif %}
 
 <form method="post">
@@ -300,6 +304,7 @@ We also want to use [this jQuery plugin](https://github.com/elo80ka/django-dynam
     {% endif %}
 
     <input type="submit" value="Update Profile" class="button"/>
+
 </form>
 
 <!-- Include formset plugin - including jQuery dependency -->
@@ -311,6 +316,7 @@ We also want to use [this jQuery plugin](https://github.com/elo80ka/django-dynam
         deleteText: 'remove'
     });
 </script>
+
 {% endraw %}
 {% endhighlight %}
 
@@ -318,9 +324,9 @@ We also want to use [this jQuery plugin](https://github.com/elo80ka/django-dynam
 
 Let's set up some basic unit tests to make sure everything is working correctly.
 
-As the profile form is available only to authenticated users, we'll use the `setup` method to create and login a user.  In the examples below I've used [factory boy](https://github.com/rbarrois/factory_boy) to generate a dummy user.
+As the profile form is available only to authenticated users, we'll use the `setup` method to create and login a user. In the examples below I've used [factory boy](https://github.com/rbarrois/factory_boy) to generate a dummy user.
 
-Most of the examples below are _variations_ on posting the same data either to the view or the form directly.  For this reason, much of this functionality has been split into separate helper functions.
+Most of the examples below are _variations_ on posting the same data either to the view or the form directly. For this reason, much of this functionality has been split into separate helper functions.
 
 #### Test the Profile Form
 
@@ -333,9 +339,9 @@ from myapp.factories import UserFactory
 from myapp.forms import ProfileForm
 
 class ProfileFormTest(TestCase):
-    def setUp(self):
-        self.user = UserFactory()
-        self.client.login(username=self.user.email, password='pass')
+def setUp(self):
+self.user = UserFactory()
+self.client.login(username=self.user.email, password='pass')
 
     def form_data(self, first, last):
         return ProfileForm(
@@ -362,6 +368,7 @@ class ProfileFormTest(TestCase):
 
         self.assertEqual(len(errors), 1)
         self.assertEqual(errors[0].code, 'required')
+
 {% endhighlight %}
 
 #### Test the Formset
@@ -369,7 +376,7 @@ class ProfileFormTest(TestCase):
 We can test our formset by either:
 
 1. Passing data to the `ProfileForm` (for this to work we **must** include the `TOTAL_FORMS` and `INITIAL_FORMS` settings that are generated by the `management_form`).
-2. Posting data directly to the view.  This allows us to check for specific errors using `assertFormsetError`.
+2. Posting data directly to the view. This allows us to check for specific errors using `assertFormsetError`.
 
 <p class="code-heading">tests/test_forms.py</p>
 {% highlight python %}
@@ -379,9 +386,9 @@ from myapp.factories import UserFactory
 from myapp.forms import ProfileForm
 
 class LinkFormsetTest(TestCase):
-    def setUp(self):
-        self.user = UserFactory()
-        self.client.login(username=self.user.email, password='pass')
+def setUp(self):
+self.user = UserFactory()
+self.client.login(username=self.user.email, password='pass')
 
     def form_data(self, anchor, url):
         return ProfileForm(
@@ -465,6 +472,7 @@ class LinkFormsetTest(TestCase):
         response = self.post_data('', 'http://mylink.com')
 
         self.raise_formset_error(response, 'All links must have an anchor.')
+
 {% endhighlight %}
 
 #### Testing Our View
@@ -479,20 +487,20 @@ from myapp.factories import UserFactory
 from myapp.models import User, UserLink
 
 class ProfileSettingsTest(TestCase):
-    def test_can_update_profile(self):
-        user = UserFactory()
-        self.client.login(username=user.email, password='pass')
-        response = self.client.post(
-            reverse('test:profile-settings'),
-            data={
-                'first_name': 'New First Name',
-                'last_name': 'New Last Name',
-                'form-TOTAL_FORMS': 1,
-                'form-INITIAL_FORMS': 0,
-                'form-0-anchor': 'My Link',
-                'form-0-url': 'http://mylink.com',
-            },
-        )
+def test_can_update_profile(self):
+user = UserFactory()
+self.client.login(username=user.email, password='pass')
+response = self.client.post(
+reverse('test:profile-settings'),
+data={
+'first_name': 'New First Name',
+'last_name': 'New Last Name',
+'form-TOTAL_FORMS': 1,
+'form-INITIAL_FORMS': 0,
+'form-0-anchor': 'My Link',
+'form-0-url': 'http://mylink.com',
+},
+)
 
         # Get the user again
         user = User.objects.get(id=user.id)
@@ -502,8 +510,9 @@ class ProfileSettingsTest(TestCase):
         self.assertEqual(user.last_name, 'New Last Name')
         self.assertEqual(user_link.anchor, 'My Link')
         self.assertEqual(user_link.url, 'http://mylink.com/')
+
 {% endhighlight %}
 
 ## Conclusion
 
-That's it!  We have a working _tested_ formset saving our user's links.  If you found this article useful, please share it.  If you have a comment or question, please get in touch!
+That's it! We have a working _tested_ formset saving our user's links. If you found this article useful, please share it. If you have a comment or question, please get in touch!

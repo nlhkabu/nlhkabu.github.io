@@ -1,14 +1,13 @@
 ---
 layout: post
 colors:
-  default: 006DAD
-  dark: 005d92
-  light: 669dbd
+  default: 18a4a2
+  dark: 129a98
+  light: 8fd7d6
 
 title: My guest appearance on the Talk Python to Me podcast
 summary: Together with Ee Durbin III and Dustin Ingram, I had the opportunity to speak about the new PyPI on the Talk Python to Me podcast
-comments: 'off'
-
+comments: "off"
 ---
 
 A big thank you to [Michael Kennedy](https://twitter.com/mkennedy) for hosting us!

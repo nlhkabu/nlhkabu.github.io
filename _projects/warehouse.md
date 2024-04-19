@@ -1,28 +1,28 @@
 ---
 layout: project
 colors:
-    default: 006DAD
-    dark: 005d92
-    light: 669dbd
+  default: 006DAD
+  dark: 005d92
+  light: 669dbd
 
-title: Warehouse - The Future of PyPI
+title: Warehouse - Powering the Python Packaging Index (PyPI)
 skills: [UI, Visual Design, CSS/SCSS]
-summary: Warehouse is the next generation Python Package Repository, designed to replace the legacy code base that currently powers PyPI.
+summary: Warehouse is the codebase that powers the Python Package Repository.
 feature_image:
-    small: /assets/img/warehouse-small.png
-    medium: /assets/img/warehouse-medium.png
-    large: /assets/img/warehouse-large.png
+  small: /assets/img/warehouse-small.png
+  medium: /assets/img/warehouse-medium.png
+  large: /assets/img/warehouse-large.png
 
 links:
--   url: http://pypi.org
+  - url: http://pypi.org
     text: Visit Site
--   url: https://github.com/pypa/warehouse
+  - url: https://github.com/pypa/warehouse
     text: View source on GitHub
 
 priority: 1
 
 sections:
--   |
+  - |
     ## The Problem
     In mid-2015, I took on a new role within the Python community - redesigning [Warehouse](https://warehouse.python.org/) (the new PyPI), a project due for public release in 2018.
 
@@ -33,7 +33,7 @@ sections:
     - What devices and browsers should we support?
     - How should we challenge and validate design decisions?
 
--   |
+  - |
     ## The Solution
 
     There has been a huge amount of work done so far, and there is still [lots more to do](https://github.com/pypa/warehouse/issues).  Here's what we have come up with so far:
@@ -54,7 +54,7 @@ sections:
 
     Feedback from the Python community has been overwhelmingly positive and many users are very excited about the new design. That said, validating design is not just about public opinion; it's about *testing* the design with a range of users and use cases.  For this reason, we're planning on conducting a series of usability tests with a range of Python users; from complete beginners to long time users. So stay tuned in 2018!
 
--   |
+  - |
     ## Addendum: Warehouse Launched April 2018
 
     After almost 3 years working on the Warehouse project, I am pleased to write that the new codebase was launched to the public on April 16, 2018, after a short beta period. The legacy codebase powering PyPI was shutdown shortly thereafter.

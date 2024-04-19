@@ -1,14 +1,13 @@
 ---
 layout: post
 colors:
-  default: 006DAD
-  dark: 005d92
-  light: 669dbd
+  default: 18a4a2
+  dark: 129a98
+  light: 8fd7d6
 
 title: Presenting Warehouse at PyCon France
 summary: On Saturday the 15th of October, I had the opportunity to present a talk about the state of the Warehouse project at Pycon France in Rennes.
-comments: 'on'
-
+comments: "on"
 ---
 
 The talk explored the organisational state of Python packaging, the current state of the [Python Package Index](https://pypi.python.org), and introduced the [Warehouse project](https://pypi.io) - the [codebase](https://github.com/pypa/warehouse/) that will soon power PyPI.
